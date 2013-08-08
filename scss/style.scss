@@ -7,8 +7,168 @@
 @import "helpers";
 @import "fonts";
 
+$cBackground: #f4f5fa;
+$cWhite:      #dee5f2;
+$cPurple:     #6900cc;
+$cOrange:     #f7796a;
+$cBlue:       #caf3f5;
+$cDarkGreen:  #1d7066;
+$cGreen:      #37dccb;
+$cBrown:      #4c3c3d;
+
 body {
   font-family: "SohoStd-Regular";
+  line-height:normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  background: $cBackground;
+
+  @include box-sizing(border-box);
 }
 
+a {
+  text-decoration:none;
+}
 
+strong {
+  font-family: "SohoStd-Bold";
+}
+
+sup {
+  font-size:.5em;
+  vertical-align: super;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+  font-family: "SohoStd-Bold";
+}
+
+header {
+
+  @include clearfix();
+
+  background: $cPurple;
+  /*border-bottom: 1px solid $cOrange;*/
+
+  ul { @include inline-block(); }
+
+  li {
+    @include inline-block();
+    margin-right:2%;
+    &:last-child { margin-right: 0; }
+  }
+
+  a  {
+    font-size:1.2em;
+    color: $cWhite;
+    /*font-family: "SohoStd-Bold";*/
+  }
+
+  .inner {
+    width: 86%;
+    margin:auto;
+    padding: 1.5em 0;
+  }
+
+  .navigation {
+    float:left;
+    width: 52%;
+  }
+
+  .actions {
+    float:right;
+    width: 20%;
+    text-align:right;
+    li {
+      margin-right:5%;
+
+    }
+
+
+    li a {
+      color: $cOrange;
+    }
+  }
+
+
+}
+
+section {
+
+  .inner {
+    width: 65%;
+    margin-left:7%;
+    padding: 4.5em 0;
+  }
+
+}
+
+/* Color definition */
+
+section.about {
+  background: $cPurple;
+  color: $cBlue;
+}
+
+section.storytelling {
+  background: $cDarkGreen;
+  color: $cGreen;
+}
+
+section.organizers {
+  background: $cBlue;
+  color: $cPurple;
+}
+
+section.storytellers {
+  background: $cOrange;
+  color: $cWhite;
+}
+
+section.when_where {
+  background: $cPurple;
+  color: $cBlue;
+}
+
+section.contact {
+  background: $cBrown;
+  color: $cBlue;
+}
+
+section.sponsors {
+  /*background: $cBrown;*/
+  color: $cBrown;
+}
+
+/* Section content */
+
+section.issues {
+
+}
+
+section.about {
+
+  p {
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+  }
+
+}
+
+  /*.inner {
+    width: 100%;
+    margin:0;
+  }
+
+  img {
+
+    width: 100%;
+    margin:auto;
+    @include absolute-landscape-center(700px);
+
+    }
+   */
