@@ -51,7 +51,9 @@ h3 {
 }
 
 .logo {
+  display: block;
   width: percentage(2855/3693);
+  maring: 0 0 percentage(219/$siteWidth) 0;
 }
 
 .separator {
@@ -63,13 +65,25 @@ h3 {
 
 .btn {
   display: block;
-  /*width: percentage(1217/$siteWidth);*/
-  /*background:$cPurple;*/
-  /*color:$cWhite;*/
-  /*font-size: 2em;*/
+  padding: 4% 0;
+  margin: 0 auto .7em auto;
+  margin: auto;
+
+  font-weight:bold;
+  font-size:1.2em;
+
+  background:$cPurple;
+  color: $cWhite;
+  text-align:center;
 }
 
-header {
+nav {
+
+  &.fixed {
+    width:100%;
+    top: 0; left: 0;
+    position:fixed;
+  }
 
   @include clearfix();
 
@@ -94,33 +108,32 @@ header {
 
   .inner {
     width: percentage(3693/$siteWidth);
+    padding: percentage(83/$siteWidth) 0;
     margin:auto;
-    padding: 1.5em 0;
   }
 
   .navigation {
-    width: percentage(2232/$siteWidth);
+    width: percentage(2232/3693);
     float:left;
   }
 
   .actions {
     float:right;
-    width: percentage(830/$siteWidth);
+    width: percentage(830/3693);
 
     li {
       margin-right: percentage(93/830);
+
+      a { color: $cOrange; }
     }
 
-    li a {
-      color: $cOrange;
-    }
   }
 }
 
 section.main .inner {
   width: percentage(3693/$siteWidth);
+  padding: percentage(225/$siteWidth) 0;
   margin:auto;
-  padding: 1.5em 0;
 }
 
 section .inner {
@@ -192,6 +205,23 @@ section.sponsors {
 }
 
 /* Section content */
+
+section.main ul {
+  @include clearfix();
+
+  li {
+    float:left;
+    width: percentage(1219/$siteWidth);
+    margin: 0 percentage(105/$siteWidth) 0 0;
+    color:$cBrown;
+
+    .btn {
+      margin: 3% 0 0 0;
+      background:$cOrange;
+      color:$cBrown;
+    }
+  }
+}
 
 section p {
   font-size: 1.1em;
