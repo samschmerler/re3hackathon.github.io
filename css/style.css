@@ -180,13 +180,7 @@ h3 {
 /* line 80, ../scss/style.scss */
 nav {
   background: #6900cc;
-}
-/* line 82, ../scss/style.scss */
-nav.fixed {
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
+  padding: 1.94152% 0;
 }
 /* line 124, ../scss/helpers.scss */
 nav {
@@ -201,7 +195,20 @@ nav:before, nav:after {
 nav:after {
   clear: both;
 }
-/* line 92, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
+nav.fixed {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+/* line 93, ../scss/style.scss */
+nav .inner {
+  width: 86.38596%;
+  padding: 0;
+  margin: auto;
+}
+/* line 99, ../scss/style.scss */
 nav ul {
   float: right;
 }
@@ -218,53 +225,47 @@ nav ul:before, nav ul:after {
 nav ul:after {
   clear: both;
 }
-/* line 97, ../scss/style.scss */
-nav li {
+/* line 103, ../scss/style.scss */
+nav ul li {
   float: left;
   margin-right: 2.17544%;
 }
-/* line 101, ../scss/style.scss */
-nav li:last-child {
+/* line 107, ../scss/style.scss */
+nav ul li:last-child {
   margin: 0;
 }
-/* line 104, ../scss/style.scss */
-nav a {
+/* line 109, ../scss/style.scss */
+nav ul li a {
   font-size: 1.0em;
   color: #dee5f2;
 }
-/* line 109, ../scss/style.scss */
-nav .inner {
-  width: 86.38596%;
-  padding: 1.94152% 0;
-  margin: auto;
-}
-/* line 115, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 nav .navigation {
   width: 60.43867%;
   float: left;
 }
-/* line 120, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 nav .actions {
   float: right;
   width: 22.47495%;
 }
-/* line 124, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 nav .actions li {
   margin-right: 11.20482%;
 }
-/* line 127, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 nav .actions li a {
   color: #f7796a;
 }
 
-/* line 133, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 section.main .inner {
   width: 86.38596%;
   padding: 5.26316% 0;
   margin: auto;
 }
 
-/* line 139, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 section .inner {
   width: 69.45029%;
   margin-left: 7%;
@@ -272,89 +273,89 @@ section .inner {
 }
 
 /* Color definition */
-/* line 147, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 section.main {
   color: #f7796a;
 }
-/* line 150, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 section.main .separator {
   background: #f7796a;
 }
 
-/* line 153, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 section.about {
   background: #6900cc;
   color: #caf3f5;
 }
-/* line 157, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 section.about .separator {
   background: #caf3f5;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
 section.storytelling {
   background: #1d7066;
   color: #37dccb;
 }
-/* line 164, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 section.storytelling .separator {
   background: #37dccb;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 section.organizers {
   background: #caf3f5;
   color: #6900cc;
 }
-/* line 171, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 section.organizers .separator {
   background: #6900cc;
 }
 
-/* line 174, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 section.issues {
   color: #4c3c3d;
 }
-/* line 177, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 section.issues .separator {
   background: #4c3c3d;
 }
 
-/* line 180, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 section.storytellers {
   background: #f7796a;
   color: #dee5f2;
 }
-/* line 184, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 section.storytellers .separator {
   background: #dee5f2;
 }
 
-/* line 187, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 section.when_where {
   background: #6900cc;
   color: #caf3f5;
 }
-/* line 191, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 section.when_where .separator {
   background: #caf3f5;
 }
 
-/* line 194, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 section.contact {
   background: #4c3c3d;
   color: #caf3f5;
 }
-/* line 198, ../scss/style.scss */
+/* line 201, ../scss/style.scss */
 section.contact .separator {
   background: #caf3f5;
 }
 
-/* line 201, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 section.sponsors {
   color: #4c3c3d;
 }
-/* line 204, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 section.sponsors .separator {
   background: #4c3c3d;
 }
@@ -373,21 +374,21 @@ section.main ul:before, section.main ul:after {
 section.main ul:after {
   clear: both;
 }
-/* line 212, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 section.main ul li {
   float: left;
   width: 28.51462%;
   margin: 0 2.45614% 0 0;
   color: #4c3c3d;
 }
-/* line 218, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 section.main ul li .btn {
   margin: 3% 0 0 0;
   background: #f7796a;
   color: #4c3c3d;
 }
 
-/* line 226, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 section p {
   font-size: 1.1em;
   margin: 0 0 1em 0;
@@ -406,21 +407,21 @@ section.storytelling ul li:before, section.storytelling ul li:after {
 section.storytelling ul li:after {
   clear: both;
 }
-/* line 237, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 section.storytelling ul div {
   float: left;
 }
-/* line 239, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 section.storytelling ul .num {
   font-size: 3.6em;
   margin: 0 .4em 0 0;
 }
-/* line 244, ../scss/style.scss */
+/* line 247, ../scss/style.scss */
 section.storytelling ul p {
   display: block;
   font-size: 1.2em;
 }
-/* line 249, ../scss/style.scss */
+/* line 252, ../scss/style.scss */
 section.storytelling ul strong {
   display: block;
   clear: right;
@@ -429,14 +430,14 @@ section.storytelling ul strong {
   margin: .2em 0 0 0;
 }
 
-/* line 258, ../scss/style.scss */
+/* line 261, ../scss/style.scss */
 section.organizers .inner {
   width: 86%;
   margin: auto;
   padding: 4.5em 0;
 }
 
-/* line 267, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 section.organizers ul {
   margin: 0 0 1em 0;
 }
@@ -453,18 +454,18 @@ section.organizers ul:before, section.organizers ul:after {
 section.organizers ul:after {
   clear: both;
 }
-/* line 272, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 section.organizers ul li {
   float: left;
   /*width: 19.9766082%;*/
   width: 23.5%;
   margin: 0 2% 0 0;
 }
-/* line 279, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 section.organizers ul li:last-child {
   margin: 0;
 }
-/* line 281, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 section.organizers ul li img, section.organizers ul li .pic {
   display: block;
   width: 100%;
@@ -473,14 +474,14 @@ section.organizers ul li img, section.organizers ul li .pic {
   background: #6900cc;
 }
 
-/* line 290, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 section.storytellers .inner {
   width: 86.38596%;
   margin: auto;
   padding: 4.5em 0;
 }
 
-/* line 296, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 section.storytellers ul {
   margin: auto;
   width: 92.76619%;
@@ -498,41 +499,41 @@ section.storytellers ul:before, section.storytellers ul:after {
 section.storytellers ul:after {
   clear: both;
 }
-/* line 303, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 section.storytellers ul li {
   text-align: center;
 }
-/* line 306, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 section.storytellers ul li p {
   line-height: 150%;
   font-size: 1.15em;
   margin: 0 0 1.5em 0;
 }
-/* line 312, ../scss/style.scss */
+/* line 315, ../scss/style.scss */
 section.storytellers ul li:first-child {
   float: left;
   width: 44.94743%;
 }
-/* line 317, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 section.storytellers ul li:last-child {
   float: right;
   width: 44.94743%;
 }
-/* line 322, ../scss/style.scss */
+/* line 325, ../scss/style.scss */
 section.storytellers ul li strong {
   display: block;
   font-size: 1.1em;
   margin: 0 0 1em 0;
   color: #6900cc;
 }
-/* line 329, ../scss/style.scss */
+/* line 332, ../scss/style.scss */
 section.storytellers ul li .explanation {
   margin: auto;
   width: 66.92658%;
   color: #6900cc;
   font-size: 1em;
 }
-/* line 336, ../scss/style.scss */
+/* line 339, ../scss/style.scss */
 section.storytellers ul li .btn {
   margin: auto;
   font-weight: bold;
@@ -544,16 +545,7 @@ section.storytellers ul li .btn {
   color: #dee5f2;
 }
 
-/*.inner {
-width: 100%;
-margin:0;
+/* line 357, ../scss/style.scss */
+section.about p {
+  line-height: 150%;
 }
-
-img {
-
-width: 100%;
-margin:auto;
-@include absolute-landscape-center(700px);
-
-}
- */
