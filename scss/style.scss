@@ -1,11 +1,8 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
 @import "helpers";
 @import "fonts";
+
+$siteWidth: 4275;
 
 $cBackground: #f4f5fa;
 $cWhite:      #dee5f2;
@@ -55,64 +52,69 @@ h3 {
 
 .separator {
   width: 20px;
-  height: 2px;
+  height: 1px;
   background:$cBlue;
   margin: 0 0 1.5em 0;
 }
 
+.btn {
+  display: block;
+  /*width: percentage(1217/$siteWidth);*/
+  /*background:$cPurple;*/
+  /*color:$cWhite;*/
+  /*font-size: 2em;*/
+}
 
 header {
 
   @include clearfix();
 
   background: $cPurple;
-  /*border-bottom: 1px solid $cOrange;*/
 
-  ul { @include inline-block(); }
+  ul {
+    @include clearfix();
+    float:right;
+  }
 
   li {
-    @include inline-block();
-    margin-right:2%;
-    &:last-child { margin-right: 0; }
+    float:left;
+    margin-right: percentage(93/$siteWidth);
+
+    &:last-child { margin: 0; }
   }
 
   a  {
-    font-size:1.2em;
+    font-size:1.0em;
     color: $cWhite;
-    /*font-family: "SohoStd-Bold";*/
   }
 
   .inner {
-    width: 86%;
+    width: percentage(3693/$siteWidth);
     margin:auto;
     padding: 1.5em 0;
   }
 
   .navigation {
+    width: percentage(2232/$siteWidth);
     float:left;
-    width: 52%;
   }
 
   .actions {
     float:right;
-    width: 20%;
-    text-align:right;
+    width: percentage(830/$siteWidth);
+
     li {
-      margin-right:5%;
-
+      margin-right: percentage(93/830);
     }
-
 
     li a {
       color: $cOrange;
     }
   }
-
-
 }
 
 section .inner {
-  width: 65%;
+  width: percentage(2969/$siteWidth);
   margin-left:7%;
   padding: 4.5em 0;
 }
@@ -175,16 +177,138 @@ section.sponsors {
 
 /* Section content */
 
+section p {
+  font-size: 1.1em;
+  margin: 0 0 1em 0;
+}
+
+section.storytelling ul {
+
+  li {
+    @include clearfix();
+  }
+
+  div { float: left; }
+
+  .num {
+    font-size:3.6em;
+    margin: 0 .4em 0 0;
+  }
+
+  p  {
+    display: block;
+    font-size:1.2em;
+  }
+
+  strong {
+    display: block;
+    clear:right;
+    color: $cWhite;
+    font-size:1.3em;
+    margin: .2em 0 0 0;
+  }
+}
+
+section.organizers .inner {
+  width: 86%;
+  margin:auto;
+  padding: 4.5em 0;
+}
+
+section.organizers h2 {
+}
+
+section.organizers ul {
+
+  margin: 0 0 1em 0;
+  @include clearfix();
+
+  li {
+    float:left;
+
+    /*width: 19.9766082%;*/
+    width:23.5%;
+    margin: 0 2% 0 0;
+
+    &:last-child { margin: 0; }
+
+    img, .pic {
+      display:block;
+      @include size(100%, 200px);
+      margin: 0 0 1em 0;
+      background:$cPurple;
+    }
+  }
+}
+
+section.storytellers .inner {
+  width: percentage(3693/$siteWidth);
+  margin:auto;
+  padding: 4.5em 0;
+}
+
+section.storytellers ul {
+
+  margin: auto;
+  width: percentage(3424/3691);
+
+  @include clearfix();
+
+  li {
+    text-align: center;
+
+    p {
+      line-height: 150%;
+      font-size:1.15em;
+      margin: 0 0 1.5em 0;
+    }
+
+    &:first-child {
+      float:left;
+      width: percentage(1539/3424);
+    }
+
+    &:last-child {
+      float:right;
+      width: percentage(1539/3424);
+    }
+
+    strong {
+      display: block;
+      font-size:1.1em;
+      margin: 0 0 1em 0;
+      color: $cPurple;
+    }
+
+    .explanation {
+      margin: auto;
+      width: percentage(1030/1539);
+      color:$cPurple;
+      font-size:1em;
+    }
+
+    .btn  {
+      margin: auto;
+      font-weight:bold;
+      padding: 4% 0;
+      font-size:1.2em;
+      width: percentage(1043/1539);
+      margin: 0 auto .7em auto;
+      background:$cPurple;
+      color: $cWhite;
+    }
+
+    p {
+
+    }
+  }
+}
+
 section.issues {
 
 }
 
 section.about {
-
-  p {
-    font-size: 1.5em;
-    margin: 0 0 1em 0;
-  }
 
 }
 
