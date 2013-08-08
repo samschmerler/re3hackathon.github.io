@@ -146,6 +146,12 @@ section.storytelling .inner {
   padding: percentage(375/$siteWidth) 0;
 }
 
+section.issues .inner {
+  width: percentage(3693/$siteWidth);
+  padding: percentage(375/$siteWidth) 0;
+  margin-left:7%;
+}
+
 section .inner {
   width: percentage(2969/$siteWidth);
   margin-left:7%;
@@ -376,5 +382,23 @@ section.storytellers ul {
 section.about {
   p {
     line-height: 150%;
+  }
+}
+
+section.issues .inner {
+
+  .header {
+    width: percentage(2905/$siteWidth);
+    margin: 0 0 percentage(144/$siteWidth) 0;
+    h2  {
+      font-size: 1.5em;
+    }
+  }
+
+
+  .flower {
+    display: block;
+    margin: auto;
+    width: percentage(2611/$siteWidth);
   }
 }
