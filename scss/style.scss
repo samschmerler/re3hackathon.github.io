@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
   font-family: "SohoStd-Bold";
@@ -133,10 +133,17 @@ nav {
   }
 }
 
+/* Margins */
+
 section.main .inner {
   width: percentage(3693/$siteWidth);
   padding: percentage(225/$siteWidth) 0;
   margin:auto;
+}
+
+section.storytelling .inner {
+  width: percentage(2969/$siteWidth);
+  padding: percentage(375/$siteWidth) 0;
 }
 
 section .inner {
@@ -209,6 +216,11 @@ section.sponsors {
 
 /* Section content */
 
+section p {
+  font-size: 1.1em;
+  margin: 0 0 1em 0;
+}
+
 section.main ul {
   @include clearfix();
 
@@ -226,12 +238,20 @@ section.main ul {
   }
 }
 
-section p {
-  font-size: 1.1em;
-  margin: 0 0 1em 0;
+section.storytelling {
+  h2 {
+    margin: 0 0 percentage(142/$siteWidth) 0;
+  }
+
+  .inner > p {
+    font-size: 1em;
+    margin: 0 0 percentage(140/$siteWidth) 0;
+  }
+
 }
 
 section.storytelling ul {
+
 
   li {
     @include clearfix();
@@ -240,21 +260,21 @@ section.storytelling ul {
   div { float: left; }
 
   .num {
-    font-size:3.6em;
+    font-size:2.9em;
     margin: 0 .4em 0 0;
   }
 
   p  {
     display: block;
-    font-size:1.2em;
+    font-size:1em;
   }
 
   strong {
     display: block;
     clear:right;
     color: $cWhite;
-    font-size:1.3em;
-    margin: .2em 0 0 0;
+    font-size:1em;
+    margin: .2em 0 percentage(40/$siteWidth) 0;
   }
 }
 
