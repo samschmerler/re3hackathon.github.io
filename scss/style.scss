@@ -28,6 +28,10 @@ a {
   text-decoration:none;
 }
 
+input {
+  font-family: "SohoStd-Regular";
+}
+
 strong {
   font-family: "SohoStd-Bold";
 }
@@ -66,7 +70,6 @@ h3 {
 .btn {
   display: block;
   padding: 4% 0;
-  margin: 0 auto .7em auto;
   margin: auto;
 
   font-weight:bold;
@@ -82,7 +85,7 @@ nav {
   @include clearfix();
 
   background: $cPurple;
-    padding: percentage(83/$siteWidth) 0;
+  padding: percentage(83/$siteWidth) 0;
 
   &.fixed {
     width:100%;
@@ -135,7 +138,8 @@ nav {
 
 /* Margins */
 
-section.main .inner {
+section.main .inner,
+section.sponsors .inner {
   width: percentage(3693/$siteWidth);
   padding: percentage(225/$siteWidth) 0;
   margin:auto;
@@ -402,3 +406,90 @@ section.issues .inner {
     width: percentage(2611/$siteWidth);
   }
 }
+
+
+section.contact {
+
+  .inner {
+    @include clearfix();
+  }
+
+  .input {
+
+    position:relative;
+    background:$cWhite;
+    padding: 5% 7% 3% 7%;
+    margin: 0 0 percentage(555/3693) 0;
+
+    .submit {
+      position:absolute;
+      float:right;
+      background: $cOrange;
+      width: percentage(185/1403);
+      height: 100%;
+      top: 0; right: 0;
+    }
+
+    input {
+      width: percentage(1262/1403);
+      padding: 0;
+      border:none;
+      background:none;
+      font-size: 1em;
+      color: $cBrown;
+      outline:none;
+    }
+
+  }
+
+  .contact {
+
+    float:left;
+    margin: 0 percentage(515/3693) 0 0;
+
+    address {
+      line-height:150%;
+      margin: 0 0 percentage(555/3693) 0;
+    }
+
+    a {
+      color:$cOrange;
+    }
+  }
+
+  .informed_and_involved {
+    float: left;
+    width: percentage(1043/3693);
+  }
+
+  .btn {
+    background:$cOrange;
+    color: $cBrown;
+    margin: 0 0 percentage(80/1043) 0;
+  }
+
+}
+
+
+section.sponsors ul {
+
+  width: 100%;
+
+  @include clearfix();
+
+  li {
+    float:left;
+    width: percentage(717/3693);
+    height: 50px;
+    margin: 0 percentage(253/3693) 0 0;
+    &:last-child { margin: 0; }
+
+    a {
+      display:block;
+      background:$cBrown;
+      width:100%;
+      height: 100%;
+    }
+  }
+}
+
