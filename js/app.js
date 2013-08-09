@@ -13,6 +13,8 @@ $(function() {
     e.preventDefault();
     e.stopPropagation();
 
+    $("nav").removeClass("fixed");
+
     var t = $(this).attr("href"),
     n = t.substring(t.indexOf("#") + 1);
 

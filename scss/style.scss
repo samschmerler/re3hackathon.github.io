@@ -78,6 +78,8 @@ h3 {
   background:$cPurple;
   color: $cWhite;
   text-align:center;
+
+  @include simple-transition(background, 200ms);
 }
 
 nav {
@@ -244,6 +246,10 @@ section.main ul {
       margin: 3% 0 0 0;
       background:$cOrange;
       color:$cBrown;
+
+      &:hover {
+        background: $cGreen;
+      }
     }
   }
 }
@@ -367,19 +373,21 @@ section.storytellers ul {
     }
 
     .btn  {
-      margin: auto;
-      font-weight:bold;
-      padding: 4% 0;
-      font-size:1.2em;
-      width: percentage(1043/1539);
       margin: 0 auto .7em auto;
+      padding: 4% 0;
+      width: percentage(1043/1539);
+
+      font-weight:bold;
+      font-size:1.2em;
       background:$cPurple;
       color: $cWhite;
+
+      &:hover {
+        background: $cDarkGreen;
+        color: $cWhite;
+      }
     }
 
-    p {
-
-    }
   }
 }
 
@@ -455,7 +463,11 @@ section.contact {
 
     a {
       color:$cOrange;
+      &:hover {
+        color: $cGreen;
+      }
     }
+
   }
 
   .informed_and_involved {
@@ -467,6 +479,12 @@ section.contact {
     background:$cOrange;
     color: $cBrown;
     margin: 0 0 percentage(80/1043) 0;
+
+    &:hover {
+      background: $cGreen;
+      color: $cBrown;
+    }
+
   }
 
 }
@@ -490,6 +508,7 @@ section.sponsors ul {
       background:$cBrown;
       width:100%;
       height: 100%;
+
     }
   }
 }
