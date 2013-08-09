@@ -624,8 +624,9 @@ section.contact .input .submit {
   height: 100%;
   top: 0;
   right: 0;
+  /*background: url(../img/right_arrow.png) no-repeat;*/
 }
-/* line 433, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 section.contact .input input {
   width: 89.95011%;
   padding: 0;
@@ -635,33 +636,33 @@ section.contact .input input {
   color: #4c3c3d;
   outline: none;
 }
-/* line 445, ../scss/style.scss */
+/* line 446, ../scss/style.scss */
 section.contact .contact {
   float: left;
   margin: 0 13.9453% 0 0;
 }
-/* line 450, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 section.contact .contact address {
   line-height: 150%;
   margin: 0 0 15.02843% 0;
 }
-/* line 455, ../scss/style.scss */
+/* line 456, ../scss/style.scss */
 section.contact .contact a {
   color: #f7796a;
 }
-/* line 460, ../scss/style.scss */
+/* line 461, ../scss/style.scss */
 section.contact .informed_and_involved {
   float: left;
   width: 28.24262%;
 }
-/* line 465, ../scss/style.scss */
+/* line 466, ../scss/style.scss */
 section.contact .btn {
   background: #f7796a;
   color: #4c3c3d;
   margin: 0 0 7.67018% 0;
 }
 
-/* line 474, ../scss/style.scss */
+/* line 475, ../scss/style.scss */
 section.sponsors ul {
   width: 100%;
 }
@@ -678,18 +679,18 @@ section.sponsors ul:before, section.sponsors ul:after {
 section.sponsors ul:after {
   clear: both;
 }
-/* line 480, ../scss/style.scss */
+/* line 481, ../scss/style.scss */
 section.sponsors ul li {
   float: left;
   width: 19.41511%;
   height: 50px;
   margin: 0 6.8508% 0 0;
 }
-/* line 485, ../scss/style.scss */
+/* line 486, ../scss/style.scss */
 section.sponsors ul li:last-child {
   margin: 0;
 }
-/* line 487, ../scss/style.scss */
+/* line 488, ../scss/style.scss */
 section.sponsors ul li a {
   display: block;
   background: #4c3c3d;

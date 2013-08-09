@@ -18,12 +18,17 @@ $(function() {
 
     var $el = $("." + n);
 
-    var paddingTop = parseInt($el.find(".inner").css("paddingTop"), 10);
-    var position = $el.offset().top - paddingTop;
+    var position;
+    var paddingTop = parseInt($("nav").css("paddingTop"), 10);
 
-    console.log($el.offset().top, position, paddingTop);
+    if (n == 'about') {
+      position = $(".main").height()
+    } else {
+      position = Math.round($el.offset().top) - $("nav").outerHeight(true) ;
+      console.log(position);
+    }
 
-    $("body,html").animate({ scrollTop: position + 4 }, { easing: "easeInSine", duration: 300});
+    $("body,html").animate({ scrollTop: position }, { easing: "easeInSine", duration: 300 });
 
   }
 
