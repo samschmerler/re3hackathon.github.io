@@ -22,20 +22,24 @@ $cBrown:      #4c3c3d;
 
 $breakpoint-S: max-width 640px, min-resolution 1.5dppx;
 
-$breakpoint-small-portrait:  max-width 800px, orientation portrait;
-$breakpoint-medium-portrait: max-width 1145px, orientation portrait;
+$breakpoint-medium-portrait: (max-width 1145px) (orientation portrait);
+$breakpoint-small-portrait:  (max-width 800px)  (orientation portrait);
+$breakpoint-small-landscape: (max-width 800px)  (orientation landscape);
 
 /* Main elements */
 
 body {
+
+  @include box-sizing(border-box);
+
   font-family: "SohoStd-Regular";
   line-height:normal;
+
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
   background: $cBackground;
 
-  @include box-sizing(border-box);
 }
 
 a {
@@ -59,6 +63,17 @@ h2 {
   font-size: 2.1em;
   margin: 0 0 1em 0;
   font-family: "SohoStd-Regular";
+
+  @include breakpoint($breakpoint-medium-portrait) {
+    font-size: 2em;
+  }
+  @include breakpoint($breakpoint-small-landscape) {
+    font-size: 2em;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    font-size: 2em;
+  }
+
 }
 
 h3 {
@@ -66,12 +81,30 @@ h3 {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   font-family: "SohoStd-Bold";
+
+  @include breakpoint($breakpoint-medium-portrait) {
+    font-size: .9em;
+  }
+  @include breakpoint($breakpoint-small-landscape) {
+    font-size: .9em;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    font-size: .9em;
+  }
 }
 
 .logo {
   display: block;
   width: percentage(2855/3693);
   maring: 0 0 percentage(219/$siteWidth) 0;
+
+  @include breakpoint($breakpoint-small-landscape) {
+    width:100%;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    width:100%;
+  }
+
 }
 
 .separator {
@@ -100,9 +133,12 @@ nav {
 
   @include clearfix();
 
+  @include breakpoint($breakpoint-small-landscape) {
+    display:none;
+  }
+
   @include breakpoint($breakpoint-small-portrait) {
-    /*display:none;*/
-    background:blue;
+    display:none;
   }
 
   background: $cPurple;
@@ -153,7 +189,6 @@ nav {
         background:red;
       }
 
-
       a { color: $cOrange; }
     }
 
@@ -167,11 +202,27 @@ section.sponsors .inner {
   width: percentage(3693/$siteWidth);
   padding: percentage(225/$siteWidth) 0;
   margin:auto;
+
+  @include breakpoint($breakpoint-small-landscape) {
+    width: 90%; margin: auto;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    width: 90%; margin: auto;
+  }
+
 }
 
 section.storytelling .inner {
   width: percentage(2969/$siteWidth);
   padding: percentage(375/$siteWidth) 0;
+
+  @include breakpoint($breakpoint-small-landscape) {
+    width: 90%; margin: auto;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    width: 90%; margin: auto;
+  }
+
 }
 
 section.issues .inner {
@@ -253,11 +304,34 @@ section.sponsors {
 section p {
   font-size: 1.1em;
   margin: 0 0 1em 0;
-}
 
+  @include breakpoint($breakpoint-medium-portrait) {
+    font-size: 1em;
+  }
+  @include breakpoint($breakpoint-small-landscape) {
+    font-size: 1em;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    font-size: 1em;
+  }
+
+}
 
 section.main {
   background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+
+  h2 {
+    @include breakpoint($breakpoint-medium-portrait) {
+      font-size: 1.9em;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      font-size: 1.9em;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      font-size: 1.9em;
+    }
+  }
+
 }
 
 section.main ul {
@@ -268,6 +342,16 @@ section.main ul {
     width: percentage(1219/$siteWidth);
     margin: 0 percentage(105/$siteWidth) 0 0;
     color:$cBrown;
+
+    @include breakpoint($breakpoint-medium-portrait) {
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      width: 200px;
+      font-size: .9em;
+      margin: 0 5px 0 0;
+    }
 
     .btn {
       margin: 3% 0 0 0;
@@ -284,11 +368,33 @@ section.main ul {
 section.storytelling {
   h2 {
     margin: 0 0 percentage(142/$siteWidth) 0;
+
+    @include breakpoint($breakpoint-medium-portrait) {
+      margin: 0 0 20px 0;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      margin: 0 0 20px 0;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      margin: 0 0 20px 0;
+    }
+
   }
 
   .inner > p {
     font-size: 1em;
     margin: 0 0 percentage(140/$siteWidth) 0;
+
+    @include breakpoint($breakpoint-medium-portrait) {
+      margin: 0 0 25px 0;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      margin: 0 0 25px 0;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      margin: 0 0 25px 0;
+    }
+
   }
 
 }
@@ -298,18 +404,58 @@ section.storytelling ul {
 
   li {
     @include clearfix();
+    /*background:#f1f1f1;*/
   }
 
   div { float: left; }
 
+  .text{
+
+    @include breakpoint($breakpoint-medium-portrait) {
+      width: 650px;
+    }
+
+    @include breakpoint($breakpoint-small-portrait) {
+      width: 245px;
+    }
+
+    @include breakpoint($breakpoint-small-landscape) {
+      width: 380px;
+    }
+
+  }
+
   .num {
     font-size:2.9em;
     margin: 0 .4em 0 0;
+
+    @include breakpoint($breakpoint-medium-portrait) {
+      font-size:2em;
+    }
+
+    @include breakpoint($breakpoint-small-landscape) {
+      font-size: 3.2em;
+      margin: 0 .15em 0 0;
+    }
+
+    @include breakpoint($breakpoint-small-portrait) {
+      font-size: 3.2em;
+      margin: 0 .15em 0 0;
+    }
   }
 
   p  {
     display: block;
     font-size:1em;
+
+    @include breakpoint($breakpoint-small-landscape) {
+      font-size:.8em;
+    }
+
+    @include breakpoint($breakpoint-small-portrait) {
+      font-size:.8em;
+    }
+
   }
 
   strong {
@@ -318,6 +464,11 @@ section.storytelling ul {
     color: $cWhite;
     font-size:1em;
     margin: .2em 0 percentage(40/$siteWidth) 0;
+
+    @include breakpoint($breakpoint-medium-portrait) {
+      font-size:.8em;
+    }
+
   }
 }
 
@@ -335,22 +486,77 @@ section.organizers ul {
   margin: 0 0 1em 0;
   @include clearfix();
 
+    @include breakpoint($breakpoint-medium-portrait) {
+      margin: auto;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      margin: auto;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      margin: auto;
+    }
+
   li {
     float:left;
 
-    /*width: 19.9766082%;*/
     width:23.5%;
     margin: 0 2% 0 0;
+    min-width:186px;
 
-    &:last-child { margin: 0; }
+    @include breakpoint($breakpoint-medium-portrait) {
+      float: none;
+      margin: 0 auto 30px auto;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      float: none;
+      margin: 0 auto 30px auto;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      float: none;
+      margin: 0 auto 30px auto;
+    }
 
-    img, .pic {
+    &:last-child {
+      margin: 0;
+
+      @include breakpoint($breakpoint-medium-portrait) {
+        float: none;
+        margin: 0 auto 30px auto;
+      }
+      @include breakpoint($breakpoint-small-landscape) {
+        float: none;
+        margin: 0 auto 30px auto;
+      }
+      @include breakpoint($breakpoint-small-portrait) {
+        float: none;
+        margin: 0 auto 30px auto;
+      }
+    }
+
+    img {
       display:block;
       max-width:206px;
       @include size(100%, 100%);
       margin: 0 0 1em 0;
     }
   }
+}
+
+section.when_where {
+  position:relative;
+  background:#fff;
+  clear:both;
+  overflow:hidden;
+  height: 784px;
+  /*background: url(../img/map.png) no-repeat 0 100%;*/
+}
+
+section.when_where .overlay {
+  display:block;
+  position:absolute;
+  top: 0; left: 0;
+  @include size(475px, 468px);
+  background: url(../img/when_where_overlay.png) no-repeat;
 }
 
 section.storytellers .inner {
@@ -430,8 +636,20 @@ section.issues .inner {
   .header {
     width: percentage(2905/$siteWidth);
     margin: 0 0 percentage(144/$siteWidth) 0;
+
     h2  {
       font-size: 1.5em;
+
+      @include breakpoint($breakpoint-medium-portrait) {
+        font-size: 1.2em;
+      }
+      @include breakpoint($breakpoint-small-landscape) {
+        font-size: 1.2em;
+      }
+      @include breakpoint($breakpoint-small-portrait) {
+        font-size: 1.2em;
+      }
+
     }
   }
 
@@ -440,7 +658,16 @@ section.issues .inner {
     display: block;
     margin: auto;
     width: percentage(2611/$siteWidth);
+
+    @include breakpoint($breakpoint-small-landscape) {
+      width:100%;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      width:100%;
+    }
+
   }
+
 }
 
 
