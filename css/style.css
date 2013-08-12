@@ -417,10 +417,6 @@ section p {
 
 /* line 259, ../scss/style.scss */
 section.main {
-  background: #fff;
-}
-/* line 262, ../scss/style.scss */
-section.main .inner {
   background: white url(../img/home_bkg.png) no-repeat 100% 100%;
 }
 
@@ -437,29 +433,29 @@ section.main ul:before, section.main ul:after {
 section.main ul:after {
   clear: both;
 }
-/* line 270, ../scss/style.scss */
+/* line 266, ../scss/style.scss */
 section.main ul li {
   float: left;
   width: 28.51462%;
   margin: 0 2.45614% 0 0;
   color: #4c3c3d;
 }
-/* line 276, ../scss/style.scss */
+/* line 272, ../scss/style.scss */
 section.main ul li .btn {
   margin: 3% 0 0 0;
   background: #f7796a;
   color: #4c3c3d;
 }
-/* line 281, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 section.main ul li .btn:hover {
   background: #37dccb;
 }
 
-/* line 289, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 section.storytelling h2 {
   margin: 0 0 3.32164% 0;
 }
-/* line 293, ../scss/style.scss */
+/* line 289, ../scss/style.scss */
 section.storytelling .inner > p {
   font-size: 1em;
   margin: 0 0 3.27485% 0;
@@ -478,21 +474,21 @@ section.storytelling ul li:before, section.storytelling ul li:after {
 section.storytelling ul li:after {
   clear: both;
 }
-/* line 307, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 section.storytelling ul div {
   float: left;
 }
-/* line 309, ../scss/style.scss */
+/* line 305, ../scss/style.scss */
 section.storytelling ul .num {
   font-size: 2.9em;
   margin: 0 .4em 0 0;
 }
-/* line 314, ../scss/style.scss */
+/* line 310, ../scss/style.scss */
 section.storytelling ul p {
   display: block;
   font-size: 1em;
 }
-/* line 319, ../scss/style.scss */
+/* line 315, ../scss/style.scss */
 section.storytelling ul strong {
   display: block;
   clear: right;
@@ -501,14 +497,14 @@ section.storytelling ul strong {
   margin: 0.2em 0 0.93567% 0;
 }
 
-/* line 328, ../scss/style.scss */
+/* line 324, ../scss/style.scss */
 section.organizers .inner {
   width: 86%;
   margin: auto;
   padding: 4.5em 0;
 }
 
-/* line 337, ../scss/style.scss */
+/* line 333, ../scss/style.scss */
 section.organizers ul {
   margin: 0 0 1em 0;
 }
@@ -525,18 +521,18 @@ section.organizers ul:before, section.organizers ul:after {
 section.organizers ul:after {
   clear: both;
 }
-/* line 342, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 section.organizers ul li {
   float: left;
   /*width: 19.9766082%;*/
   width: 23.5%;
   margin: 0 2% 0 0;
 }
-/* line 349, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 section.organizers ul li:last-child {
   margin: 0;
 }
-/* line 351, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 section.organizers ul li img, section.organizers ul li .pic {
   display: block;
   width: 100%;
@@ -545,14 +541,14 @@ section.organizers ul li img, section.organizers ul li .pic {
   background: #6900cc;
 }
 
-/* line 360, ../scss/style.scss */
+/* line 356, ../scss/style.scss */
 section.storytellers .inner {
   width: 86.38596%;
   margin: auto;
   padding: 4.5em 0;
 }
 
-/* line 366, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 section.storytellers ul {
   margin: auto;
   width: 92.76619%;
@@ -570,41 +566,41 @@ section.storytellers ul:before, section.storytellers ul:after {
 section.storytellers ul:after {
   clear: both;
 }
-/* line 373, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 section.storytellers ul li {
   text-align: center;
 }
-/* line 376, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 section.storytellers ul li p {
   line-height: 150%;
   font-size: 1.15em;
   margin: 0 0 1.5em 0;
 }
-/* line 382, ../scss/style.scss */
+/* line 378, ../scss/style.scss */
 section.storytellers ul li:first-child {
   float: left;
   width: 44.94743%;
 }
-/* line 387, ../scss/style.scss */
+/* line 383, ../scss/style.scss */
 section.storytellers ul li:last-child {
   float: right;
   width: 44.94743%;
 }
-/* line 392, ../scss/style.scss */
+/* line 388, ../scss/style.scss */
 section.storytellers ul li strong {
   display: block;
   font-size: 1.1em;
   margin: 0 0 1em 0;
   color: #6900cc;
 }
-/* line 399, ../scss/style.scss */
+/* line 395, ../scss/style.scss */
 section.storytellers ul li .explanation {
   margin: auto;
   width: 66.92658%;
   color: #6900cc;
   font-size: 1em;
 }
-/* line 406, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 section.storytellers ul li .btn {
   margin: 0 auto .7em auto;
   padding: 4% 0;
@@ -614,27 +610,27 @@ section.storytellers ul li .btn {
   background: #6900cc;
   color: #dee5f2;
 }
-/* line 416, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
 section.storytellers ul li .btn:hover {
   background: #1d7066;
   color: #dee5f2;
 }
 
-/* line 427, ../scss/style.scss */
+/* line 423, ../scss/style.scss */
 section.about p {
   line-height: 150%;
 }
 
-/* line 434, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 section.issues .inner .header {
   width: 67.95322%;
   margin: 0 0 3.36842% 0;
 }
-/* line 437, ../scss/style.scss */
+/* line 433, ../scss/style.scss */
 section.issues .inner .header h2 {
   font-size: 1.5em;
 }
-/* line 443, ../scss/style.scss */
+/* line 439, ../scss/style.scss */
 section.issues .inner .flower {
   display: block;
   margin: auto;
@@ -654,14 +650,14 @@ section.contact .inner:before, section.contact .inner:after {
 section.contact .inner:after {
   clear: both;
 }
-/* line 457, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 section.contact .input {
   position: relative;
   background: #dee5f2;
   padding: 5% 7% 3% 7%;
   margin: 0 0 15.02843% 0;
 }
-/* line 464, ../scss/style.scss */
+/* line 460, ../scss/style.scss */
 section.contact .input .submit {
   position: absolute;
   float: right;
@@ -672,7 +668,7 @@ section.contact .input .submit {
   right: 0;
   /*background: url(../img/right_arrow.png) no-repeat;*/
 }
-/* line 474, ../scss/style.scss */
+/* line 470, ../scss/style.scss */
 section.contact .input input {
   width: 89.95011%;
   padding: 0;
@@ -682,42 +678,42 @@ section.contact .input input {
   color: #4c3c3d;
   outline: none;
 }
-/* line 486, ../scss/style.scss */
+/* line 482, ../scss/style.scss */
 section.contact .contact {
   float: left;
   margin: 0 13.9453% 0 0;
 }
-/* line 491, ../scss/style.scss */
+/* line 487, ../scss/style.scss */
 section.contact .contact address {
   line-height: 150%;
   margin: 0 0 15.02843% 0;
 }
-/* line 496, ../scss/style.scss */
+/* line 492, ../scss/style.scss */
 section.contact .contact a {
   color: #f7796a;
 }
-/* line 498, ../scss/style.scss */
+/* line 494, ../scss/style.scss */
 section.contact .contact a:hover {
   color: #37dccb;
 }
-/* line 505, ../scss/style.scss */
+/* line 501, ../scss/style.scss */
 section.contact .informed_and_involved {
   float: left;
   width: 28.24262%;
 }
-/* line 510, ../scss/style.scss */
+/* line 506, ../scss/style.scss */
 section.contact .btn {
   background: #f7796a;
   color: #4c3c3d;
   margin: 0 0 7.67018% 0;
 }
-/* line 515, ../scss/style.scss */
+/* line 511, ../scss/style.scss */
 section.contact .btn:hover {
   background: #37dccb;
   color: #4c3c3d;
 }
 
-/* line 525, ../scss/style.scss */
+/* line 521, ../scss/style.scss */
 section.sponsors ul {
   width: 100%;
 }
@@ -734,18 +730,18 @@ section.sponsors ul:before, section.sponsors ul:after {
 section.sponsors ul:after {
   clear: both;
 }
-/* line 531, ../scss/style.scss */
+/* line 527, ../scss/style.scss */
 section.sponsors ul li {
   float: left;
   width: 19.41511%;
   height: 50px;
   margin: 0 6.8508% 0 0;
 }
-/* line 536, ../scss/style.scss */
+/* line 532, ../scss/style.scss */
 section.sponsors ul li:last-child {
   margin: 0;
 }
-/* line 538, ../scss/style.scss */
+/* line 534, ../scss/style.scss */
 section.sponsors ul li a {
   display: block;
   background: #4c3c3d;
