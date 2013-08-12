@@ -353,6 +353,11 @@ section p {
 
 }
 
+/* ---------------------
+ * MAIN
+ * ---------------------
+ */
+
 section.main {
   background: #fff url(../img/home_bkg.png) no-repeat 100% 0;
 
@@ -379,27 +384,42 @@ section.main ul {
     margin: 0 percentage(105/$siteWidth) 0 0;
     color:$cBrown;
 
+    &:last-child { margin: 0; }
+
     @include breakpoint($breakpoint-medium-portrait) {
+      float:none;
+      margin: 0 0 10px 0;
     }
     @include breakpoint($breakpoint-small-landscape) {
+      float:none;
+      margin: 0 0 10px 0;
     }
     @include breakpoint($breakpoint-small-portrait) {
-      width: 200px;
+      float:none;
+      width: 100%;
       font-size: .9em;
-      margin: 0 5px 0 0;
+      margin: 0 0 20px 0;
     }
 
     .btn {
       margin: 3% 0 0 0;
       background:$cOrange;
       color:$cBrown;
+      line-height: auto;
 
       &:hover {
         background: $cGreen;
       }
+
     }
   }
 }
+
+
+/* ---------------------
+ * STORYTELLING
+ * ---------------------
+ */
 
 section.storytelling {
   h2 {
@@ -511,6 +531,11 @@ section.storytelling ul {
   }
 }
 
+/* ---------------------
+ * ORGANIZERS
+ * ---------------------
+ */
+
 section.organizers .inner {
   width: 86%;
   margin:auto;
@@ -522,15 +547,15 @@ section.organizers ul {
   margin: 0 0 1em 0;
   @include clearfix();
 
-    @include breakpoint($breakpoint-medium-portrait) {
-      margin: auto;
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      margin: auto;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      margin: auto;
-    }
+  @include breakpoint($breakpoint-medium-portrait) {
+    margin: auto;
+  }
+  @include breakpoint($breakpoint-small-landscape) {
+    margin: auto;
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    margin: auto;
+  }
 
   li {
     float:left;
@@ -547,19 +572,17 @@ section.organizers ul {
     @include breakpoint($breakpoint-small-landscape) {
       float: none;
       margin: 0 auto 30px auto;
+      width: 240px;
     }
     @include breakpoint($breakpoint-small-portrait) {
       float: none;
       margin: 0 auto 30px auto;
+      width: 240px;
     }
 
     &:nth-child(4) {
       margin: 0;
       clear:right;
-    }
-
-    &:nth-child(5) {
-      margin: 0;
     }
 
     &:last-child {
@@ -584,9 +607,21 @@ section.organizers ul {
       max-width:206px;
       @include size(100%, 100%);
       margin: 0 0 1em 0;
+
+      @include breakpoint($breakpoint-small-landscape) {
+        max-width: 100%;
+      }
+      @include breakpoint($breakpoint-small-portrait) {
+        max-width: 100%;
+      }
     }
   }
 }
+
+/* ---------------------
+ * WHEN & WHERE
+ * ---------------------
+ */
 
 section.when_where {
   display:none;
@@ -604,6 +639,11 @@ section.when_where .overlay {
   @include size(475px, 468px);
   background: url(../img/when_where_overlay.png) no-repeat;
 }
+
+/* ---------------------
+ * STORYTELLERS
+ * ---------------------
+ */
 
 section.storytellers .inner {
   width: percentage(3693/$siteWidth);
@@ -719,12 +759,22 @@ section.storytellers ul {
   }
 }
 
+/* ---------------------
+ * ABOUT
+ * ---------------------
+ */
+
 section.about {
 
   p {
     line-height: 150%;
   }
 }
+
+/* ---------------------
+ * ISSUES
+ * ---------------------
+ */
 
 section.issues .inner {
 
@@ -876,36 +926,61 @@ section.contact {
 
 }
 
+/* ---------------------
+ * SPONSORS
+ * ---------------------
+ */
+
 section.sponsors {
   background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
 }
 
 section.sponsors ul {
 
-  width: 100%;
-
-  @include clearfix();
+  margin: auto;
+  text-align: center;
 
   li {
-    float:left;
-    width: percentage(717/3693);
+    @include inline-block();
     margin: 0 percentage(253/3693) 0 0;
+
     &:last-child { margin: 0; }
+
+    @include breakpoint($breakpoint-medium-portrait) {
+      margin: 0 0 40px 0;
+      float:none;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      margin: 0 0 40px 0;
+      float:none;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      margin: 0 0 40px 0;
+      float:none;
+    }
+
 
     a {
       display:block;
       position:relative;
 
-      img {
-        display:block;
-        @include size(100%, 100%);
-        margin: 0 0 1em 0;
+      &.parsons {
+        background: url(../img/logos/parsons.png) no-repeat;
+        @include size(217px, 64px);
+      }
+      &.hyperakt {
+        background: url(../img/logos/hyperakt.png) no-repeat;
+        @include size(172px, 28px);
+      }
+      &.vizzuality {
+        background: url(../img/logos/vizzuality.png) no-repeat;
+        @include size(154px, 81px);
       }
 
-      &.parsons { }
-      &.hyperakt { }
-      &.vizzuality { }
-      &.bridge { }
+      &.bridge {
+        background: url(../img/logos/bridge.png) no-repeat;
+        @include size(137px, 65px);
+      }
 
     }
   }
