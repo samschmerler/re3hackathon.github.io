@@ -1149,8 +1149,8 @@ section.contact .inner:after {
 /* line 777, ../scss/style.scss */
 section.contact .input {
   position: relative;
-  padding: 5% 7% 3% 7%;
-  margin: 0 0 15.02843% 0;
+  padding: 10px;
+  margin: 0 0 48px 0;
   background: #caf3f5;
 }
 /* line 785, ../scss/style.scss */
