@@ -1,8 +1,13 @@
+@import "breakpoint";
 @import "compass/reset";
 @import "helpers";
 @import "fonts";
 
+/* Vars */
+
 $siteWidth: 4275;
+
+/* Colors */
 
 $cBackground: #f4f5fa;
 $cWhite:      #dee5f2;
@@ -12,6 +17,15 @@ $cBlue:       #caf3f5;
 $cDarkGreen:  #1d7066;
 $cGreen:      #37dccb;
 $cBrown:      #4c3c3d;
+
+/* Breakpoints */
+
+$breakpoint-S: max-width 640px, min-resolution 1.5dppx;
+
+$breakpoint-small-portrait:  max-width 800px, orientation portrait;
+$breakpoint-medium-portrait: max-width 1145px, orientation portrait;
+
+/* Main elements */
 
 body {
   font-family: "SohoStd-Regular";
@@ -86,6 +100,11 @@ nav {
 
   @include clearfix();
 
+  @include breakpoint($breakpoint-small-portrait) {
+    /*display:none;*/
+    background:blue;
+  }
+
   background: $cPurple;
   padding: percentage(83/$siteWidth) 0;
 
@@ -104,20 +123,18 @@ nav {
   ul {
     @include clearfix();
     float:right;
+  }
 
-    li {
-      float:left;
-      margin-right: percentage(93/$siteWidth);
+  ul li {
+    float:left;
+    margin-right: percentage(93/$siteWidth);
 
-      &:last-child { margin: 0; }
+    &:last-child { margin: 0; }
+  }
 
-      a  {
-        font-size:1.0em;
-        color: $cWhite;
-      }
-
-    }
-
+  ul li a  {
+    font-size:1.0em;
+    color: $cWhite;
   }
 
   .navigation {
@@ -131,6 +148,11 @@ nav {
 
     li {
       margin-right: percentage(93/830);
+
+      @include breakpoint($breakpoint-medium-portrait) {
+        background:red;
+      }
+
 
       a { color: $cOrange; }
     }
@@ -231,6 +253,15 @@ section.sponsors {
 section p {
   font-size: 1.1em;
   margin: 0 0 1em 0;
+}
+
+
+section.main {
+  background: #fff;
+
+  .inner {
+    background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+  }
 }
 
 section.main ul {
@@ -392,6 +423,7 @@ section.storytellers ul {
 }
 
 section.about {
+
   p {
     line-height: 150%;
   }
