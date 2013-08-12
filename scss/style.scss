@@ -228,6 +228,7 @@ nav {
 /* Margins */
 
 section.main .inner,
+section.contact .inner,
 section.sponsors .inner {
   width: percentage(3693/$siteWidth);
   padding: 40px 0;
@@ -248,14 +249,17 @@ section.storytelling .inner {
   padding: 50px 0;
 
   @include breakpoint($breakpoint-medium-portrait) {
-    width: 90%; margin: auto;
+    width: 90%;
+    margin: auto;
   }
   @include breakpoint($breakpoint-small-landscape) {
-    width: 90%; margin: auto;
+    width: 90%;
+    margin: auto;
     padding: 40px 0;
   }
   @include breakpoint($breakpoint-small-portrait) {
-    width: 90%; margin: auto;
+    width: 90%;
+    margin: auto;
     padding: 40px 0;
   }
 
@@ -475,26 +479,22 @@ section.storytelling ul {
 
   li {
     @include clearfix();
-    /*background:#f1f1f1;*/
   }
 
   div { float: left; }
 
-  .text{
+  .text {
 
     @include breakpoint($breakpoint-medium-portrait) {
       width: 650px;
-    }
-    @include breakpoint($breakpoint-medium-portrait) {
-      width: 650px;
-    }
-
-    @include breakpoint($breakpoint-small-portrait) {
-      width: 245px;
     }
 
     @include breakpoint($breakpoint-small-landscape) {
       width: 380px;
+    }
+
+    @include breakpoint($breakpoint-small-portrait) {
+      width: 300px;
     }
 
   }
@@ -677,7 +677,7 @@ section.storytellers ul {
     text-align: center;
 
     @include breakpoint($breakpoint-medium-portrait) {
-      margin: 0 0 80px 0;
+      /*margin: 0 0 80px 0;*/
     }
     @include breakpoint($breakpoint-small-landscape) {
       margin: 0 0 80px 0;
@@ -709,8 +709,8 @@ section.storytellers ul {
       width: percentage(1539/3424);
 
       @include breakpoint($breakpoint-medium-portrait) {
-        width: 100%;
-        float:none;
+        /*width: 100%;*/
+        /*float:none;*/
       }
       @include breakpoint($breakpoint-small-landscape) {
         width: 100%;
@@ -727,8 +727,8 @@ section.storytellers ul {
       width: percentage(1539/3424);
 
       @include breakpoint($breakpoint-medium-portrait) {
-        width: 100%;
-        float:none;
+        /*width: 100%;*/
+        /*float:none;*/
       }
       @include breakpoint($breakpoint-small-landscape) {
         width: 100%;
@@ -837,7 +837,9 @@ section.issues .inner {
 
 section.contact {
 
-  .inner { @include clearfix(); }
+  .inner {
+    @include clearfix();
+  }
 
   .input {
 
@@ -879,6 +881,15 @@ section.contact {
 
     float:left;
     margin: 0 percentage(515/3693) 0 0;
+
+    @include breakpoint($breakpoint-medium-portrait) {
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      width: 100%;
+      margin: 0 0 50px 0;
+    }
 
     address {
       line-height:150%;
@@ -924,7 +935,10 @@ section.contact {
 
   .informed_and_involved {
     float: left;
-    width: percentage(1043/3693);
+
+    @include breakpoint($breakpoint-small-portrait) {
+      /*width: 100%;*/
+    }
   }
 
   .btn {
