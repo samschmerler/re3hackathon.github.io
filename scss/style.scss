@@ -21,8 +21,8 @@ $cBrown:      #4c3c3d;
 /* Breakpoints */
 
 
-$breakpoint-small-portrait:  (max-width 768px)  (orientation portrait);
-$breakpoint-small-landscape: (max-width 768px)  (orientation landscape);
+$breakpoint-small-portrait:  (max-width 640px)  (orientation portrait);
+$breakpoint-small-landscape: (max-width 768px)  ;
 $breakpoint-medium-portrait: 768px 940px;
 
 /* Main elements */
@@ -144,7 +144,7 @@ h3 {
 
 .btn {
   display: block;
-  padding: 4% 0;
+  padding: 12px 0;
   margin: auto;
 
   font-weight:bold;
@@ -359,7 +359,7 @@ section p {
  */
 
 section.main {
-  background: #fff url(../img/home_bkg.png) no-repeat 100% 0;
+  background: #fff url(../img/home_bkg.png) no-repeat 50% 50%;
 
   h2 {
     @include breakpoint($breakpoint-medium-portrait) {
@@ -380,32 +380,47 @@ section.main ul {
 
   li {
     float:left;
-    width: percentage(1219/$siteWidth);
+    width: percentage(1319/$siteWidth);
     margin: 0 percentage(105/$siteWidth) 0 0;
     color:$cBrown;
 
-    &:last-child { margin: 0; }
+    p { margin: 0; }
+
+    &:last-child {
+      width: percentage(1219/$siteWidth);
+      margin: 0;
+    }
 
     @include breakpoint($breakpoint-medium-portrait) {
-      float:none;
-      margin: 0 0 10px 0;
+      margin: 0;
+      width: 48%;
+      float:left;
+      &:last-child { float:right; width: 48%; }
     }
     @include breakpoint($breakpoint-small-landscape) {
-      float:none;
-      margin: 0 0 10px 0;
+      margin: 0;
+      width: 48%;
+      float:left;
+      &:last-child { float:right; width: 48%; }
     }
+
     @include breakpoint($breakpoint-small-portrait) {
       float:none;
       width: 100%;
-      font-size: .9em;
       margin: 0 0 20px 0;
+
+      &:last-child {
+        float:none;
+        width: auto;
+      }
+
     }
 
     .btn {
       margin: 3% 0 0 0;
       background:$cOrange;
       color:$cBrown;
-      line-height: auto;
+      line-height: 1em;
 
       &:hover {
         background: $cGreen;
