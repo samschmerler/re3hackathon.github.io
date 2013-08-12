@@ -20,13 +20,41 @@ $cBrown:      #4c3c3d;
 
 /* Breakpoints */
 
-$breakpoint-S: max-width 640px, min-resolution 1.5dppx;
 
-$breakpoint-medium-portrait: (max-width 1145px) (orientation portrait);
-$breakpoint-small-portrait:  (max-width 800px)  (orientation portrait);
-$breakpoint-small-landscape: (max-width 800px)  (orientation landscape);
+$breakpoint-small-portrait:  (max-width 768px)  (orientation portrait);
+$breakpoint-small-landscape: (max-width 768px)  (orientation landscape);
+$breakpoint-medium-portrait: 768px 940px;
 
 /* Main elements */
+
+.breakpoint {
+  display:none;
+  position:fixed; right: 0; top: 0;
+  width: 100%; height: 20px;
+  z-index: 1000;
+  text-align:right;
+  &:after { content: 'a'; }
+
+  @include breakpoint($breakpoint-medium-portrait) {
+    display:block;
+    background:blue;
+    color: #fff;
+    &:after { content: 'medium'; }
+  }
+  @include breakpoint($breakpoint-small-landscape) {
+    display:block;
+    content: 'small-landscape';
+    background:green;
+    color: #fff;
+    &:after { content: 'small landscape'; }
+  }
+  @include breakpoint($breakpoint-small-portrait) {
+    display:block;
+    background:green;
+    color: #fff;
+    &:after { content: 'small portrait'; }
+  }
+}
 
 body {
 
@@ -96,7 +124,7 @@ h3 {
 .logo {
   display: block;
   width: percentage(2855/3693);
-  maring: 0 0 percentage(219/$siteWidth) 0;
+  margin: 0 0 percentage(219/$siteWidth) 0;
 
   @include breakpoint($breakpoint-small-landscape) {
     width:100%;
@@ -129,6 +157,12 @@ h3 {
   @include simple-transition(background, 200ms);
 }
 
+/*
+ * ---------------------
+ * NAVIGATION
+ * ---------------------
+ */
+
 nav {
 
   @include clearfix();
@@ -157,37 +191,33 @@ nav {
   }
 
   ul {
+
     @include clearfix();
     float:right;
-  }
 
-  ul li {
-    float:left;
-    margin-right: percentage(93/$siteWidth);
+    li {
+      float:left;
+      margin-right: percentage(93/$siteWidth);
 
-    &:last-child { margin: 0; }
-  }
+      &:last-child { margin: 0; }
+    }
 
-  ul li a  {
-    font-size:1.0em;
-    color: $cWhite;
+    a  { font-size:1.0em; color: $cWhite; }
+
   }
 
   .navigation {
-    width: percentage(2232/3693);
     float:left;
+    width: 68%;
   }
 
   .actions {
     float:right;
-    width: percentage(830/3693);
+    width: 28%;
 
     li {
-      margin-right: percentage(93/830);
-
-      @include breakpoint($breakpoint-medium-portrait) {
-        background:red;
-      }
+      float:right;
+      margin-left: percentage(93/830);
 
       a { color: $cOrange; }
     }
@@ -200,7 +230,7 @@ nav {
 section.main .inner,
 section.sponsors .inner {
   width: percentage(3693/$siteWidth);
-  padding: percentage(225/$siteWidth) 0;
+  padding: 40px 0;
   margin:auto;
 
   @include breakpoint($breakpoint-small-landscape) {
@@ -208,26 +238,32 @@ section.sponsors .inner {
   }
   @include breakpoint($breakpoint-small-portrait) {
     width: 90%; margin: auto;
+    padding: 40px 0;
   }
 
 }
 
 section.storytelling .inner {
   width: percentage(2969/$siteWidth);
-  padding: percentage(375/$siteWidth) 0;
+  padding: 50px 0;
 
+  @include breakpoint($breakpoint-medium-portrait) {
+    width: 90%; margin: auto;
+  }
   @include breakpoint($breakpoint-small-landscape) {
     width: 90%; margin: auto;
+    padding: 40px 0;
   }
   @include breakpoint($breakpoint-small-portrait) {
     width: 90%; margin: auto;
+    padding: 40px 0;
   }
 
 }
 
 section.issues .inner {
   width: percentage(3693/$siteWidth);
-  padding: percentage(375/$siteWidth) 0;
+  padding: 50px 0;
   margin-left:7%;
 }
 
@@ -318,7 +354,7 @@ section p {
 }
 
 section.main {
-  background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+  background: #fff url(../img/home_bkg.png) no-repeat 100% 0;
 
   h2 {
     @include breakpoint($breakpoint-medium-portrait) {
@@ -414,6 +450,9 @@ section.storytelling ul {
     @include breakpoint($breakpoint-medium-portrait) {
       width: 650px;
     }
+    @include breakpoint($breakpoint-medium-portrait) {
+      width: 650px;
+    }
 
     @include breakpoint($breakpoint-small-portrait) {
       width: 245px;
@@ -478,9 +517,6 @@ section.organizers .inner {
   padding: 4.5em 0;
 }
 
-section.organizers h2 {
-}
-
 section.organizers ul {
 
   margin: 0 0 1em 0;
@@ -499,13 +535,14 @@ section.organizers ul {
   li {
     float:left;
 
-    width:23.5%;
     margin: 0 2% 0 0;
-    min-width:186px;
+    width: 23.5%;
+    min-width: 186px;
 
     @include breakpoint($breakpoint-medium-portrait) {
-      float: none;
-      margin: 0 auto 30px auto;
+      width:32.5%;
+      margin: 0 2% 0 0;
+      min-width:186px;
     }
     @include breakpoint($breakpoint-small-landscape) {
       float: none;
@@ -514,6 +551,15 @@ section.organizers ul {
     @include breakpoint($breakpoint-small-portrait) {
       float: none;
       margin: 0 auto 30px auto;
+    }
+
+    &:nth-child(4) {
+      margin: 0;
+      clear:right;
+    }
+
+    &:nth-child(5) {
+      margin: 0;
     }
 
     &:last-child {
@@ -543,12 +589,12 @@ section.organizers ul {
 }
 
 section.when_where {
+  display:none;
   position:relative;
   background:#fff;
   clear:both;
   overflow:hidden;
   height: 784px;
-  /*background: url(../img/map.png) no-repeat 0 100%;*/
 }
 
 section.when_where .overlay {
@@ -575,20 +621,69 @@ section.storytellers ul {
   li {
     text-align: center;
 
+    @include breakpoint($breakpoint-medium-portrait) {
+      margin: 0 0 80px 0;
+    }
+    @include breakpoint($breakpoint-small-landscape) {
+      margin: 0 0 80px 0;
+    }
+    @include breakpoint($breakpoint-small-portrait) {
+      margin: 0 0 80px 0;
+    }
+
     p {
       line-height: 150%;
       font-size:1.15em;
       margin: 0 0 1.5em 0;
+
+      @include breakpoint($breakpoint-medium-portrait) {
+        font-size: 1em;
+      }
+      @include breakpoint($breakpoint-small-landscape) {
+        font-size: 1em;
+      }
+      @include breakpoint($breakpoint-small-portrait) {
+        font-size: 1em;
+      }
+
+
     }
 
     &:first-child {
       float:left;
       width: percentage(1539/3424);
+
+      @include breakpoint($breakpoint-medium-portrait) {
+        width: 100%;
+        float:none;
+      }
+      @include breakpoint($breakpoint-small-landscape) {
+        width: 100%;
+        float:none;
+      }
+      @include breakpoint($breakpoint-small-portrait) {
+        width: 100%;
+        float:none;
+      }
     }
 
     &:last-child {
       float:right;
       width: percentage(1539/3424);
+
+      @include breakpoint($breakpoint-medium-portrait) {
+        width: 100%;
+        float:none;
+      }
+      @include breakpoint($breakpoint-small-landscape) {
+        width: 100%;
+        float:none;
+      }
+      @include breakpoint($breakpoint-small-portrait) {
+        width: 100%;
+        float:none;
+      }
+
     }
 
     strong {
@@ -669,39 +764,48 @@ section.issues .inner {
   }
 
 }
-
+/*
+ * ---------------------
+ * CONTACT
+ * ---------------------
+ */
 
 section.contact {
 
-  .inner {
-    @include clearfix();
-  }
+  .inner { @include clearfix(); }
 
   .input {
 
     position:relative;
-    background:$cWhite;
     padding: 5% 7% 3% 7%;
     margin: 0 0 percentage(555/3693) 0;
 
-    .submit {
-      position:absolute;
-      float:right;
-      background: $cOrange;
-      width: percentage(185/1403);
-      height: 100%;
-      top: 0; right: 0;
-    /*background: url(../img/right_arrow.png) no-repeat;*/
-    }
+    background:$cBlue;
 
     input {
       width: percentage(1262/1403);
       padding: 0;
+
       border:none;
       background:none;
       font-size: 1em;
       color: $cBrown;
       outline:none;
+
+      &::-webkit-input-placeholder { color:$cBrown; }
+      &::-moz-placeholder { color:$cBrown; } /* firefox 19+ */
+      &:-ms-input-placeholder { color:$cBrown; } /* ie */
+      &:-moz-placeholder { color:$cBrown; }
+
+    }
+
+    .submit {
+      float:right;
+      @include position(0, 0, none, none);
+      @include size(17px, 43px);
+      padding: 0 13px;
+
+      background: $cOrange url(../img/right_arrow.png) no-repeat 50% 50%;
     }
 
   }
@@ -713,16 +817,44 @@ section.contact {
 
     address {
       line-height:150%;
-      margin: 0 0 percentage(555/3693) 0;
+      margin: 0 0 28px 0;
     }
 
-    a {
+    .mail {
+      display: block;
       color:$cOrange;
+      margin: 0 0 67px 0;
+
       &:hover {
         color: $cGreen;
       }
     }
 
+    .social {
+
+      @include clearfix();
+
+      li {
+
+        float:left;
+        margin: 0 29px 0 0;
+
+        a {
+
+          display:block;
+
+          &.twitter  {
+            background: url(../img/twitter.png) no-repeat;
+            @include size(35px, 29px);
+          }
+
+          &.facebook {
+            background: url(../img/facebook.png) no-repeat;
+            @include size(32px, 32px);
+          }
+        }
+      }
+    }
   }
 
   .informed_and_involved {
@@ -733,7 +865,7 @@ section.contact {
   .btn {
     background:$cOrange;
     color: $cBrown;
-    margin: 0 0 percentage(80/1043) 0;
+    margin: 0 0 15px 0;
 
     &:hover {
       background: $cGreen;
@@ -744,6 +876,9 @@ section.contact {
 
 }
 
+section.sponsors {
+  background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+}
 
 section.sponsors ul {
 
@@ -754,15 +889,23 @@ section.sponsors ul {
   li {
     float:left;
     width: percentage(717/3693);
-    height: 50px;
     margin: 0 percentage(253/3693) 0 0;
     &:last-child { margin: 0; }
 
     a {
       display:block;
-      background:$cBrown;
-      width:100%;
-      height: 100%;
+      position:relative;
+
+      img {
+        display:block;
+        @include size(100%, 100%);
+        margin: 0 0 1em 0;
+      }
+
+      &.parsons { }
+      &.hyperakt { }
+      &.vizzuality { }
+      &.bridge { }
 
     }
   }
