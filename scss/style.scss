@@ -346,9 +346,8 @@ section.organizers ul {
 
     img, .pic {
       display:block;
-      @include size(100%, 200px);
+      @include size(100%, 100%);
       margin: 0 0 1em 0;
-      background:$cPurple;
     }
   }
 }
