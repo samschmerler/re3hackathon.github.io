@@ -20,40 +20,23 @@ $cBrown:      #4c3c3d;
 
 /* Breakpoints */
 
-
 $breakpoint-small-portrait:  (max-width 640px)  (orientation portrait);
-$breakpoint-small-landscape: (max-width 768px)  ;
-$breakpoint-medium-portrait: 768px 940px;
+$breakpoint-small-landscape: (max-width 768px)  (orientation landscape);
+$breakpoint-ipad-portrait:   (max-width 768px)  (orientation portrait);
+$breakpoint-medium-portrait: (max-width 1400px);
 
 /* Main elements */
 
 .breakpoint {
   display:none;
   position:fixed; right: 0; top: 0;
-  width: 100%; height: 20px;
+  width: 100%;
   z-index: 1000;
-  text-align:right;
-  &:after { content: 'a'; }
+  text-align:center;
+  padding: 10px;
+  @include opacity(.9);
 
-  @include breakpoint($breakpoint-medium-portrait) {
-    display:block;
-    background:blue;
-    color: #fff;
-    &:after { content: 'medium'; }
-  }
-  @include breakpoint($breakpoint-small-landscape) {
-    display:block;
-    content: 'small-landscape';
-    background:green;
-    color: #fff;
-    &:after { content: 'small landscape'; }
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    display:block;
-    background:green;
-    color: #fff;
-    &:after { content: 'small portrait'; }
-  }
+  span { display:none; }
 }
 
 body {
@@ -91,17 +74,6 @@ h2 {
   font-size: 2.1em;
   margin: 0 0 1em 0;
   font-family: "SohoStd-Regular";
-
-  @include breakpoint($breakpoint-medium-portrait) {
-    font-size: 2em;
-  }
-  @include breakpoint($breakpoint-small-landscape) {
-    font-size: 2em;
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    font-size: 2em;
-  }
-
 }
 
 h3 {
@@ -109,16 +81,6 @@ h3 {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   font-family: "SohoStd-Bold";
-
-  @include breakpoint($breakpoint-medium-portrait) {
-    font-size: .9em;
-  }
-  @include breakpoint($breakpoint-small-landscape) {
-    font-size: .9em;
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    font-size: .9em;
-  }
 }
 
 .logo {
@@ -167,14 +129,6 @@ nav {
 
   @include clearfix();
 
-  @include breakpoint($breakpoint-small-landscape) {
-    display:none;
-  }
-
-  @include breakpoint($breakpoint-small-portrait) {
-    display:none;
-  }
-
   background: $cPurple;
   padding: percentage(83/$siteWidth) 0;
 
@@ -202,7 +156,7 @@ nav {
       &:last-child { margin: 0; }
     }
 
-    a  { font-size:1.0em; color: $cWhite; }
+    a  { font-size:1.2em; color: $cWhite; }
 
   }
 
@@ -247,22 +201,6 @@ section.sponsors .inner {
 section.storytelling .inner {
   width: percentage(2969/$siteWidth);
   padding: 50px 0;
-
-  @include breakpoint($breakpoint-medium-portrait) {
-    width: 90%;
-    margin: auto;
-  }
-  @include breakpoint($breakpoint-small-landscape) {
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
-  }
-
 }
 
 section.issues .inner {
@@ -345,7 +283,7 @@ section p {
   font-size: 1.1em;
   margin: 0 0 1em 0;
 
-  @include breakpoint($breakpoint-medium-portrait) {
+  @include breakpoint($breakpoint-ipad-portrait) {
     font-size: 1em;
   }
   @include breakpoint($breakpoint-small-landscape) {
@@ -366,7 +304,7 @@ section.main {
   background: #fff url(../img/home_bkg.png) no-repeat 50% 50%;
 
   h2 {
-    @include breakpoint($breakpoint-medium-portrait) {
+    @include breakpoint($breakpoint-ipad-portrait) {
       font-size: 1.9em;
     }
     @include breakpoint($breakpoint-small-landscape) {
@@ -395,7 +333,7 @@ section.main ul {
       margin: 0;
     }
 
-    @include breakpoint($breakpoint-medium-portrait) {
+    @include breakpoint($breakpoint-ipad-portrait) {
       margin: 0;
       width: 48%;
       float:left;
@@ -441,108 +379,58 @@ section.main ul {
  */
 
 section.storytelling {
+  .inner {
+    /*background:red;*/
+  }
+
   h2 {
     margin: 0 0 percentage(142/$siteWidth) 0;
-
-    @include breakpoint($breakpoint-medium-portrait) {
-      margin: 0 0 20px 0;
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      margin: 0 0 20px 0;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      margin: 0 0 20px 0;
-    }
-
   }
 
   .inner > p {
-    font-size: 1em;
     margin: 0 0 percentage(140/$siteWidth) 0;
-
-    @include breakpoint($breakpoint-medium-portrait) {
-      margin: 0 0 25px 0;
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      margin: 0 0 25px 0;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      margin: 0 0 25px 0;
-    }
-
+    width: 90%;
   }
 
-}
-
-section.storytelling ul {
-
-
-  li {
-    @include clearfix();
+  p, strong {
+    font-size:1.1em;
   }
 
-  div { float: left; }
+  ul {
 
-  .text {
+    /*background:red;*/
 
-    @include breakpoint($breakpoint-medium-portrait) {
-      width: 650px;
+    li {
+
+      /*background:blue;*/
+
+      @include clearfix();
+
+      div { float: left; }
+
+      .text {
+        float:left;
+        /*background:green;*/
+        width:90%;
+      }
+
+      .num {
+        font-size:3em;
+        margin: 0 .4em 0 0;
+      }
+
+      p  {
+        display: block;
+      }
+
+      strong {
+        display: block;
+        clear:right;
+        color: $cWhite;
+        margin: .2em 0 .1em 0;
+      }
+
     }
-
-    @include breakpoint($breakpoint-small-landscape) {
-      width: 380px;
-    }
-
-    @include breakpoint($breakpoint-small-portrait) {
-      width: 300px;
-    }
-
-  }
-
-  .num {
-    font-size:2.9em;
-    margin: 0 .4em 0 0;
-
-    @include breakpoint($breakpoint-medium-portrait) {
-      font-size:2em;
-    }
-
-    @include breakpoint($breakpoint-small-landscape) {
-      font-size: 3.2em;
-      margin: 0 .15em 0 0;
-    }
-
-    @include breakpoint($breakpoint-small-portrait) {
-      font-size: 3.2em;
-      margin: 0 .15em 0 0;
-    }
-  }
-
-  p  {
-    display: block;
-    font-size:1em;
-
-    @include breakpoint($breakpoint-small-landscape) {
-      font-size:.8em;
-    }
-
-    @include breakpoint($breakpoint-small-portrait) {
-      font-size:.8em;
-    }
-
-  }
-
-  strong {
-    display: block;
-    clear:right;
-    color: $cWhite;
-    font-size:1em;
-    margin: .2em 0 percentage(40/$siteWidth) 0;
-
-    @include breakpoint($breakpoint-medium-portrait) {
-      font-size:.8em;
-    }
-
   }
 }
 
@@ -562,7 +450,7 @@ section.organizers ul {
   margin: 0 0 1em 0;
   @include clearfix();
 
-  @include breakpoint($breakpoint-medium-portrait) {
+  @include breakpoint($breakpoint-ipad-portrait) {
     margin: auto;
   }
   @include breakpoint($breakpoint-small-landscape) {
@@ -579,7 +467,7 @@ section.organizers ul {
     width: 23.5%;
     min-width: 186px;
 
-    @include breakpoint($breakpoint-medium-portrait) {
+    @include breakpoint($breakpoint-ipad-portrait) {
       width:32.5%;
       margin: 0 2% 0 0;
       min-width:186px;
@@ -603,7 +491,7 @@ section.organizers ul {
     &:last-child {
       margin: 0;
 
-      @include breakpoint($breakpoint-medium-portrait) {
+      @include breakpoint($breakpoint-ipad-portrait) {
         float: none;
         margin: 0 auto 30px auto;
       }
@@ -676,7 +564,7 @@ section.storytellers ul {
   li {
     text-align: center;
 
-    @include breakpoint($breakpoint-medium-portrait) {
+    @include breakpoint($breakpoint-ipad-portrait) {
       /*margin: 0 0 80px 0;*/
     }
     @include breakpoint($breakpoint-small-landscape) {
@@ -691,7 +579,7 @@ section.storytellers ul {
       font-size:1.15em;
       margin: 0 0 1.5em 0;
 
-      @include breakpoint($breakpoint-medium-portrait) {
+      @include breakpoint($breakpoint-ipad-portrait) {
         font-size: 1em;
       }
       @include breakpoint($breakpoint-small-landscape) {
@@ -708,7 +596,7 @@ section.storytellers ul {
       float:left;
       width: percentage(1539/3424);
 
-      @include breakpoint($breakpoint-medium-portrait) {
+      @include breakpoint($breakpoint-ipad-portrait) {
         /*width: 100%;*/
         /*float:none;*/
       }
@@ -726,7 +614,7 @@ section.storytellers ul {
       float:right;
       width: percentage(1539/3424);
 
-      @include breakpoint($breakpoint-medium-portrait) {
+      @include breakpoint($breakpoint-ipad-portrait) {
         /*width: 100%;*/
         /*float:none;*/
       }
@@ -800,7 +688,7 @@ section.issues .inner {
     h2  {
       font-size: 1.5em;
 
-      @include breakpoint($breakpoint-medium-portrait) {
+      @include breakpoint($breakpoint-ipad-portrait) {
         font-size: 1.2em;
       }
       @include breakpoint($breakpoint-small-landscape) {
@@ -813,10 +701,10 @@ section.issues .inner {
     }
   }
 
-
   .flower {
     display: block;
     margin: auto;
+
     width: percentage(2611/$siteWidth);
 
     @include breakpoint($breakpoint-small-landscape) {
@@ -882,10 +770,8 @@ section.contact {
     float:left;
     margin: 0 percentage(515/3693) 0 0;
 
-    @include breakpoint($breakpoint-medium-portrait) {
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-    }
+    @include breakpoint($breakpoint-ipad-portrait) { }
+    @include breakpoint($breakpoint-small-landscape) { }
     @include breakpoint($breakpoint-small-portrait) {
       width: 100%;
       margin: 0 0 50px 0;
@@ -937,7 +823,7 @@ section.contact {
     float: left;
 
     @include breakpoint($breakpoint-small-portrait) {
-      /*width: 100%;*/
+      width: 100%;
     }
   }
 
@@ -975,7 +861,7 @@ section.sponsors ul {
 
     &:last-child { margin: 0; }
 
-    @include breakpoint($breakpoint-medium-portrait) {
+    @include breakpoint($breakpoint-ipad-portrait) {
       margin: 0 0 40px 0;
       float:none;
     }
@@ -1015,3 +901,137 @@ section.sponsors ul {
   }
 }
 
+@include mobile {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .mobile { display: inline-block; }
+    .desktop { display: none; }
+  }
+
+  nav { display: none; }
+  h2  { font-size: 2em; }
+  h3  { font-size: .9em; }
+
+}
+
+@include mobile-portrait {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .portrait { display: inline-block; }
+    .desktop { display: none; }
+  }
+}
+
+@include mobile-landscape {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .mobile, .landscape { display: inline-block; }
+    .desktop { display: none; }
+  }
+}
+
+@include tablet {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .tablet { display: inline-block; }
+    .portrait, .desktop { display: none; }
+  }
+
+  h3  { font-size: .9em; }
+
+}
+
+@include tablet-portrait {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .tablet, .portrait { display: inline-block; }
+    .desktop { display: none; }
+  }
+
+  nav ul li a { font-size: .75em; }
+
+  section.storytelling .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    p, strong { font-size:1em; }
+    .num { font-size: 2.5em; }
+  }
+
+}
+
+@include tablet-landscape {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .tablet, .landscape { display: inline-block; }
+    .portrait { display: none; }
+  }
+
+  h2 { font-size: 1.9em; }
+  h3 { font-size: 1em; margin: 0 0 1em 0; }
+
+  nav ul li a { font-size: 1.0em; }
+
+  section.storytelling .inner {
+    width: 80%;
+    /*margin: auto;*/
+    /*padding: 50px 0;*/
+
+    p, strong { font-size:1em; }
+    .num { font-size: 2.5em; }
+  }
+
+
+}
+
+@include desktop {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .desktop { display: inline-block; }
+  }
+}
+
+@include desktop-and-up {
+  .breakpoint {
+    display:block;
+    background:red;
+    color: #fff;
+    .desktop { display: inline-block; }
+  }
+
+  nav ul li a { font-size: 1.2em; }
+  h2 { font-size: 3em; }
+  h3 { font-size: 1.2em; margin: 0 0 1em 0; }
+
+  section.storytelling {
+    .inner {
+      p, strong { font-size:1.5em; }
+      .num { font-size: 4em; }
+    }
+  }
+
+}
+
+@include retina {
+  .breakpoint {
+    display:block;
+    background:orange;
+    color: #fff;
+    .retina { display: inline-block; }
+  }
+}
