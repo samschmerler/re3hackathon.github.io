@@ -110,7 +110,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Colors */
 /* Breakpoints */
 /* Main elements */
-/* line 30, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 .breakpoint {
   display: none;
   position: fixed;
@@ -123,12 +123,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 39, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 .breakpoint span {
   display: none;
 }
 
-/* line 42, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -140,35 +140,35 @@ body {
   background: #f4f5fa;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 input {
   font-family: "SohoStd-Regular";
 }
 
-/* line 64, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 strong {
   font-family: "SohoStd-Bold";
 }
 
-/* line 68, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 sup {
   font-size: .5em;
   vertical-align: super;
 }
 
-/* line 73, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 h2 {
   font-size: 2.1em;
   margin: 0 0 1em 0;
   font-family: "SohoStd-Regular";
 }
 
-/* line 79, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 h3 {
   font-size: 1em;
   margin: 0 0 1em 0;
@@ -176,26 +176,26 @@ h3 {
   font-family: "SohoStd-Bold";
 }
 
-/* line 86, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .logo {
   display: block;
   width: 77.30842%;
   margin: 0 0 5.12281% 0;
 }
 @media (max-width: 768px) and (orientation: landscape) {
-  /* line 86, ../scss/style.scss */
+  /* line 87, ../scss/style.scss */
   .logo {
     width: 100%;
   }
 }
 @media (max-width: 640px) and (orientation: portrait) {
-  /* line 86, ../scss/style.scss */
+  /* line 87, ../scss/style.scss */
   .logo {
     width: 100%;
   }
 }
 
-/* line 100, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .separator {
   width: 20px;
   height: 1px;
@@ -203,7 +203,7 @@ h3 {
   margin: 0 0 1.5em 0;
 }
 
-/* line 107, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .btn {
   display: block;
   padding: 12px 0;
@@ -232,7 +232,7 @@ h3 {
  * NAVIGATION
  * ---------------------
  */
-/* line 128, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 nav {
   background: #6900cc;
   padding: 1.94152% 0;
@@ -250,20 +250,20 @@ nav:before, nav:after {
 nav:after {
   clear: both;
 }
-/* line 135, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 nav.fixed {
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
 }
-/* line 141, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 nav .inner {
   width: 86.38596%;
   padding: 0;
   margin: auto;
 }
-/* line 147, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 nav ul {
   float: right;
 }
@@ -280,42 +280,42 @@ nav ul:before, nav ul:after {
 nav ul:after {
   clear: both;
 }
-/* line 152, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 nav ul li {
   float: left;
   margin-right: 2.17544%;
 }
-/* line 156, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 nav ul li:last-child {
   margin: 0;
 }
-/* line 159, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 nav ul a {
   font-size: 1.2em;
   color: #dee5f2;
 }
-/* line 163, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 nav .navigation {
   float: left;
   width: 68%;
 }
-/* line 168, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 nav .actions {
   float: right;
   width: 28%;
 }
-/* line 172, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 nav .actions li {
   float: right;
   margin-left: 11.20482%;
 }
-/* line 176, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 nav .actions li a {
   color: #f7796a;
 }
 
 /* Margins */
-/* line 185, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 section.main .inner,
 section.contact .inner {
   width: 86.38596%;
@@ -323,34 +323,34 @@ section.contact .inner {
   margin: auto;
 }
 
-/* line 191, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 section.sponsors .inner {
   width: 86%;
   margin: auto;
   padding: 4.5em 0;
 }
 
-/* line 197, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 section.storytellers .inner {
   width: 86%;
   margin: auto;
   padding: 4.5em 0;
 }
 
-/* line 203, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 section.storytelling .inner {
   width: 69.45029%;
   padding: 50px 0;
 }
 
-/* line 208, ../scss/style.scss */
+/* line 209, ../scss/style.scss */
 section.issues .inner {
   width: 86.38596%;
   padding: 50px 0;
   margin-left: 7%;
 }
 
-/* line 214, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 section .inner {
   width: 69.45029%;
   margin-left: 7%;
@@ -358,113 +358,113 @@ section .inner {
 }
 
 /* Color definition */
-/* line 222, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 section.main {
   color: #f7796a;
 }
-/* line 225, ../scss/style.scss */
+/* line 226, ../scss/style.scss */
 section.main .separator {
   background: #f7796a;
 }
 
-/* line 228, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 section.about {
   background: #6900cc;
   color: #caf3f5;
 }
-/* line 232, ../scss/style.scss */
+/* line 233, ../scss/style.scss */
 section.about .separator {
   background: #caf3f5;
 }
 
-/* line 235, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
 section.storytelling {
   background: #1d7066;
   color: #37dccb;
 }
-/* line 239, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 section.storytelling .separator {
   background: #37dccb;
 }
 
-/* line 242, ../scss/style.scss */
+/* line 243, ../scss/style.scss */
 section.organizers {
   background: #caf3f5;
   color: #6900cc;
 }
-/* line 246, ../scss/style.scss */
+/* line 247, ../scss/style.scss */
 section.organizers .separator {
   background: #6900cc;
 }
 
-/* line 249, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 section.issues {
   color: #4c3c3d;
 }
-/* line 252, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 section.issues .separator {
   background: #4c3c3d;
 }
 
-/* line 255, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 section.storytellers {
   background: #f7796a;
   color: #dee5f2;
 }
-/* line 259, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 section.storytellers .separator {
   background: #dee5f2;
 }
 
-/* line 262, ../scss/style.scss */
+/* line 263, ../scss/style.scss */
 section.when_where {
   background: #6900cc;
   color: #caf3f5;
 }
-/* line 266, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 section.when_where .separator {
   background: #caf3f5;
 }
 
-/* line 269, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 section.contact {
   background: #4c3c3d;
   color: #caf3f5;
 }
-/* line 273, ../scss/style.scss */
+/* line 274, ../scss/style.scss */
 section.contact .separator {
   background: #caf3f5;
 }
 
-/* line 276, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 section.sponsors {
   color: #4c3c3d;
 }
-/* line 279, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 section.sponsors .separator {
   background: #4c3c3d;
 }
 
 /* Section content */
-/* line 284, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 section p {
   font-size: 1.1em;
   margin: 0 0 1em 0;
 }
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 284, ../scss/style.scss */
+  /* line 285, ../scss/style.scss */
   section p {
     font-size: 1em;
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {
-  /* line 284, ../scss/style.scss */
+  /* line 285, ../scss/style.scss */
   section p {
     font-size: 1em;
   }
 }
 @media (max-width: 640px) and (orientation: portrait) {
-  /* line 284, ../scss/style.scss */
+  /* line 285, ../scss/style.scss */
   section p {
     font-size: 1em;
   }
@@ -474,27 +474,13 @@ section p {
  * MAIN
  * ---------------------
  */
-/* line 305, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 section.main {
-  background: white url(../img/home_bkg.png) no-repeat 50% 50%;
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  /* line 308, ../scss/style.scss */
-  section.main h2 {
-    font-size: 1.9em;
-  }
-}
-@media (max-width: 768px) and (orientation: landscape) {
-  /* line 308, ../scss/style.scss */
-  section.main h2 {
-    font-size: 1.9em;
-  }
-}
-@media (max-width: 640px) and (orientation: portrait) {
-  /* line 308, ../scss/style.scss */
-  section.main h2 {
-    font-size: 1.9em;
-  }
+  background: url(../img/home_bkg.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* line 124, ../scss/helpers.scss */
@@ -510,69 +496,69 @@ section.main ul:before, section.main ul:after {
 section.main ul:after {
   clear: both;
 }
-/* line 325, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 section.main ul li {
   float: left;
   width: 30.8538%;
   margin: 0 2.45614% 0 0;
   color: #4c3c3d;
 }
-/* line 331, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 section.main ul li p {
   margin: 0;
 }
-/* line 333, ../scss/style.scss */
+/* line 322, ../scss/style.scss */
 section.main ul li:last-child {
   width: 28.51462%;
   margin: 0;
 }
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 325, ../scss/style.scss */
+  /* line 314, ../scss/style.scss */
   section.main ul li {
     margin: 0;
     width: 48%;
     float: left;
   }
-  /* line 342, ../scss/style.scss */
+  /* line 331, ../scss/style.scss */
   section.main ul li:last-child {
     float: right;
     width: 48%;
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {
-  /* line 325, ../scss/style.scss */
+  /* line 314, ../scss/style.scss */
   section.main ul li {
     margin: 0;
     width: 48%;
     float: left;
   }
-  /* line 348, ../scss/style.scss */
+  /* line 337, ../scss/style.scss */
   section.main ul li:last-child {
     float: right;
     width: 48%;
   }
 }
 @media (max-width: 640px) and (orientation: portrait) {
-  /* line 325, ../scss/style.scss */
+  /* line 314, ../scss/style.scss */
   section.main ul li {
     float: none;
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 356, ../scss/style.scss */
+  /* line 345, ../scss/style.scss */
   section.main ul li:last-child {
     float: none;
     width: auto;
   }
 }
-/* line 363, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 section.main ul li .btn {
   margin: 3% 0 0 0;
   background: #f7796a;
   color: #4c3c3d;
   line-height: 1em;
 }
-/* line 369, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 section.main ul li .btn:hover {
   background: #37dccb;
 }
@@ -581,28 +567,28 @@ section.main ul li .btn:hover {
  * STORYTELLING
  * ---------------------
  */
-/* line 384, ../scss/style.scss */
+/* line 373, ../scss/style.scss */
 section.storytelling .inner {
   /*background:red;*/
 }
-/* line 388, ../scss/style.scss */
+/* line 377, ../scss/style.scss */
 section.storytelling h2 {
   margin: 0 0 3.32164% 0;
 }
-/* line 392, ../scss/style.scss */
+/* line 381, ../scss/style.scss */
 section.storytelling .inner > p {
   margin: 0 0 3.27485% 0;
   width: 90%;
 }
-/* line 397, ../scss/style.scss */
+/* line 386, ../scss/style.scss */
 section.storytelling p, section.storytelling strong {
   font-size: 1.1em;
 }
-/* line 401, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 section.storytelling ul {
   /*background:red;*/
 }
-/* line 405, ../scss/style.scss */
+/* line 394, ../scss/style.scss */
 section.storytelling ul li {
   /*background:blue;*/
 }
@@ -619,26 +605,26 @@ section.storytelling ul li:before, section.storytelling ul li:after {
 section.storytelling ul li:after {
   clear: both;
 }
-/* line 411, ../scss/style.scss */
+/* line 400, ../scss/style.scss */
 section.storytelling ul li div {
   float: left;
 }
-/* line 413, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 section.storytelling ul li .text {
   float: left;
   /*background:green;*/
   width: 90%;
 }
-/* line 419, ../scss/style.scss */
+/* line 408, ../scss/style.scss */
 section.storytelling ul li .num {
   font-size: 3em;
   margin: 0 .4em 0 0;
 }
-/* line 424, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 section.storytelling ul li p {
   display: block;
 }
-/* line 428, ../scss/style.scss */
+/* line 417, ../scss/style.scss */
 section.storytelling ul li strong {
   display: block;
   clear: right;
@@ -650,17 +636,17 @@ section.storytelling ul li strong {
  * ORGANIZERS
  * ---------------------
  */
-/* line 444, ../scss/style.scss */
+/* line 433, ../scss/style.scss */
 section.organizers .inner {
   width: 86%;
   margin: auto;
   padding: 4.5em 0;
 }
-/* line 449, ../scss/style.scss */
+/* line 438, ../scss/style.scss */
 section.organizers .inner h2 {
   width: 75%;
 }
-/* line 451, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 section.organizers .inner ul {
   width: 100%;
 }
@@ -677,7 +663,7 @@ section.organizers .inner ul:before, section.organizers .inner ul:after {
 section.organizers .inner ul:after {
   clear: both;
 }
-/* line 455, ../scss/style.scss */
+/* line 444, ../scss/style.scss */
 section.organizers .inner ul li {
   float: left;
   width: 25%;
@@ -689,12 +675,12 @@ section.organizers .inner ul li {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 466, ../scss/style.scss */
+/* line 455, ../scss/style.scss */
 section.organizers .inner ul li p {
   font-size: .9em;
   width: auto;
 }
-/* line 471, ../scss/style.scss */
+/* line 460, ../scss/style.scss */
 section.organizers .inner ul li img {
   display: block;
   width: 100%;
@@ -706,32 +692,54 @@ section.organizers .inner ul li img {
  * WHEN & WHERE
  * ---------------------
  */
-/* line 485, ../scss/style.scss */
+/* line 474, ../scss/style.scss */
 section.when_where {
-  display: none;
+  min-height: 786px;
+  background: url(../img/map.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: relative;
-  background: #fff;
   clear: both;
   overflow: hidden;
-  height: 784px;
 }
-
-/* line 494, ../scss/style.scss */
+/* line 484, ../scss/style.scss */
 section.when_where .overlay {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 475px;
   height: 468px;
   background: url(../img/when_where_overlay.png) no-repeat;
+  text-align: center;
+}
+/* line 492, ../scss/style.scss */
+section.when_where .overlay .content {
+  margin: auto;
+  width: 80%;
+  text-align: left;
+  padding: 60px 0;
+}
+/* line 498, ../scss/style.scss */
+section.when_where .overlay .content h2 {
+  font-size: 2em;
+}
+/* line 499, ../scss/style.scss */
+section.when_where .overlay .content p {
+  font-size: 1.3em;
+  line-height: 150%;
+}
+/* line 501, ../scss/style.scss */
+section.when_where .overlay .content h2, section.when_where .overlay .content h3, section.when_where .overlay .content p {
+  color: #56decb;
 }
 
 /* ---------------------
  * STORYTELLERS
  * ---------------------
  */
-/* line 509, ../scss/style.scss */
+/* line 516, ../scss/style.scss */
 section.storytellers .inner ul {
   margin: auto;
   width: 100%;
@@ -749,7 +757,7 @@ section.storytellers .inner ul:before, section.storytellers .inner ul:after {
 section.storytellers .inner ul:after {
   clear: both;
 }
-/* line 516, ../scss/style.scss */
+/* line 523, ../scss/style.scss */
 section.storytellers .inner ul li {
   text-align: center;
   width: 45%;
@@ -757,35 +765,35 @@ section.storytellers .inner ul li {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 521, ../scss/style.scss */
+/* line 528, ../scss/style.scss */
 section.storytellers .inner ul li:first-child {
   float: left;
 }
-/* line 522, ../scss/style.scss */
+/* line 529, ../scss/style.scss */
 section.storytellers .inner ul li:last-child {
   float: right;
 }
-/* line 524, ../scss/style.scss */
+/* line 531, ../scss/style.scss */
 section.storytellers .inner ul li strong {
   display: block;
   font-size: 1.3em;
   margin: 0 0 1em 0;
   color: #6900cc;
 }
-/* line 531, ../scss/style.scss */
+/* line 538, ../scss/style.scss */
 section.storytellers .inner ul li p {
   line-height: 150%;
   font-size: 1.3em;
   margin: 0 0 1.5em 0;
 }
-/* line 537, ../scss/style.scss */
+/* line 544, ../scss/style.scss */
 section.storytellers .inner ul li .explanation {
   margin: auto;
   width: 66.92658%;
   color: #6900cc;
   font-size: 1em;
 }
-/* line 544, ../scss/style.scss */
+/* line 551, ../scss/style.scss */
 section.storytellers .inner ul li .btn {
   margin: 0 auto .7em auto;
   padding: 4% 0;
@@ -795,7 +803,7 @@ section.storytellers .inner ul li .btn {
   background: #6900cc;
   color: #dee5f2;
 }
-/* line 554, ../scss/style.scss */
+/* line 561, ../scss/style.scss */
 section.storytellers .inner ul li .btn:hover {
   background: #1d7066;
   color: #dee5f2;
@@ -805,29 +813,30 @@ section.storytellers .inner ul li .btn:hover {
  * ABOUT
  * ---------------------
  */
-/* line 570, ../scss/style.scss */
+/* line 577, ../scss/style.scss */
 section.about p {
   line-height: 150%;
+  font-size: 1.3em;
 }
 
 /* ---------------------
  * ISSUES
  * ---------------------
  */
-/* line 582, ../scss/style.scss */
+/* line 590, ../scss/style.scss */
 section.issues .inner .header {
   width: 67.95322%;
   margin: 0 0 3.36842% 0;
 }
-/* line 586, ../scss/style.scss */
+/* line 594, ../scss/style.scss */
 section.issues .inner .header h2 {
   font-size: 1.5em;
 }
-/* line 590, ../scss/style.scss */
+/* line 598, ../scss/style.scss */
 section.issues .inner .graph {
   display: block;
   margin: auto;
-  background: url(../img/flower.png) no-repeat;
+  background: url(../img/flower@2x.png) no-repeat;
   background-size: 100% 100%;
   width: 600px;
   height: 600px;
@@ -851,14 +860,14 @@ section.contact .inner:before, section.contact .inner:after {
 section.contact .inner:after {
   clear: both;
 }
-/* line 611, ../scss/style.scss */
+/* line 619, ../scss/style.scss */
 section.contact .input {
   position: relative;
   padding: 10px;
   margin: 0 0 48px 0;
   background: #caf3f5;
 }
-/* line 619, ../scss/style.scss */
+/* line 627, ../scss/style.scss */
 section.contact .input input {
   padding: 0;
   border: none;
@@ -869,23 +878,23 @@ section.contact .input input {
   /* firefox 19+ */
   /* ie */
 }
-/* line 628, ../scss/style.scss */
+/* line 636, ../scss/style.scss */
 section.contact .input input::-webkit-input-placeholder {
   color: #4c3c3d;
 }
-/* line 629, ../scss/style.scss */
+/* line 637, ../scss/style.scss */
 section.contact .input input::-moz-placeholder {
   color: #4c3c3d;
 }
-/* line 630, ../scss/style.scss */
+/* line 638, ../scss/style.scss */
 section.contact .input input:-ms-input-placeholder {
   color: #4c3c3d;
 }
-/* line 631, ../scss/style.scss */
+/* line 639, ../scss/style.scss */
 section.contact .input input:-moz-placeholder {
   color: #4c3c3d;
 }
-/* line 635, ../scss/style.scss */
+/* line 643, ../scss/style.scss */
 section.contact .input .submit {
   float: right;
   position: absolute;
@@ -898,23 +907,23 @@ section.contact .input .submit {
   padding: 0 13px;
   background: #f7796a url(../img/right_arrow.png) no-repeat 50% 50%;
 }
-/* line 646, ../scss/style.scss */
+/* line 654, ../scss/style.scss */
 section.contact .contact {
   float: left;
   margin: 0 13.9453% 0 0;
 }
-/* line 651, ../scss/style.scss */
+/* line 659, ../scss/style.scss */
 section.contact .contact address {
   line-height: 150%;
   margin: 0 0 28px 0;
 }
-/* line 656, ../scss/style.scss */
+/* line 664, ../scss/style.scss */
 section.contact .contact .mail {
   display: block;
   color: #f7796a;
   margin: 0 0 67px 0;
 }
-/* line 661, ../scss/style.scss */
+/* line 669, ../scss/style.scss */
 section.contact .contact .mail:hover {
   color: #37dccb;
 }
@@ -931,38 +940,38 @@ section.contact .contact .social:before, section.contact .contact .social:after 
 section.contact .contact .social:after {
   clear: both;
 }
-/* line 670, ../scss/style.scss */
+/* line 678, ../scss/style.scss */
 section.contact .contact .social li {
   float: left;
   margin: 0 29px 0 0;
 }
-/* line 675, ../scss/style.scss */
+/* line 683, ../scss/style.scss */
 section.contact .contact .social li a {
   display: block;
 }
-/* line 679, ../scss/style.scss */
+/* line 687, ../scss/style.scss */
 section.contact .contact .social li a.twitter {
   background: url(../img/twitter.png) no-repeat;
   width: 35px;
   height: 29px;
 }
-/* line 684, ../scss/style.scss */
+/* line 692, ../scss/style.scss */
 section.contact .contact .social li a.facebook {
   background: url(../img/facebook.png) no-repeat;
   width: 32px;
   height: 32px;
 }
-/* line 693, ../scss/style.scss */
+/* line 701, ../scss/style.scss */
 section.contact .informed_and_involved {
   float: left;
 }
-/* line 697, ../scss/style.scss */
+/* line 705, ../scss/style.scss */
 section.contact .btn {
   background: #f7796a;
   color: #4c3c3d;
   margin: 0 0 15px 0;
 }
-/* line 702, ../scss/style.scss */
+/* line 710, ../scss/style.scss */
 section.contact .btn:hover {
   background: #37dccb;
   color: #4c3c3d;
@@ -972,11 +981,11 @@ section.contact .btn:hover {
  * SPONSORS
  * ---------------------
  */
-/* line 713, ../scss/style.scss */
+/* line 721, ../scss/style.scss */
 section.sponsors {
   background: white url(../img/home_bkg.png) no-repeat 100% 100%;
 }
-/* line 716, ../scss/style.scss */
+/* line 724, ../scss/style.scss */
 section.sponsors ul {
   width: 100%;
   margin: 80px auto 0 auto;
@@ -995,7 +1004,7 @@ section.sponsors ul:before, section.sponsors ul:after {
 section.sponsors ul:after {
   clear: both;
 }
-/* line 722, ../scss/style.scss */
+/* line 730, ../scss/style.scss */
 section.sponsors ul li {
   display: block;
   float: left;
@@ -1006,24 +1015,24 @@ section.sponsors ul li {
   text-align: center;
   padding: 20px;
 }
-/* line 730, ../scss/style.scss */
+/* line 738, ../scss/style.scss */
 section.sponsors ul li:last-child {
   margin: 0;
 }
-/* line 732, ../scss/style.scss */
+/* line 740, ../scss/style.scss */
 section.sponsors ul li img {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-/* line 738, ../scss/style.scss */
+/* line 746, ../scss/style.scss */
 section.sponsors ul li a {
   display: block;
   width: 100%;
   text-align: center;
 }
-/* line 743, ../scss/style.scss */
+/* line 751, ../scss/style.scss */
 section.sponsors ul li a img {
   margin: auto;
   max-width: 230px;
@@ -1035,54 +1044,54 @@ section.sponsors ul li a img {
  * ---------------------
  */
 @media (max-width: 480px) {
-  /* line 757, ../scss/style.scss */
+  /* line 765, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 761, ../scss/style.scss */
+  /* line 769, ../scss/style.scss */
   .breakpoint .mobile {
     display: inline-block;
   }
-  /* line 762, ../scss/style.scss */
+  /* line 770, ../scss/style.scss */
   .breakpoint .desktop {
     display: none;
   }
 
-  /* line 765, ../scss/style.scss */
+  /* line 773, ../scss/style.scss */
   nav {
     display: none;
   }
 }
 @media (max-width: 320px) {
-  /* line 770, ../scss/style.scss */
+  /* line 778, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 775, ../scss/style.scss */
+  /* line 783, ../scss/style.scss */
   .breakpoint .portrait {
     display: inline-block;
   }
-  /* line 776, ../scss/style.scss */
+  /* line 784, ../scss/style.scss */
   .breakpoint .desktop {
     display: none;
   }
 
-  /* line 779, ../scss/style.scss */
+  /* line 787, ../scss/style.scss */
   h2 {
     font-size: 1.6em;
   }
 
-  /* line 780, ../scss/style.scss */
+  /* line 788, ../scss/style.scss */
   h3 {
     font-size: .9em;
     margin: 0 0 1em 0;
   }
 
-  /* line 783, ../scss/style.scss */
+  /* line 791, ../scss/style.scss */
   section.issues .inner,
   section.about .inner {
     width: 90%;
@@ -1090,98 +1099,98 @@ section.sponsors ul li a img {
     padding: 50px 0;
   }
 
-  /* line 790, ../scss/style.scss */
+  /* line 798, ../scss/style.scss */
   section.issues .inner .header {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 794, ../scss/style.scss */
+  /* line 802, ../scss/style.scss */
   section.issues .inner .header h2 {
     font-size: 1.2em;
   }
 
-  /* line 802, ../scss/style.scss */
+  /* line 810, ../scss/style.scss */
   section.storytellers .inner h2 {
     font-size: 1.7em;
   }
-  /* line 804, ../scss/style.scss */
+  /* line 812, ../scss/style.scss */
   section.storytellers .inner ul li {
     width: 100%;
     float: none;
     margin: 0 0 40px 0;
   }
-  /* line 810, ../scss/style.scss */
+  /* line 818, ../scss/style.scss */
   section.storytellers .inner ul li strong {
     font-size: 1.1em;
   }
-  /* line 811, ../scss/style.scss */
+  /* line 819, ../scss/style.scss */
   section.storytellers .inner ul li p {
-    font-size: 1.0em;
+    font-size: 1.1em;
   }
-  /* line 812, ../scss/style.scss */
+  /* line 820, ../scss/style.scss */
   section.storytellers .inner ul li .btn {
     width: 100%;
     font-size: 1.0em;
   }
-  /* line 813, ../scss/style.scss */
+  /* line 821, ../scss/style.scss */
   section.storytellers .inner ul li .explanation {
     width: 90%;
     font-size: .9em;
   }
 
-  /* line 818, ../scss/style.scss */
+  /* line 826, ../scss/style.scss */
   section.sponsors .inner {
-    background: white url(../img/home_bkg.png) no-repeat 100% 100%;
+    background: white url(../img/home_bkg.png) no-repeat auto auto;
     padding: 3.5em 0;
   }
-  /* line 823, ../scss/style.scss */
+  /* line 831, ../scss/style.scss */
   section.sponsors .inner ul {
     margin: 20px auto 0 auto;
   }
-  /* line 827, ../scss/style.scss */
+  /* line 835, ../scss/style.scss */
   section.sponsors .inner ul li {
     width: 100%;
     float: none;
     margin: 0 0 30px 0;
     padding: 0;
   }
-  /* line 833, ../scss/style.scss */
+  /* line 841, ../scss/style.scss */
   section.sponsors .inner ul li a img {
     max-width: 200px;
   }
 
-  /* line 840, ../scss/style.scss */
+  /* line 848, ../scss/style.scss */
   section.contact .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 846, ../scss/style.scss */
+  /* line 854, ../scss/style.scss */
   section.contact .inner .contact {
     margin: 0 0 20px 0;
   }
-  /* line 847, ../scss/style.scss */
+  /* line 855, ../scss/style.scss */
   section.contact .inner .contact .mail {
     margin: 0 0 30px 0;
   }
-  /* line 851, ../scss/style.scss */
+  /* line 859, ../scss/style.scss */
   section.contact .inner .informed_and_involved {
     width: 100%;
   }
 
-  /* line 856, ../scss/style.scss */
+  /* line 864, ../scss/style.scss */
   section.organizers .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 861, ../scss/style.scss */
+  /* line 869, ../scss/style.scss */
   section.organizers .inner ul {
     width: 100%;
     margin: auto;
     text-align: center;
   }
-  /* line 866, ../scss/style.scss */
+  /* line 874, ../scss/style.scss */
   section.organizers .inner ul li {
     float: none;
     margin: auto;
@@ -1190,62 +1199,62 @@ section.sponsors ul li a img {
     text-align: left;
   }
 
-  /* line 876, ../scss/style.scss */
+  /* line 884, ../scss/style.scss */
   section.storytelling .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 881, ../scss/style.scss */
+  /* line 889, ../scss/style.scss */
   section.storytelling .inner h2 {
     margin: 0 0 20px 0;
   }
-  /* line 885, ../scss/style.scss */
+  /* line 893, ../scss/style.scss */
   section.storytelling .inner > p {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 890, ../scss/style.scss */
+  /* line 898, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1.0em;
   }
-  /* line 891, ../scss/style.scss */
+  /* line 899, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2em;
   }
-  /* line 892, ../scss/style.scss */
+  /* line 900, ../scss/style.scss */
   section.storytelling .inner .text {
     width: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  /* line 898, ../scss/style.scss */
+  /* line 906, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 902, ../scss/style.scss */
+  /* line 910, ../scss/style.scss */
   .breakpoint .mobile, .breakpoint .landscape {
     display: inline-block;
   }
-  /* line 903, ../scss/style.scss */
+  /* line 911, ../scss/style.scss */
   .breakpoint .desktop {
     display: none;
   }
 
-  /* line 906, ../scss/style.scss */
+  /* line 914, ../scss/style.scss */
   h2 {
     font-size: 1.4em;
   }
 
-  /* line 907, ../scss/style.scss */
+  /* line 915, ../scss/style.scss */
   h3 {
     font-size: .75em;
     margin: 0 0 1em 0;
   }
 
-  /* line 910, ../scss/style.scss */
+  /* line 918, ../scss/style.scss */
   section.issues .inner,
   section.about .inner {
     width: 90%;
@@ -1253,383 +1262,397 @@ section.sponsors ul li a img {
     padding: 50px 0;
   }
 
-  /* line 917, ../scss/style.scss */
+  /* line 925, ../scss/style.scss */
   section.issues .inner .header {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 921, ../scss/style.scss */
+  /* line 929, ../scss/style.scss */
   section.issues .inner .header h2 {
     font-size: 1.2em;
   }
 
-  /* line 930, ../scss/style.scss */
+  /* line 938, ../scss/style.scss */
   section.storytellers .inner h2 {
     font-size: 1.7em;
   }
-  /* line 932, ../scss/style.scss */
+  /* line 940, ../scss/style.scss */
   section.storytellers .inner ul li {
     width: 100%;
     float: none;
     margin: 0 0 40px 0;
   }
-  /* line 938, ../scss/style.scss */
+  /* line 946, ../scss/style.scss */
   section.storytellers .inner ul li strong {
     font-size: 1.1em;
   }
-  /* line 939, ../scss/style.scss */
+  /* line 947, ../scss/style.scss */
   section.storytellers .inner ul li p {
     font-size: 1.0em;
   }
-  /* line 940, ../scss/style.scss */
+  /* line 948, ../scss/style.scss */
   section.storytellers .inner ul li .btn {
     width: 100%;
     font-size: 1.0em;
   }
-  /* line 941, ../scss/style.scss */
+  /* line 949, ../scss/style.scss */
   section.storytellers .inner ul li .explanation {
     width: 78%;
     font-size: .9em;
   }
 
-  /* line 946, ../scss/style.scss */
+  /* line 954, ../scss/style.scss */
   section.sponsors .inner {
-    background: white url(../img/home_bkg.png) no-repeat 100% 100%;
+    background: url(../img/home_bkg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 3.5em 0;
   }
-  /* line 951, ../scss/style.scss */
+  /* line 961, ../scss/style.scss */
   section.sponsors .inner ul {
     margin: 20px auto 0 auto;
   }
-  /* line 954, ../scss/style.scss */
+  /* line 964, ../scss/style.scss */
   section.sponsors .inner ul li {
     float: left;
     width: 50%;
     padding: 10px;
     min-height: 100px;
   }
-  /* line 960, ../scss/style.scss */
+  /* line 970, ../scss/style.scss */
   section.sponsors .inner ul li a img {
     max-width: 200px;
   }
 
-  /* line 967, ../scss/style.scss */
+  /* line 977, ../scss/style.scss */
   section.contact .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 973, ../scss/style.scss */
+  /* line 983, ../scss/style.scss */
   section.contact .inner .contact {
     margin: 0 0 20px 0;
   }
-  /* line 974, ../scss/style.scss */
+  /* line 984, ../scss/style.scss */
   section.contact .inner .contact .mail {
     margin: 0 0 30px 0;
   }
-  /* line 978, ../scss/style.scss */
+  /* line 988, ../scss/style.scss */
   section.contact .inner .informed_and_involved {
     width: 100%;
   }
 
-  /* line 983, ../scss/style.scss */
+  /* line 993, ../scss/style.scss */
   section.organizers .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 988, ../scss/style.scss */
+  /* line 998, ../scss/style.scss */
   section.organizers .inner ul {
     width: 100%;
   }
-  /* line 991, ../scss/style.scss */
+  /* line 1001, ../scss/style.scss */
   section.organizers .inner ul li {
     min-height: 260px;
     width: 50%;
   }
 
-  /* line 999, ../scss/style.scss */
+  /* line 1009, ../scss/style.scss */
   section.storytelling .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 1004, ../scss/style.scss */
+  /* line 1014, ../scss/style.scss */
   section.storytelling .inner h2 {
     margin: 0 0 20px 0;
   }
-  /* line 1008, ../scss/style.scss */
+  /* line 1018, ../scss/style.scss */
   section.storytelling .inner > p {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 1013, ../scss/style.scss */
+  /* line 1023, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1em;
   }
-  /* line 1014, ../scss/style.scss */
+  /* line 1024, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2.2em;
   }
-  /* line 1015, ../scss/style.scss */
+  /* line 1025, ../scss/style.scss */
   section.storytelling .inner .text {
     width: 380px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  /* line 1021, ../scss/style.scss */
+  /* line 1031, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1025, ../scss/style.scss */
+  /* line 1035, ../scss/style.scss */
   .breakpoint .tablet {
     display: inline-block;
   }
-  /* line 1026, ../scss/style.scss */
+  /* line 1036, ../scss/style.scss */
   .breakpoint .portrait, .breakpoint .desktop {
     display: none;
   }
 
-  /* line 1029, ../scss/style.scss */
+  /* line 1039, ../scss/style.scss */
   h3 {
     font-size: .9em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 1034, ../scss/style.scss */
+  /* line 1044, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1038, ../scss/style.scss */
+  /* line 1048, ../scss/style.scss */
   .breakpoint .tablet, .breakpoint .portrait {
     display: inline-block;
   }
-  /* line 1039, ../scss/style.scss */
+  /* line 1049, ../scss/style.scss */
   .breakpoint .desktop {
     display: none;
   }
 
-  /* line 1042, ../scss/style.scss */
+  /* line 1052, ../scss/style.scss */
   h2 {
     font-size: 1.9em;
   }
 
-  /* line 1043, ../scss/style.scss */
+  /* line 1053, ../scss/style.scss */
   h3 {
     font-size: 1em;
     margin: 0 0 1em 0;
   }
 
-  /* line 1045, ../scss/style.scss */
+  /* line 1055, ../scss/style.scss */
   nav ul li a {
     font-size: .75em;
   }
 
-  /* line 1049, ../scss/style.scss */
+  /* line 1059, ../scss/style.scss */
   section.storytellers .inner h2 {
     font-size: 1.7em;
   }
-  /* line 1051, ../scss/style.scss */
+  /* line 1061, ../scss/style.scss */
   section.storytellers .inner ul li {
     width: 48%;
   }
-  /* line 1055, ../scss/style.scss */
+  /* line 1065, ../scss/style.scss */
   section.storytellers .inner ul li strong {
     font-size: .9em;
   }
-  /* line 1056, ../scss/style.scss */
+  /* line 1066, ../scss/style.scss */
   section.storytellers .inner ul li p {
     font-size: 1.0em;
   }
-  /* line 1057, ../scss/style.scss */
+  /* line 1067, ../scss/style.scss */
   section.storytellers .inner ul li .btn {
     font-size: 1.0em;
   }
-  /* line 1058, ../scss/style.scss */
+  /* line 1068, ../scss/style.scss */
   section.storytellers .inner ul li .explanation {
     font-size: .9em;
   }
 
-  /* line 1064, ../scss/style.scss */
+  /* line 1074, ../scss/style.scss */
   section.organizers .inner ul {
     width: 100%;
   }
-  /* line 1067, ../scss/style.scss */
+  /* line 1077, ../scss/style.scss */
   section.organizers .inner ul li {
     width: 50%;
   }
 
-  /* line 1071, ../scss/style.scss */
+  /* line 1081, ../scss/style.scss */
   section.storytelling .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 1076, ../scss/style.scss */
+  /* line 1086, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1em;
   }
-  /* line 1077, ../scss/style.scss */
+  /* line 1087, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* line 1083, ../scss/style.scss */
+  /* line 1093, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1087, ../scss/style.scss */
+  /* line 1097, ../scss/style.scss */
   .breakpoint .tablet, .breakpoint .landscape {
     display: inline-block;
   }
-  /* line 1088, ../scss/style.scss */
+  /* line 1098, ../scss/style.scss */
   .breakpoint .portrait {
     display: none;
   }
 
-  /* line 1091, ../scss/style.scss */
+  /* line 1101, ../scss/style.scss */
   h2 {
     font-size: 1.9em;
   }
 
-  /* line 1092, ../scss/style.scss */
+  /* line 1102, ../scss/style.scss */
   h3 {
     font-size: 1em;
     margin: 0 0 1em 0;
   }
 
-  /* line 1094, ../scss/style.scss */
+  /* line 1104, ../scss/style.scss */
   nav ul li a {
     font-size: 1.0em;
   }
 
-  /* line 1098, ../scss/style.scss */
+  /* line 1108, ../scss/style.scss */
   section.storytellers .inner h2 {
     font-size: 1.7em;
   }
-  /* line 1100, ../scss/style.scss */
+  /* line 1110, ../scss/style.scss */
   section.storytellers .inner ul li {
     width: 45%;
   }
-  /* line 1104, ../scss/style.scss */
+  /* line 1114, ../scss/style.scss */
   section.storytellers .inner ul li strong {
     font-size: 1.1em;
   }
-  /* line 1105, ../scss/style.scss */
+  /* line 1115, ../scss/style.scss */
   section.storytellers .inner ul li p {
     font-size: 1.0em;
   }
-  /* line 1106, ../scss/style.scss */
+  /* line 1116, ../scss/style.scss */
   section.storytellers .inner ul li .btn {
     font-size: 1.0em;
   }
-  /* line 1107, ../scss/style.scss */
+  /* line 1117, ../scss/style.scss */
   section.storytellers .inner ul li .explanation {
     font-size: .9em;
   }
 
-  /* line 1115, ../scss/style.scss */
+  /* line 1125, ../scss/style.scss */
   section.organizers .inner ul li {
     min-height: 360px;
   }
 
-  /* line 1121, ../scss/style.scss */
+  /* line 1131, ../scss/style.scss */
   section.storytelling .inner {
     width: 80%;
   }
-  /* line 1124, ../scss/style.scss */
+  /* line 1134, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1em;
   }
-  /* line 1125, ../scss/style.scss */
+  /* line 1135, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
-  /* line 1132, ../scss/style.scss */
+  /* line 1142, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1136, ../scss/style.scss */
+  /* line 1146, ../scss/style.scss */
   .breakpoint .desktop {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1301px) {
-  /* line 1141, ../scss/style.scss */
+  /* line 1151, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: red;
     color: #fff;
   }
-  /* line 1145, ../scss/style.scss */
+  /* line 1155, ../scss/style.scss */
   .breakpoint .desktop {
     display: inline-block;
   }
 
-  /* line 1148, ../scss/style.scss */
+  /* line 1158, ../scss/style.scss */
   nav ul li a {
     font-size: 1.2em;
   }
 
-  /* line 1149, ../scss/style.scss */
+  /* line 1159, ../scss/style.scss */
   h2 {
     font-size: 2.9em;
   }
 
-  /* line 1150, ../scss/style.scss */
+  /* line 1160, ../scss/style.scss */
   h3 {
     font-size: 1.5em;
     margin: 0 0 1em 0;
   }
 
-  /* line 1154, ../scss/style.scss */
+  /* line 1164, ../scss/style.scss */
   section.storytellers .inner ul li p {
     font-size: 1.47em;
   }
 
-  /* line 1161, ../scss/style.scss */
+  /* line 1172, ../scss/style.scss */
+  section.issues .inner .graph {
+    display: block;
+    margin: auto;
+    background: url(../img/flower@2x.png) no-repeat;
+    background-size: 100% 100%;
+    width: 800px;
+    height: 800px;
+  }
+
+  /* line 1183, ../scss/style.scss */
   section.organizers .inner ul li {
     min-height: 480px;
   }
-  /* line 1164, ../scss/style.scss */
+  /* line 1186, ../scss/style.scss */
   section.organizers .inner ul li p {
     font-size: 1em;
     width: auto;
   }
 
-  /* line 1172, ../scss/style.scss */
+  /* line 1194, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1.5em;
   }
-  /* line 1173, ../scss/style.scss */
+  /* line 1195, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 4em;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 1179, ../scss/style.scss */
+  /* line 1201, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1183, ../scss/style.scss */
+  /* line 1205, ../scss/style.scss */
   .breakpoint .retina {
     display: inline-block;
   }
 
-  /* line 1192, ../scss/style.scss */
+  /* line 1214, ../scss/style.scss */
   section.issues .inner .graph {
     display: block;
     margin: auto;
@@ -1640,7 +1663,7 @@ section.sponsors ul li a img {
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 320px), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 320px) {
-  /* line 1188, ../scss/style.scss */
+  /* line 1210, ../scss/style.scss */
   section.issues .inner
   .graph {
     width: 290px;

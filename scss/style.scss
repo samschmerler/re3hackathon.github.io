@@ -14,6 +14,7 @@ $cWhite:      #dee5f2;
 $cPurple:     #6900cc;
 $cOrange:     #f7796a;
 $cBlue:       #caf3f5;
+$cLightBlue:  #56decb;
 $cDarkGreen:  #1d7066;
 $cGreen:      #37dccb;
 $cBrown:      #4c3c3d;
@@ -303,20 +304,8 @@ section p {
  */
 
 section.main {
-  background: #fff url(../img/home_bkg.png) no-repeat 50% 50%;
-
-  h2 {
-    @include breakpoint($breakpoint-ipad-portrait) {
-      font-size: 1.9em;
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      font-size: 1.9em;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      font-size: 1.9em;
-    }
-  }
-
+   background: url(../img/home_bkg.png) no-repeat center center ;
+   @include background-size(cover);
 }
 
 section.main ul {
@@ -483,20 +472,38 @@ section.organizers .inner {
  */
 
 section.when_where {
-  display:none;
-  position:relative;
-  background:#fff;
-  clear:both;
-  overflow:hidden;
-  height: 784px;
-}
+  min-height: 786px;
 
-section.when_where .overlay {
-  display:block;
-  position:absolute;
-  top: 0; left: 0;
-  @include size(475px, 468px);
-  background: url(../img/when_where_overlay.png) no-repeat;
+   background: url(../img/map.png) no-repeat center center ;
+   @include background-size(cover);
+
+   position:relative;
+   clear:both;
+   overflow:hidden;
+
+  .overlay {
+
+    @include position(0, false, false, 0);
+    @include size(475px, 468px);
+    background: url(../img/when_where_overlay.png) no-repeat;
+
+    text-align: center;
+
+    .content {
+      margin: auto;
+      width: 80%;
+      text-align:left;
+      padding: 60px 0;
+
+      h2 { font-size: 2em; }
+      p  { font-size: 1.3em; line-height: 150%; }
+
+      h2, h3, p { color: $cLightBlue; }
+
+    }
+
+  }
+
 }
 
 /* ---------------------
@@ -569,6 +576,7 @@ section.about {
 
   p {
     line-height: 150%;
+    font-size: 1.3em;
   }
 }
 
@@ -590,9 +598,9 @@ section.issues .inner {
   .graph {
     display: block;
     margin: auto;
-    background: url(../img/flower.png) no-repeat;
+    background: url(../img/flower@2x.png) no-repeat;
     background-size: 100% 100%;
-    width: 600px; height: 600px;
+    @include size(600px);
   }
 
 }
@@ -808,7 +816,7 @@ section.sponsors {
       margin: 0 0 40px 0;
 
       strong { font-size:1.1em; }
-      p     { font-size:1.0em; }
+      p     { font-size:1.1em; }
       .btn  { width: 100%; font-size:1.0em; }
       .explanation { width: 90%; font-size:.9em; }
 
@@ -817,7 +825,7 @@ section.sponsors {
 
   section.sponsors .inner {
 
-    background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+    background: #fff url(../img/home_bkg.png) no-repeat auto auto;
     padding: 3.5em 0;
 
     ul {
@@ -945,7 +953,9 @@ section.sponsors {
 
   section.sponsors .inner {
 
-    background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+    background: url(../img/home_bkg.png) no-repeat center center ;
+    @include background-size(cover);
+
     padding: 3.5em 0;
 
     ul {
@@ -1155,6 +1165,18 @@ section.sponsors {
         font-size:1.47em;
       }
     }
+  }
+
+  section.issues .inner {
+
+    .graph {
+      display: block;
+      margin: auto;
+      background: url(../img/flower@2x.png) no-repeat;
+      background-size: 100% 100%;
+      @include size(800px);
+    }
+
   }
 
   section.organizers .inner {
