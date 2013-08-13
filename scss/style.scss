@@ -443,79 +443,33 @@ section.organizers .inner {
   width: 86%;
   margin:auto;
   padding: 4.5em 0;
-}
 
-section.organizers ul {
+  h2 { width: 75%; }
 
-  margin: 0 0 1em 0;
-  @include clearfix();
+  ul {
+    width: 100%;
+    @include clearfix();
 
-  @include breakpoint($breakpoint-ipad-portrait) {
-    margin: auto;
-  }
-  @include breakpoint($breakpoint-small-landscape) {
-    margin: auto;
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    margin: auto;
-  }
+    li {
+      float:left;
+      width: 25%;
 
-  li {
-    float:left;
+      min-width: 186px;
+      /*max-width: 213px;*/
+      min-height: 410px;
+      padding: 20px;
 
-    margin: 0 2% 0 0;
-    width: 23.5%;
-    min-width: 186px;
+      @include box-sizing(border-box);
 
-    @include breakpoint($breakpoint-ipad-portrait) {
-      width:32.5%;
-      margin: 0 2% 0 0;
-      min-width:186px;
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      float: none;
-      margin: 0 auto 30px auto;
-      width: 240px;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      float: none;
-      margin: 0 auto 30px auto;
-      width: 240px;
-    }
-
-    &:nth-child(4) {
-      margin: 0;
-      clear:right;
-    }
-
-    &:last-child {
-      margin: 0;
-
-      @include breakpoint($breakpoint-ipad-portrait) {
-        float: none;
-        margin: 0 auto 30px auto;
+      p {
+        font-size:.9em;
+        width:auto;
       }
-      @include breakpoint($breakpoint-small-landscape) {
-        float: none;
-        margin: 0 auto 30px auto;
-      }
-      @include breakpoint($breakpoint-small-portrait) {
-        float: none;
-        margin: 0 auto 30px auto;
-      }
-    }
 
-    img {
-      display:block;
-      max-width:206px;
-      @include size(100%, 100%);
-      margin: 0 0 1em 0;
-
-      @include breakpoint($breakpoint-small-landscape) {
-        max-width: 100%;
-      }
-      @include breakpoint($breakpoint-small-portrait) {
-        max-width: 100%;
+      img {
+        display:block;
+        @include size(100%, 100%);
+        margin: 0 0 1em 0;
       }
     }
   }
@@ -564,69 +518,20 @@ section.storytellers ul {
   li {
     text-align: center;
 
-    @include breakpoint($breakpoint-ipad-portrait) {
-      /*margin: 0 0 80px 0;*/
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      margin: 0 0 80px 0;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      margin: 0 0 80px 0;
-    }
-
     p {
       line-height: 150%;
       font-size:1.15em;
       margin: 0 0 1.5em 0;
-
-      @include breakpoint($breakpoint-ipad-portrait) {
-        font-size: 1em;
-      }
-      @include breakpoint($breakpoint-small-landscape) {
-        font-size: 1em;
-      }
-      @include breakpoint($breakpoint-small-portrait) {
-        font-size: 1em;
-      }
-
-
     }
 
     &:first-child {
       float:left;
       width: percentage(1539/3424);
-
-      @include breakpoint($breakpoint-ipad-portrait) {
-        /*width: 100%;*/
-        /*float:none;*/
-      }
-      @include breakpoint($breakpoint-small-landscape) {
-        width: 100%;
-        float:none;
-      }
-      @include breakpoint($breakpoint-small-portrait) {
-        width: 100%;
-        float:none;
-      }
     }
 
     &:last-child {
       float:right;
       width: percentage(1539/3424);
-
-      @include breakpoint($breakpoint-ipad-portrait) {
-        /*width: 100%;*/
-        /*float:none;*/
-      }
-      @include breakpoint($breakpoint-small-landscape) {
-        width: 100%;
-        float:none;
-      }
-      @include breakpoint($breakpoint-small-portrait) {
-        width: 100%;
-        float:none;
-      }
-
     }
 
     strong {
@@ -911,8 +816,6 @@ section.sponsors ul {
   }
 
   nav { display: none; }
-  h2  { font-size: 2em; }
-  h3  { font-size: .9em; }
 
 }
 
@@ -924,6 +827,70 @@ section.sponsors ul {
     .portrait { display: inline-block; }
     .desktop { display: none; }
   }
+
+  h2 { font-size: 1.6em; }
+  h3 { font-size: .9em; margin: 0 0 1em 0; }
+
+  section.organizers .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    ul {
+      width: 100%;
+      margin:auto;
+      text-align:center;
+
+      li {
+        float:none;
+        margin:auto;
+        width: 100%;
+        min-height: 260px;
+        text-align: left;
+      }
+    }
+
+    /*
+    ul {
+
+      li {
+        float: none!important;
+        margin: 0 auto 30px auto!important;
+        clear:none!important;
+        width: 250px;
+
+        p {
+          font-size:1.2em;
+          width:auto;
+        }
+
+        img {
+          max-width:250px;
+        }
+      }
+    }
+    */
+  }
+
+  section.storytelling .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    h2 {
+      margin: 0 0 20px 0;
+    }
+
+    & > p {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+
+    p, strong { font-size:1.0em; }
+    .num { font-size: 2em; }
+    .text { width: 250px; }
+  }
+
 }
 
 @include mobile-landscape {
@@ -934,6 +901,45 @@ section.sponsors ul {
     .mobile, .landscape { display: inline-block; }
     .desktop { display: none; }
   }
+
+  h2 { font-size: 1.4em; }
+  h3 { font-size: .75em; margin: 0 0 1em 0; }
+
+  section.organizers .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    ul {
+      width: 100%;
+
+      li {
+        min-height: 260px;
+        width: 50%;
+      }
+    }
+
+  }
+
+  section.storytelling .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    h2 {
+      margin: 0 0 20px 0;
+    }
+
+    & > p {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+
+    p, strong { font-size:1em; }
+    .num { font-size: 2.2em; }
+    .text { width: 380px; }
+  }
+
 }
 
 @include tablet {
@@ -958,7 +964,19 @@ section.sponsors ul {
     .desktop { display: none; }
   }
 
+  h2 { font-size: 1.9em; }
+  h3 { font-size: 1em; margin: 0 0 1em 0; }
+
   nav ul li a { font-size: .75em; }
+
+  section.organizers .inner {
+    ul {
+      width: 100%;
+      li {
+        width: 50%;
+      }
+    }
+  }
 
   section.storytelling .inner {
     width: 90%;
@@ -984,6 +1002,15 @@ section.sponsors ul {
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
   nav ul li a { font-size: 1.0em; }
+
+  section.organizers .inner {
+    ul {
+
+      li {
+        min-height: 360px;
+      }
+    }
+  }
 
   section.storytelling .inner {
     width: 80%;
@@ -1015,8 +1042,21 @@ section.sponsors ul {
   }
 
   nav ul li a { font-size: 1.2em; }
-  h2 { font-size: 3em; }
-  h3 { font-size: 1.2em; margin: 0 0 1em 0; }
+  h2 { font-size: 2.9em; }
+  h3 { font-size: 1.5em; margin: 0 0 1em 0; }
+
+  section.organizers .inner {
+    ul {
+      li {
+        min-height: 470px;
+
+        p {
+          font-size:1em;
+          width:auto;
+        }
+      }
+    }
+  }
 
   section.storytelling {
     .inner {
