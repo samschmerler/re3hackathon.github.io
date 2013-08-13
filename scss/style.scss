@@ -643,7 +643,6 @@ section.contact {
     background:$cBlue;
 
     input {
-      width: percentage(1262/1403);
       padding: 0;
 
       border:none;
@@ -674,13 +673,6 @@ section.contact {
 
     float:left;
     margin: 0 percentage(515/3693) 0 0;
-
-    @include breakpoint($breakpoint-ipad-portrait) { }
-    @include breakpoint($breakpoint-small-landscape) { }
-    @include breakpoint($breakpoint-small-portrait) {
-      width: 100%;
-      margin: 0 0 50px 0;
-    }
 
     address {
       line-height:150%;
@@ -726,10 +718,6 @@ section.contact {
 
   .informed_and_involved {
     float: left;
-
-    @include breakpoint($breakpoint-small-portrait) {
-      width: 100%;
-    }
   }
 
   .btn {
@@ -737,10 +725,7 @@ section.contact {
     color: $cBrown;
     margin: 0 0 15px 0;
 
-    &:hover {
-      background: $cGreen;
-      color: $cBrown;
-    }
+    &:hover { background: $cGreen; color: $cBrown; }
 
   }
 
@@ -831,6 +816,18 @@ section.sponsors ul {
   h2 { font-size: 1.6em; }
   h3 { font-size: .9em; margin: 0 0 1em 0; }
 
+  section.contact {
+
+    .contact {
+      .mail { margin: 0 0 30px 0; }
+      margin: 0 0 20px 0;
+    }
+
+    .informed_and_involved {
+      width: 100%;
+    }
+  }
+
   section.organizers .inner {
     width: 90%;
     margin: auto;
@@ -904,6 +901,18 @@ section.sponsors ul {
 
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
+
+  section.contact {
+
+    .contact {
+      .mail { margin: 0 0 30px 0; }
+      margin: 0 0 20px 0;
+    }
+
+    .informed_and_involved {
+      width: 100%;
+    }
+  }
 
   section.organizers .inner {
     width: 90%;
