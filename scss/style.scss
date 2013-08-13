@@ -132,6 +132,7 @@ nav {
 
   background: $cPurple;
   padding: percentage(83/$siteWidth) 0;
+  z-index: 10000;
 
   &.fixed {
     width:100%;
