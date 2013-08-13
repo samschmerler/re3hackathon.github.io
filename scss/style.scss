@@ -182,20 +182,22 @@ nav {
 /* Margins */
 
 section.main .inner,
-section.contact .inner,
-section.sponsors .inner {
+section.contact .inner {
   width: percentage(3693/$siteWidth);
   padding: 40px 0;
   margin:auto;
+}
 
-  @include breakpoint($breakpoint-small-landscape) {
-    width: 90%; margin: auto;
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    width: 90%; margin: auto;
-    padding: 40px 0;
-  }
+section.sponsors .inner {
+  width: 86%;
+  margin:auto;
+  padding: 4.5em 0;
+}
 
+section.storytellers .inner {
+  width: 86%;
+  margin:auto;
+  padding: 4.5em 0;
 }
 
 section.storytelling .inner {
@@ -503,67 +505,58 @@ section.when_where .overlay {
  */
 
 section.storytellers .inner {
-  width: percentage(3693/$siteWidth);
-  margin:auto;
-  padding: 4.5em 0;
-}
 
-section.storytellers ul {
+  ul {
 
-  margin: auto;
-  width: percentage(3424/3691);
+    margin: auto;
+    width: 100%;
 
-  @include clearfix();
+    @include clearfix();
 
-  li {
-    text-align: center;
+    li {
+      text-align: center;
+      width: 45%;
+      @include box-sizing(border-box);
 
-    p {
-      line-height: 150%;
-      font-size:1.15em;
-      margin: 0 0 1.5em 0;
-    }
+      &:first-child { float:left;  }
+      &:last-child  { float:right; }
 
-    &:first-child {
-      float:left;
-      width: percentage(1539/3424);
-    }
+      strong {
+        display: block;
+        font-size:1.3em;
+        margin: 0 0 1em 0;
+        color: $cPurple;
+      }
 
-    &:last-child {
-      float:right;
-      width: percentage(1539/3424);
-    }
+      p {
+        line-height: 150%;
+        font-size:1.3em;
+        margin: 0 0 1.5em 0;
+      }
 
-    strong {
-      display: block;
-      font-size:1.1em;
-      margin: 0 0 1em 0;
-      color: $cPurple;
-    }
+      .explanation {
+        margin: auto;
+        width: percentage(1030/1539);
+        color:$cPurple;
+        font-size:1em;
+      }
 
-    .explanation {
-      margin: auto;
-      width: percentage(1030/1539);
-      color:$cPurple;
-      font-size:1em;
-    }
+      .btn  {
+        margin: 0 auto .7em auto;
+        padding: 4% 0;
+        width: 70%;
 
-    .btn  {
-      margin: 0 auto .7em auto;
-      padding: 4% 0;
-      width: percentage(1043/1539);
-
-      font-weight:bold;
-      font-size:1.2em;
-      background:$cPurple;
-      color: $cWhite;
-
-      &:hover {
-        background: $cDarkGreen;
+        font-weight:bold;
+        font-size:1.5em;
+        background:$cPurple;
         color: $cWhite;
+
+        &:hover {
+          background: $cDarkGreen;
+          color: $cWhite;
+        }
       }
     }
-
   }
 }
 
@@ -590,35 +583,16 @@ section.issues .inner {
     width: percentage(2905/$siteWidth);
     margin: 0 0 percentage(144/$siteWidth) 0;
 
-    h2  {
-      font-size: 1.5em;
+    h2  { font-size: 1.5em; }
 
-      @include breakpoint($breakpoint-ipad-portrait) {
-        font-size: 1.2em;
-      }
-      @include breakpoint($breakpoint-small-landscape) {
-        font-size: 1.2em;
-      }
-      @include breakpoint($breakpoint-small-portrait) {
-        font-size: 1.2em;
-      }
-
-    }
   }
 
-  .flower {
+  .graph {
     display: block;
     margin: auto;
-
-    width: percentage(2611/$siteWidth);
-
-    @include breakpoint($breakpoint-small-landscape) {
-      width:100%;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      width:100%;
-    }
-
+    background: url(../img/flower.png) no-repeat;
+    background-size: 100% 100%;
+    width: 600px; height: 600px;
   }
 
 }
@@ -738,58 +712,46 @@ section.contact {
 
 section.sponsors {
   background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
-}
 
-section.sponsors ul {
+  ul {
+    width: 100%;
+    margin: 80px auto 0 auto;
+    @include clearfix();
+    text-align: center;
 
-  margin: auto;
-  text-align: center;
-
-  li {
-    @include inline-block();
-    margin: 0 percentage(253/3693) 0 0;
-
-    &:last-child { margin: 0; }
-
-    @include breakpoint($breakpoint-ipad-portrait) {
-      margin: 0 0 40px 0;
-      float:none;
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      margin: 0 0 40px 0;
-      float:none;
-    }
-    @include breakpoint($breakpoint-small-portrait) {
-      margin: 0 0 40px 0;
-      float:none;
-    }
-
-
-    a {
+    li {
       display:block;
-      position:relative;
+      float:left;
+      @include box-sizing(border-box);
+      width: 25%;
+      text-align:center;
+      padding: 20px;
 
-      &.parsons {
-        background: url(../img/logos/parsons.png) no-repeat;
-        @include size(217px, 64px);
-      }
-      &.hyperakt {
-        background: url(../img/logos/hyperakt.png) no-repeat;
-        @include size(172px, 28px);
-      }
-      &.vizzuality {
-        background: url(../img/logos/vizzuality.png) no-repeat;
-        @include size(154px, 81px);
-      }
+      &:last-child { margin: 0; }
 
-      &.bridge {
-        background: url(../img/logos/bridge.png) no-repeat;
-        @include size(137px, 65px);
+      img {
+        display:block;
+        @include size(100%, 100%);
+        text-align:center;
       }
 
+      a {
+        display:block;
+        width:100%;
+        text-align:center;
+
+        img { margin: auto; max-width: 230px; }
+
+      }
     }
   }
 }
+
+/*
+ * ---------------------
+ * RESPONSIVE
+ * ---------------------
+ */
 
 @include mobile {
   .breakpoint {
@@ -809,14 +771,59 @@ section.sponsors ul {
     display:block;
     background:orange;
     color: #fff;
+
     .portrait { display: inline-block; }
-    .desktop { display: none; }
+    .desktop  { display: none; }
   }
 
   h2 { font-size: 1.6em; }
   h3 { font-size: .9em; margin: 0 0 1em 0; }
 
-  section.contact {
+  section.issues .inner,
+  section.about .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  section.issues .inner {
+    .header {
+      width: 100%;
+      margin: 0 0 20px 0;
+
+      h2  {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  section.sponsors .inner {
+
+    background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+    padding: 3.5em 0;
+
+    ul {
+
+      margin: 20px auto 0 auto;
+
+      li {
+        width: 100%;
+        float:none;
+        margin: 0 0 30px 0;
+        padding: 0;
+
+        a img {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+
+  section.contact .inner {
+
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
 
     .contact {
       .mail { margin: 0 0 30px 0; }
@@ -846,27 +853,6 @@ section.sponsors ul {
         text-align: left;
       }
     }
-
-    /*
-    ul {
-
-      li {
-        float: none!important;
-        margin: 0 auto 30px auto!important;
-        clear:none!important;
-        width: 250px;
-
-        p {
-          font-size:1.2em;
-          width:auto;
-        }
-
-        img {
-          max-width:250px;
-        }
-      }
-    }
-    */
   }
 
   section.storytelling .inner {
@@ -902,7 +888,50 @@ section.sponsors ul {
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
 
-  section.contact {
+  section.issues .inner,
+  section.about .inner {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  section.issues .inner {
+    .header {
+      width: 100%;
+      margin: 0 0 20px 0;
+
+      h2  {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  section.sponsors .inner {
+
+    background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
+    padding: 3.5em 0;
+
+    ul {
+      margin: 20px auto 0 auto;
+
+      li {
+        float:left;
+        width: 50%;
+        padding: 10px;
+        min-height:100px;
+
+        a img {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+
+  section.contact .inner {
+
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
 
     .contact {
       .mail { margin: 0 0 30px 0; }
@@ -1054,24 +1083,28 @@ section.sponsors ul {
   h2 { font-size: 2.9em; }
   h3 { font-size: 1.5em; margin: 0 0 1em 0; }
 
-  section.organizers .inner {
-    ul {
-      li {
-        min-height: 470px;
-
-        p {
-          font-size:1em;
-          width:auto;
-        }
+  section.storytellers .inner {
+    ul li {
+      p {
+        font-size:1.47em;
       }
     }
   }
 
-  section.storytelling {
-    .inner {
-      p, strong { font-size:1.5em; }
-      .num { font-size: 4em; }
+  section.organizers .inner {
+    ul li {
+      min-height: 480px;
+
+      p {
+        font-size:1em;
+        width:auto;
+      }
     }
+  }
+
+  section.storytelling .inner {
+    p, strong { font-size:1.5em; }
+    .num { font-size: 4em; }
   }
 
 }
@@ -1083,4 +1116,17 @@ section.sponsors ul {
     color: #fff;
     .retina { display: inline-block; }
   }
+
+
+  section.issues .inner {
+    .graph {
+      display: block;
+      margin: auto;
+      background: url(../img/flower.png) no-repeat;
+      background-size: 100% 100%;
+      width: 300px; height: 300px;
+    }
+  }
+
+
 }
