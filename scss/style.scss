@@ -797,6 +797,24 @@ section.sponsors {
     }
   }
 
+  section.storytellers .inner {
+
+    h2  { font-size:1.7em; }
+
+    ul li {
+
+      width: 100%;
+      float:none;
+      margin: 0 0 40px 0;
+
+      strong { font-size:1.1em; }
+      p     { font-size:1.0em; }
+      .btn  { width: 100%; font-size:1.0em; }
+      .explanation { width: 90%; font-size:.9em; }
+
+    }
+  }
+
   section.sponsors .inner {
 
     background: #fff url(../img/home_bkg.png) no-repeat 100% 100%;
@@ -904,6 +922,25 @@ section.sponsors {
         font-size: 1.2em;
       }
     }
+
+  }
+
+  section.storytellers .inner {
+
+    h2  { font-size:1.7em; }
+
+    ul li {
+
+      width: 100%;
+      float:none;
+      margin: 0 0 40px 0;
+
+      strong { font-size:1.1em; }
+      p     { font-size:1.0em; }
+      .btn  { width: 100%; font-size:1.0em; }
+      .explanation { width: 78%; font-size:.9em; }
+
+    }
   }
 
   section.sponsors .inner {
@@ -1007,12 +1044,27 @@ section.sponsors {
 
   nav ul li a { font-size: .75em; }
 
+  section.storytellers .inner {
+
+    h2  { font-size:1.7em; }
+
+    ul li {
+
+      width: 48%;
+
+      strong { font-size:.9em; }
+      p     { font-size:1.0em; }
+      .btn  { font-size:1.0em; }
+      .explanation { font-size:.9em; }
+
+    }
+  }
+
   section.organizers .inner {
     ul {
       width: 100%;
-      li {
-        width: 50%;
-      }
+
+      li { width: 50%; }
     }
   }
 
@@ -1041,6 +1093,22 @@ section.sponsors {
 
   nav ul li a { font-size: 1.0em; }
 
+  section.storytellers .inner {
+
+    h2  { font-size:1.7em; }
+
+    ul li {
+
+      width: 45%;
+
+      strong { font-size:1.1em; }
+      p     { font-size:1.0em; }
+      .btn  { font-size:1.0em; }
+      .explanation { font-size:.9em; }
+
+    }
+  }
+
   section.organizers .inner {
     ul {
 
@@ -1052,8 +1120,6 @@ section.sponsors {
 
   section.storytelling .inner {
     width: 80%;
-    /*margin: auto;*/
-    /*padding: 50px 0;*/
 
     p, strong { font-size:1em; }
     .num { font-size: 2.5em; }
@@ -1117,6 +1183,10 @@ section.sponsors {
     .retina { display: inline-block; }
   }
 
+  @include mobile-portrait {
+    section.issues .inner
+    .graph { @include size(290px); }
+  }
 
   section.issues .inner {
     .graph {
@@ -1124,9 +1194,8 @@ section.sponsors {
       margin: auto;
       background: url(../img/flower.png) no-repeat;
       background-size: 100% 100%;
-      width: 300px; height: 300px;
+      @include size(400px);
     }
   }
-
 
 }

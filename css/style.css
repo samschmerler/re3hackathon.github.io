@@ -1100,59 +1100,88 @@ section.sponsors ul li a img {
     font-size: 1.2em;
   }
 
-  /* line 800, ../scss/style.scss */
+  /* line 802, ../scss/style.scss */
+  section.storytellers .inner h2 {
+    font-size: 1.7em;
+  }
+  /* line 804, ../scss/style.scss */
+  section.storytellers .inner ul li {
+    width: 100%;
+    float: none;
+    margin: 0 0 40px 0;
+  }
+  /* line 810, ../scss/style.scss */
+  section.storytellers .inner ul li strong {
+    font-size: 1.1em;
+  }
+  /* line 811, ../scss/style.scss */
+  section.storytellers .inner ul li p {
+    font-size: 1.0em;
+  }
+  /* line 812, ../scss/style.scss */
+  section.storytellers .inner ul li .btn {
+    width: 100%;
+    font-size: 1.0em;
+  }
+  /* line 813, ../scss/style.scss */
+  section.storytellers .inner ul li .explanation {
+    width: 90%;
+    font-size: .9em;
+  }
+
+  /* line 818, ../scss/style.scss */
   section.sponsors .inner {
     background: white url(../img/home_bkg.png) no-repeat 100% 100%;
     padding: 3.5em 0;
   }
-  /* line 805, ../scss/style.scss */
+  /* line 823, ../scss/style.scss */
   section.sponsors .inner ul {
     margin: 20px auto 0 auto;
   }
-  /* line 809, ../scss/style.scss */
+  /* line 827, ../scss/style.scss */
   section.sponsors .inner ul li {
     width: 100%;
     float: none;
     margin: 0 0 30px 0;
     padding: 0;
   }
-  /* line 815, ../scss/style.scss */
+  /* line 833, ../scss/style.scss */
   section.sponsors .inner ul li a img {
     max-width: 200px;
   }
 
-  /* line 822, ../scss/style.scss */
+  /* line 840, ../scss/style.scss */
   section.contact .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 828, ../scss/style.scss */
+  /* line 846, ../scss/style.scss */
   section.contact .inner .contact {
     margin: 0 0 20px 0;
   }
-  /* line 829, ../scss/style.scss */
+  /* line 847, ../scss/style.scss */
   section.contact .inner .contact .mail {
     margin: 0 0 30px 0;
   }
-  /* line 833, ../scss/style.scss */
+  /* line 851, ../scss/style.scss */
   section.contact .inner .informed_and_involved {
     width: 100%;
   }
 
-  /* line 838, ../scss/style.scss */
+  /* line 856, ../scss/style.scss */
   section.organizers .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 843, ../scss/style.scss */
+  /* line 861, ../scss/style.scss */
   section.organizers .inner ul {
     width: 100%;
     margin: auto;
     text-align: center;
   }
-  /* line 848, ../scss/style.scss */
+  /* line 866, ../scss/style.scss */
   section.organizers .inner ul li {
     float: none;
     margin: auto;
@@ -1161,62 +1190,62 @@ section.sponsors ul li a img {
     text-align: left;
   }
 
-  /* line 858, ../scss/style.scss */
+  /* line 876, ../scss/style.scss */
   section.storytelling .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 863, ../scss/style.scss */
+  /* line 881, ../scss/style.scss */
   section.storytelling .inner h2 {
     margin: 0 0 20px 0;
   }
-  /* line 867, ../scss/style.scss */
+  /* line 885, ../scss/style.scss */
   section.storytelling .inner > p {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 872, ../scss/style.scss */
+  /* line 890, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1.0em;
   }
-  /* line 873, ../scss/style.scss */
+  /* line 891, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2em;
   }
-  /* line 874, ../scss/style.scss */
+  /* line 892, ../scss/style.scss */
   section.storytelling .inner .text {
     width: 250px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  /* line 880, ../scss/style.scss */
+  /* line 898, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 884, ../scss/style.scss */
+  /* line 902, ../scss/style.scss */
   .breakpoint .mobile, .breakpoint .landscape {
     display: inline-block;
   }
-  /* line 885, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .breakpoint .desktop {
     display: none;
   }
 
-  /* line 888, ../scss/style.scss */
+  /* line 906, ../scss/style.scss */
   h2 {
     font-size: 1.4em;
   }
 
-  /* line 889, ../scss/style.scss */
+  /* line 907, ../scss/style.scss */
   h3 {
     font-size: .75em;
     margin: 0 0 1em 0;
   }
 
-  /* line 892, ../scss/style.scss */
+  /* line 910, ../scss/style.scss */
   section.issues .inner,
   section.about .inner {
     width: 90%;
@@ -1224,312 +1253,397 @@ section.sponsors ul li a img {
     padding: 50px 0;
   }
 
-  /* line 899, ../scss/style.scss */
+  /* line 917, ../scss/style.scss */
   section.issues .inner .header {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 903, ../scss/style.scss */
+  /* line 921, ../scss/style.scss */
   section.issues .inner .header h2 {
     font-size: 1.2em;
   }
 
-  /* line 909, ../scss/style.scss */
+  /* line 930, ../scss/style.scss */
+  section.storytellers .inner h2 {
+    font-size: 1.7em;
+  }
+  /* line 932, ../scss/style.scss */
+  section.storytellers .inner ul li {
+    width: 100%;
+    float: none;
+    margin: 0 0 40px 0;
+  }
+  /* line 938, ../scss/style.scss */
+  section.storytellers .inner ul li strong {
+    font-size: 1.1em;
+  }
+  /* line 939, ../scss/style.scss */
+  section.storytellers .inner ul li p {
+    font-size: 1.0em;
+  }
+  /* line 940, ../scss/style.scss */
+  section.storytellers .inner ul li .btn {
+    width: 100%;
+    font-size: 1.0em;
+  }
+  /* line 941, ../scss/style.scss */
+  section.storytellers .inner ul li .explanation {
+    width: 78%;
+    font-size: .9em;
+  }
+
+  /* line 946, ../scss/style.scss */
   section.sponsors .inner {
     background: white url(../img/home_bkg.png) no-repeat 100% 100%;
     padding: 3.5em 0;
   }
-  /* line 914, ../scss/style.scss */
+  /* line 951, ../scss/style.scss */
   section.sponsors .inner ul {
     margin: 20px auto 0 auto;
   }
-  /* line 917, ../scss/style.scss */
+  /* line 954, ../scss/style.scss */
   section.sponsors .inner ul li {
     float: left;
     width: 50%;
     padding: 10px;
     min-height: 100px;
   }
-  /* line 923, ../scss/style.scss */
+  /* line 960, ../scss/style.scss */
   section.sponsors .inner ul li a img {
     max-width: 200px;
   }
 
-  /* line 930, ../scss/style.scss */
+  /* line 967, ../scss/style.scss */
   section.contact .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 936, ../scss/style.scss */
+  /* line 973, ../scss/style.scss */
   section.contact .inner .contact {
     margin: 0 0 20px 0;
   }
-  /* line 937, ../scss/style.scss */
+  /* line 974, ../scss/style.scss */
   section.contact .inner .contact .mail {
     margin: 0 0 30px 0;
   }
-  /* line 941, ../scss/style.scss */
+  /* line 978, ../scss/style.scss */
   section.contact .inner .informed_and_involved {
     width: 100%;
   }
 
-  /* line 946, ../scss/style.scss */
+  /* line 983, ../scss/style.scss */
   section.organizers .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 951, ../scss/style.scss */
+  /* line 988, ../scss/style.scss */
   section.organizers .inner ul {
     width: 100%;
   }
-  /* line 954, ../scss/style.scss */
+  /* line 991, ../scss/style.scss */
   section.organizers .inner ul li {
     min-height: 260px;
     width: 50%;
   }
 
-  /* line 962, ../scss/style.scss */
+  /* line 999, ../scss/style.scss */
   section.storytelling .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 967, ../scss/style.scss */
+  /* line 1004, ../scss/style.scss */
   section.storytelling .inner h2 {
     margin: 0 0 20px 0;
   }
-  /* line 971, ../scss/style.scss */
+  /* line 1008, ../scss/style.scss */
   section.storytelling .inner > p {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 976, ../scss/style.scss */
+  /* line 1013, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1em;
   }
-  /* line 977, ../scss/style.scss */
+  /* line 1014, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2.2em;
   }
-  /* line 978, ../scss/style.scss */
+  /* line 1015, ../scss/style.scss */
   section.storytelling .inner .text {
     width: 380px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  /* line 984, ../scss/style.scss */
+  /* line 1021, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 988, ../scss/style.scss */
+  /* line 1025, ../scss/style.scss */
   .breakpoint .tablet {
     display: inline-block;
   }
-  /* line 989, ../scss/style.scss */
+  /* line 1026, ../scss/style.scss */
   .breakpoint .portrait, .breakpoint .desktop {
     display: none;
   }
 
-  /* line 992, ../scss/style.scss */
+  /* line 1029, ../scss/style.scss */
   h3 {
     font-size: .9em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 997, ../scss/style.scss */
+  /* line 1034, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1001, ../scss/style.scss */
+  /* line 1038, ../scss/style.scss */
   .breakpoint .tablet, .breakpoint .portrait {
     display: inline-block;
   }
-  /* line 1002, ../scss/style.scss */
+  /* line 1039, ../scss/style.scss */
   .breakpoint .desktop {
     display: none;
   }
 
-  /* line 1005, ../scss/style.scss */
+  /* line 1042, ../scss/style.scss */
   h2 {
     font-size: 1.9em;
   }
 
-  /* line 1006, ../scss/style.scss */
+  /* line 1043, ../scss/style.scss */
   h3 {
     font-size: 1em;
     margin: 0 0 1em 0;
   }
 
-  /* line 1008, ../scss/style.scss */
+  /* line 1045, ../scss/style.scss */
   nav ul li a {
     font-size: .75em;
   }
 
-  /* line 1011, ../scss/style.scss */
+  /* line 1049, ../scss/style.scss */
+  section.storytellers .inner h2 {
+    font-size: 1.7em;
+  }
+  /* line 1051, ../scss/style.scss */
+  section.storytellers .inner ul li {
+    width: 48%;
+  }
+  /* line 1055, ../scss/style.scss */
+  section.storytellers .inner ul li strong {
+    font-size: .9em;
+  }
+  /* line 1056, ../scss/style.scss */
+  section.storytellers .inner ul li p {
+    font-size: 1.0em;
+  }
+  /* line 1057, ../scss/style.scss */
+  section.storytellers .inner ul li .btn {
+    font-size: 1.0em;
+  }
+  /* line 1058, ../scss/style.scss */
+  section.storytellers .inner ul li .explanation {
+    font-size: .9em;
+  }
+
+  /* line 1064, ../scss/style.scss */
   section.organizers .inner ul {
     width: 100%;
   }
-  /* line 1013, ../scss/style.scss */
+  /* line 1067, ../scss/style.scss */
   section.organizers .inner ul li {
     width: 50%;
   }
 
-  /* line 1019, ../scss/style.scss */
+  /* line 1071, ../scss/style.scss */
   section.storytelling .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
   }
-  /* line 1024, ../scss/style.scss */
+  /* line 1076, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1em;
   }
-  /* line 1025, ../scss/style.scss */
+  /* line 1077, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* line 1031, ../scss/style.scss */
+  /* line 1083, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1035, ../scss/style.scss */
+  /* line 1087, ../scss/style.scss */
   .breakpoint .tablet, .breakpoint .landscape {
     display: inline-block;
   }
-  /* line 1036, ../scss/style.scss */
+  /* line 1088, ../scss/style.scss */
   .breakpoint .portrait {
     display: none;
   }
 
-  /* line 1039, ../scss/style.scss */
+  /* line 1091, ../scss/style.scss */
   h2 {
     font-size: 1.9em;
   }
 
-  /* line 1040, ../scss/style.scss */
+  /* line 1092, ../scss/style.scss */
   h3 {
     font-size: 1em;
     margin: 0 0 1em 0;
   }
 
-  /* line 1042, ../scss/style.scss */
+  /* line 1094, ../scss/style.scss */
   nav ul li a {
     font-size: 1.0em;
   }
 
-  /* line 1047, ../scss/style.scss */
+  /* line 1098, ../scss/style.scss */
+  section.storytellers .inner h2 {
+    font-size: 1.7em;
+  }
+  /* line 1100, ../scss/style.scss */
+  section.storytellers .inner ul li {
+    width: 45%;
+  }
+  /* line 1104, ../scss/style.scss */
+  section.storytellers .inner ul li strong {
+    font-size: 1.1em;
+  }
+  /* line 1105, ../scss/style.scss */
+  section.storytellers .inner ul li p {
+    font-size: 1.0em;
+  }
+  /* line 1106, ../scss/style.scss */
+  section.storytellers .inner ul li .btn {
+    font-size: 1.0em;
+  }
+  /* line 1107, ../scss/style.scss */
+  section.storytellers .inner ul li .explanation {
+    font-size: .9em;
+  }
+
+  /* line 1115, ../scss/style.scss */
   section.organizers .inner ul li {
     min-height: 360px;
   }
 
-  /* line 1053, ../scss/style.scss */
+  /* line 1121, ../scss/style.scss */
   section.storytelling .inner {
     width: 80%;
-    /*margin: auto;*/
-    /*padding: 50px 0;*/
   }
-  /* line 1058, ../scss/style.scss */
+  /* line 1124, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1em;
   }
-  /* line 1059, ../scss/style.scss */
+  /* line 1125, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
-  /* line 1066, ../scss/style.scss */
+  /* line 1132, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1070, ../scss/style.scss */
+  /* line 1136, ../scss/style.scss */
   .breakpoint .desktop {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1301px) {
-  /* line 1075, ../scss/style.scss */
+  /* line 1141, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: red;
     color: #fff;
   }
-  /* line 1079, ../scss/style.scss */
+  /* line 1145, ../scss/style.scss */
   .breakpoint .desktop {
     display: inline-block;
   }
 
-  /* line 1082, ../scss/style.scss */
+  /* line 1148, ../scss/style.scss */
   nav ul li a {
     font-size: 1.2em;
   }
 
-  /* line 1083, ../scss/style.scss */
+  /* line 1149, ../scss/style.scss */
   h2 {
     font-size: 2.9em;
   }
 
-  /* line 1084, ../scss/style.scss */
+  /* line 1150, ../scss/style.scss */
   h3 {
     font-size: 1.5em;
     margin: 0 0 1em 0;
   }
 
-  /* line 1088, ../scss/style.scss */
+  /* line 1154, ../scss/style.scss */
   section.storytellers .inner ul li p {
     font-size: 1.47em;
   }
 
-  /* line 1095, ../scss/style.scss */
+  /* line 1161, ../scss/style.scss */
   section.organizers .inner ul li {
     min-height: 480px;
   }
-  /* line 1098, ../scss/style.scss */
+  /* line 1164, ../scss/style.scss */
   section.organizers .inner ul li p {
     font-size: 1em;
     width: auto;
   }
 
-  /* line 1106, ../scss/style.scss */
+  /* line 1172, ../scss/style.scss */
   section.storytelling .inner p, section.storytelling .inner strong {
     font-size: 1.5em;
   }
-  /* line 1107, ../scss/style.scss */
+  /* line 1173, ../scss/style.scss */
   section.storytelling .inner .num {
     font-size: 4em;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 1113, ../scss/style.scss */
+  /* line 1179, ../scss/style.scss */
   .breakpoint {
     display: block;
     background: orange;
     color: #fff;
   }
-  /* line 1117, ../scss/style.scss */
+  /* line 1183, ../scss/style.scss */
   .breakpoint .retina {
     display: inline-block;
   }
 
-  /* line 1122, ../scss/style.scss */
+  /* line 1192, ../scss/style.scss */
   section.issues .inner .graph {
     display: block;
     margin: auto;
     background: url(../img/flower.png) no-repeat;
     background-size: 100% 100%;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 320px), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 320px) {
+  /* line 1188, ../scss/style.scss */
+  section.issues .inner
+  .graph {
+    width: 290px;
+    height: 290px;
   }
 }
