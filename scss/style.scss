@@ -786,14 +786,8 @@ section.nominate {
 }
 
 @include mobile-portrait {
-  .breakpoint {
-    display:block;
-    background:orange;
-    color: #fff;
 
-    .portrait { display: inline-block; }
-    .desktop  { display: none; }
-  }
+  .breakpoint { display:block; background:orange; color: #fff; .portrait { display: inline-block; } .desktop  { display: none; } }
 
   .logo { width: 100%; }
 
