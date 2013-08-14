@@ -310,10 +310,9 @@ section.main {
     li {
       float:left;
       width: 50%;
-      /*margin: 0 percentage(105/$siteWidth) 0 0;*/
       padding-right: 10px;
-      color:$cBrown;
       @include box-sizing(border-box);
+      color:$cBrown;
 
       p { margin: 0; }
 
@@ -324,10 +323,12 @@ section.main {
 
       .btn {
         margin: 3% 0 0 0;
+        padding: 1em 0;
+
         background:$cOrange;
+        font-family: "SohoStd-Bold";
         color:$cBrown;
         line-height: 1em;
-        padding: 1em 0;
 
         &:hover {
           background: $cGreen;
