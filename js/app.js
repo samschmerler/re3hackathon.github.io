@@ -56,7 +56,7 @@ $(function() {
   updateNavPosition();
 
   $(document).on("scroll", updateNavPosition);
-  $("nav li a").on("click", go);
+  $("nav .navigation li a").on("click", go);
 
   if(window.location.hash) {
     go(null, window.location.hash);

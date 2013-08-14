@@ -201,6 +201,7 @@ section.storytelling .inner {
   padding: 50px 0;
 }
 
+section.nominate .inner,
 section.issues .inner {
   width: percentage(3693/$siteWidth);
   padding: 50px 0;
@@ -275,6 +276,14 @@ section.sponsors {
   .separator { background: $cBrown; }
 }
 
+section.nominate {
+  color: $cWhite;
+  background:$cOrange;
+
+  a { color: $cWhite; text-decoration: underline; }
+  .separator { background: $cWhite; }
+}
+
 /* Section content */
 
 section p {
@@ -346,9 +355,6 @@ section.main {
  */
 
 section.storytelling {
-  .inner {
-    /*background:red;*/
-  }
 
   h2 {
     margin: 0 0 percentage(142/$siteWidth) 0;
@@ -365,11 +371,7 @@ section.storytelling {
 
   ul {
 
-    /*background:red;*/
-
     li {
-
-      /*background:blue;*/
 
       @include clearfix();
 
@@ -592,41 +594,6 @@ section.contact {
     @include clearfix();
   }
 
-  .input {
-
-    position:relative;
-    padding: 10px;
-    margin: 0 0 48px 0;
-
-    background:$cBlue;
-
-    input {
-      padding: 0;
-
-      border:none;
-      background:none;
-      font-size: 1em;
-      color: $cBrown;
-      outline:none;
-
-      &::-webkit-input-placeholder { color:$cBrown; }
-      &::-moz-placeholder { color:$cBrown; } /* firefox 19+ */
-      &:-ms-input-placeholder { color:$cBrown; } /* ie */
-      &:-moz-placeholder { color:$cBrown; }
-
-    }
-
-    .submit {
-      float:right;
-      @include position(0, 0, none, none);
-      @include size(17px, 43px);
-      padding: 0 13px;
-
-      background: $cOrange url(../img/right_arrow.png) no-repeat 50% 50%;
-    }
-
-  }
-
   .contact {
 
     float:left;
@@ -729,6 +696,50 @@ section.sponsors {
       }
     }
   }
+}
+
+/* ---------------------
+ * NOMINATE
+ * ---------------------
+ */
+
+section.nominate {
+
+  p {
+    width: 70%;
+    font-size: 1.5em;
+    line-height: 150%;
+
+    &.deadline {
+      color: $cPurple;
+      font-family: "SohoStd-Bold";
+    }
+
+  }
+
+  form {
+    width: 70%;
+    @include clearfix();
+  }
+
+  .btn {
+    float:left;
+    padding: 1em;
+    font-size:1.5em;
+
+    background:$cPurple;
+    font-family: "SohoStd-Bold";
+    text-decoration:none;
+    color:$cWhite;
+    line-height: 1em;
+
+    &:hover {
+      background: $cGreen;
+    }
+
+  }
+
+
 }
 
 /*
@@ -1222,3 +1233,91 @@ section.sponsors {
   }
 
 }
+
+
+
+/* ---------------------
+ * FORMS
+ * ---------------------
+ */
+
+
+form {
+
+  .input {
+    margin: 0 0 20px 0;
+    input, textarea { font-size: 1.5em; }
+
+  }
+
+  .inputs {
+    @include clearfix();
+
+    .input {
+      float:left;
+      width: 49%;
+      @include box-sizing(border-box);
+      &:last-child { float:right; }
+    }
+  }
+
+
+}
+
+.input {
+
+  position:relative;
+  padding: 10px;
+  margin: 0 0 48px 0;
+
+  background:$cBlue;
+
+  input {
+    padding: 0;
+
+    border:none;
+    background:none;
+    font-size: 1em;
+    color: $cBrown;
+    outline:none;
+
+    &::-webkit-input-placeholder { color:$cBrown; }
+    &::-moz-placeholder { color:$cBrown; } /* firefox 19+ */
+    &:-ms-input-placeholder { color:$cBrown; } /* ie */
+    &:-moz-placeholder { color:$cBrown; }
+
+  }
+
+  textarea {
+    padding: 0;
+    width: 100%;
+    min-height: 100px;
+
+    &.big {
+      min-height: 200px;
+    }
+
+    border:none;
+    background:none;
+    font-size: 1em;
+    color: $cBrown;
+    outline:none;
+
+    &::-webkit-input-placeholder { color:$cBrown; }
+    &::-moz-placeholder { color:$cBrown; } /* firefox 19+ */
+    &:-ms-input-placeholder { color:$cBrown; } /* ie */
+    &:-moz-placeholder { color:$cBrown; }
+
+  }
+
+  .submit {
+    float:right;
+    @include position(0, 0, none, none);
+    @include size(17px, 43px);
+    padding: 0 13px;
+
+    background: $cOrange url(../img/right_arrow.png) no-repeat 50% 50%;
+  }
+
+}
+
