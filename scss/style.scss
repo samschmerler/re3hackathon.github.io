@@ -280,7 +280,16 @@ section.nominate {
   color: $cWhite;
   background:$cOrange;
 
-  a { color: $cWhite; text-decoration: underline; }
+  a {
+    color: $cWhite;
+    text-decoration: underline;
+
+    &:hover {
+      color: $cPurple;
+    }
+
+  }
+
   .separator { background: $cWhite; }
 }
 
@@ -734,7 +743,7 @@ section.nominate {
     line-height: 1em;
 
     &:hover {
-      background: $cGreen;
+      color: $cOrange;
     }
   }
 
@@ -1338,6 +1347,13 @@ form {
     background:none;
   }
 
+  .error {
+    position:absolute;
+    color: $cOrange;
+    right: 10px;
+    top: 10px;
+  }
+
   input {
     padding: 0;
 
@@ -1387,8 +1403,6 @@ form {
   }
 
 }
-
-
 
 /*
 Version: @@ver@@ Timestamp: @@timestamp@@

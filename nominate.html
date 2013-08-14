@@ -25,18 +25,18 @@
       <div class="inner">
 
         <ul class="navigation">
-          <li><a href="#about">About</a></li>
-          <li><a href="#issues">Issues</a></li>
-          <li><a href="#storytelling">Why</a></li>
-          <li><a href="#organizers">Organizers</a></li>
-          <li><a href="#storytellers">Storytellers</a></li>
-          <li><a href="#when_where">When & Where</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#issues">Issues</a></li>
+          <li><a href="/#storytelling">Why</a></li>
+          <li><a href="/#organizers">Organizers</a></li>
+          <li><a href="/#storytellers">Storytellers</a></li>
+          <li><a href="/#when_where">When & Where</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
 
         <ul class="actions">
           <li><a href="#">I want in!</a></li>
-          <li><a href="#">Nominate Stories</a></li>
+          <li><a href="#" class="active">Nominate Stories</a></li>
         </ul>
 
       </div>
@@ -56,24 +56,24 @@
 
         <p class="deadline">Between August 13th and September 5th, we’re asking you to nominate stories that need to be told. Submit your ideas now!</p>
 
-        <form action="#">
+        <form class="nominate">
         
           <div class="inputs">
-            <div class="input">
-              <input type="text" name="name" placeholder="Name" />
+            <div class="input mandatory">
+              <input type="text" name="nominate[name]" placeholder="Name" />
             </div>
 
-            <div class="input">
-              <input type="text" name="email" placeholder="Email" />
+            <div class="input mandatory">
+              <input type="email" name="nominate[email]" placeholder="Email" />
             </div>
           </div>
 
           <div class="inputs">
             <div class="input">
-              <input type="text" name="affiliation" placeholder="Professional Affiliation" />
+              <input type="text" name="nominate[affiliation]" placeholder="Professional Affiliation" />
             </div>
             <div class="input select">
-              <select style="width:100%" name="issues">
+              <select style="width:100%" name="nominate[issues]">
                 <option value="-1">Issues</option>
                 <option value="1">Issue 1</option>
                 <option value="2">Issue 2</option>
@@ -85,23 +85,23 @@
           </div>
 
             <div class="input">
-              <textarea name="pitch" class="big" placeholder="Give us your pitch. What’s your story and why is it important?"></textarea>
+              <textarea name="nominate[pitch]" class="big" placeholder="Give us your pitch. What’s your story and why is it important?"></textarea>
             </div>
 
             <div class="input">
-              <textarea name="audience" placeholder="Who needs to hear your story? Try to be specific."></textarea>
+              <textarea name="nominate[audience]" placeholder="Who needs to hear your story? Try to be specific."></textarea>
             </div>
 
             <div class="input">
-              <textarea name="audience" placeholder="What attitude shift do you hope to accomplish with your story"></textarea>
+              <textarea name="nominate[audience]" placeholder="What attitude shift do you hope to accomplish with your story"></textarea>
             </div>
         
             <div class="input">
-              <textarea name="ideas" placeholder="Do you have any ideas about how you’d like your story to be told?"></textarea>
+              <textarea name="nominate[ideas]" placeholder="Do you have any ideas about how you’d like your story to be told?"></textarea>
             </div>
         
             <div class="input">
-              <textarea name="information" placeholder="What information do you have to back up your story?"></textarea>
+              <textarea name="nominate[information]" placeholder="What information do you have to back up your story?"></textarea>
             </div>
         
         
@@ -116,6 +116,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src='js/select2.js'></script>
     <script src='js/fastclick.js'></script>
+    <script src="js/helpers.js"></script>
     <script src="js/app.js"></script>
 
   </body>
