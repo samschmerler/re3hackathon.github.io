@@ -1,6 +1,6 @@
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
   FastClick.attach(document.body);
-}, false);
+}, false);*/
 
 function updateNavPosition() {
 
@@ -54,6 +54,8 @@ function go(e, hash) {
 $(function() {
 
   updateNavPosition();
+
+  $('select').select2();
 
   $(document).on("scroll", updateNavPosition);
   $("nav .navigation li a").on("click", go);

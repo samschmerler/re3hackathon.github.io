@@ -72,8 +72,15 @@
             <div class="input">
               <input type="text" name="affiliation" placeholder="Professional Affiliation" />
             </div>
-            <div class="input">
-              <input type="text" name="issue" placeholder="Issue" />
+            <div class="input select">
+              <select style="width:100%" name="issues">
+                <option value="-1">Issues</option>
+                <option value="1">Issue 1</option>
+                <option value="2">Issue 2</option>
+                <option value="3">Issue 3</option>
+                <option value="4">Issue 4</option>
+                <option value="5">Issue 5</option>
+              </select>
             </div>
           </div>
 
@@ -107,6 +114,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <script src='js/select2.js'></script>
     <script src='js/fastclick.js'></script>
     <script src="js/app.js"></script>
 
