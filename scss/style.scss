@@ -134,18 +134,33 @@ nav {
   }
 
   .inner {
+    position:relative;
     width: percentage(3693/$siteWidth);
     padding: 0;
     margin:auto;
   }
 
+  a.re3 {
+    position:absolute;
+    top: -8px;
+    left: 0;
+    display: block;
+    background-image: url('../img/re3logo.png');
+    background-repeat: no-repeat;
+    width: 55px; height: 34px;
+    background-size: 100%;
+  }
+
   ul {
+
+    &.with_logo { padding-left: 75px; width: 60%; }
 
     @include clearfix();
     float:right;
 
     li {
       float:left;
+      position:relative;
       margin-right: percentage(93/$siteWidth);
 
       &:last-child { margin: 0; }
@@ -463,12 +478,12 @@ section.organizers .inner {
 section.when_where {
   min-height: 786px;
 
-   background: url(../img/map.png) no-repeat center center ;
-   @include background-size(cover);
+  background: url(../img/map.png) no-repeat center center ;
+  @include background-size(cover);
 
-   position:relative;
-   clear:both;
-   overflow:hidden;
+  position:relative;
+  clear:both;
+  overflow:hidden;
 
   .overlay {
 
@@ -833,6 +848,33 @@ section.nominate {
     }
   }
 
+  section.when_where {
+    min-height: 386px;
+
+    .overlay {
+
+      @include position(0, false, false, 0);
+      background: url(../img/when_where_overlay.png) no-repeat;
+      @include size(300px, 296px);
+      background-size: 300px 296px;
+
+      text-align: center;
+
+      .content {
+        margin: auto;
+        width: 200px;
+        text-align:left;
+        padding: 25px 15px;
+
+        h2 { font-size: 1em; }
+        p  { font-size: 1em; line-height: 150%; }
+
+        h2, h3, p { color: $cLightBlue; }
+
+      }
+    }
+  }
+
   section.storytellers .inner {
 
     h2  { font-size:1.7em; }
@@ -943,6 +985,33 @@ section.nominate {
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
 
+  section.when_where {
+    min-height: 386px;
+
+    .overlay {
+
+      @include position(0, false, false, 0);
+      background: url(../img/when_where_overlay.png) no-repeat;
+      @include size(300px, 296px);
+      background-size: 300px 296px;
+
+      text-align: center;
+
+      .content {
+        margin: auto;
+        width: 200px;
+        text-align:left;
+        padding: 25px 15px;
+
+        h2 { font-size: 1em; }
+        p  { font-size: 1em; line-height: 150%; }
+
+        h2, h3, p { color: $cLightBlue; }
+
+      }
+    }
+  }
+
   section.nominate {
 
     p {
@@ -1009,14 +1078,17 @@ section.nominate {
     }
   }
 
-  section.sponsors .inner {
-
-    background: url(../img/home_bkg.png) no-repeat center center ;
+  section.sponsors {
+    background: url(../img/home_bkg.png) no-repeat center center;
     @include background-size(cover);
+  }
+
+  section.sponsors .inner {
 
     padding: 3.5em 0;
 
     ul {
+
       margin: 20px auto 0 auto;
 
       li {
