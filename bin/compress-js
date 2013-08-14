@@ -1,9 +1,6 @@
 java -jar bin/compiler.jar --js \
-       public/js/underscore.min.js\
-       public/js/backbone.min.js\
-       public/js/fastclick.js\
-       public/js/rails.js\
-       public/js/jquery-ui.js\
-       public/js/app.js\
-       --js_output_file public/js/app.min.js 
+       js/fastclick.js\
+       js/jquery.easing.min.js\
+       js/app.js\
+       --js_output_file js/app.min.js 
 

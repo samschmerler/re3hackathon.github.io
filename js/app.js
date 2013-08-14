@@ -3,13 +3,18 @@ window.addEventListener('load', function() {
 }, false);
 
 function updateNavPosition() {
+
   var $mainHeight = $("section.main").height();
 
-  if ($(document).scrollTop() > $mainHeight) $("nav").addClass("fixed");
-  else $("nav").removeClass("fixed");
+  if ($(document).scrollTop() > $mainHeight) {
+    $("nav").addClass("fixed");
+  } else {
+    $("nav").removeClass("fixed");
+  }
+
 }
 
-function goto(e, hash){
+function go(e, hash) {
 
   e && e.preventDefault();
   e && e.stopPropagation();
@@ -51,10 +56,10 @@ $(function() {
   updateNavPosition();
 
   $(document).on("scroll", updateNavPosition);
-  $("nav li a").on("click", goto);
+  $("nav li a").on("click", go);
 
   if(window.location.hash) {
-    goto(null, window.location.hash);
+    go(null, window.location.hash);
   } else {
     // Fragment doesn't exist
   }
