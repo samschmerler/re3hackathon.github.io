@@ -59,7 +59,7 @@ a {
   text-decoration:none;
 }
 
-input {
+input, textarea {
   font-family: "SohoStd-Regular";
 }
 
@@ -724,7 +724,7 @@ section.nominate {
 
   .btn {
     float:left;
-    padding: 1em;
+    padding: 1em 5em;
     font-size:1.5em;
 
     background:$cPurple;
@@ -736,9 +736,7 @@ section.nominate {
     &:hover {
       background: $cGreen;
     }
-
   }
-
 
 }
 
@@ -776,6 +774,22 @@ section.nominate {
   h2 { font-size: 1.6em; }
   h3 { font-size: .9em; margin: 0 0 1em 0; }
 
+  section.nominate {
+
+    p {
+      width: 100%;
+      font-size: 1em;
+    }
+
+    form {
+      width: 100%;
+      .inputs .input { width: 100%; }
+      input, textarea { font-size: 1em; }
+      .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
+
+    }
+  }
+
   section.main {
 
     ul, ul li, .btn { width: 100%; }
@@ -784,6 +798,7 @@ section.nominate {
   }
 
   section.issues .inner,
+  section.nominate .inner,
   section.about .inner {
     width: 90%;
     margin: auto;
@@ -914,6 +929,22 @@ section.nominate {
   .logo { width: 100%; }
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
+
+  section.nominate {
+
+    p {
+      width: 100%;
+      font-size: 1em;
+    }
+
+    form {
+      width: 100%;
+      .inputs .input { width: 100%; }
+      input, textarea { font-size: 1em; }
+      .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
+
+    }
+  }
 
   section.main {
 
@@ -1065,6 +1096,22 @@ section.nominate {
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
   nav ul li a { font-size: .75em; }
+
+  section.nominate {
+
+    p {
+      width: 100%;
+      font-size: 1.1em;
+    }
+
+    form {
+      width: 100%;
+      .inputs .input { width: 100%; }
+      input, textarea { font-size: 1.1em; }
+      .btn { float:none; width: 100%; padding: 1em 0; font-size: 1.1em; }
+
+    }
+  }
 
   section.storytellers .inner {
 
@@ -1247,15 +1294,16 @@ form {
   .input {
     margin: 0 0 20px 0;
     input, textarea { font-size: 1.5em; }
-
   }
 
   .inputs {
+
     @include clearfix();
 
     .input {
       float:left;
       width: 49%;
+      padding: 1em;
       @include box-sizing(border-box);
       &:last-child { float:right; }
     }
@@ -1289,9 +1337,10 @@ form {
   }
 
   textarea {
-    padding: 0;
     width: 100%;
     min-height: 100px;
+
+    padding: .5em;
 
     &.big {
       min-height: 200px;
