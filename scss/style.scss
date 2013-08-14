@@ -819,6 +819,9 @@ section.nominate {
       .select2-container .select2-choice { font-size: 1em; }
       .select2-results .select2-result-label { font-size:1em; }
       .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
+
+      .field.submit .msg { float:none; margin: 10px 0 0 0; font-size: 1em; }
+
     }
 
   }
@@ -1031,6 +1034,7 @@ section.nominate {
       .select2-results .select2-result-label { font-size:1em; }
       input, textarea { font-size: 1em; }
       .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
+      .field.submit .msg { float:none; margin: 10px 0 0 0; font-size: 1em; }
 
     }
   }
