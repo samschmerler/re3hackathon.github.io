@@ -33,8 +33,8 @@ function goto(e, hash){
     position = $(".main").height()
   } else {
 
-    if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2);
-    else position = Math.round($el.position().top - $("nav").outerHeight(true));
+    if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2 + 2);
+    else position = Math.round($el.position().top - $("nav").outerHeight(true) + 1);
 
   }
 
