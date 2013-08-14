@@ -156,6 +156,7 @@ nav {
       margin-right: percentage(93/$siteWidth);
 
       &:last-child { margin: 0; }
+      &.active a { color: $cLightBlue; }
     }
 
     a  { font-size:1.2em; color: $cWhite; }

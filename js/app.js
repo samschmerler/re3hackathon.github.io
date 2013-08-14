@@ -1,39 +1,59 @@
-$(function() {
-
+function updateNavPosition() {
   var $mainHeight = $("section.main").height();
 
-  $(document).on("scroll", function() {
-    if ($("*, body").scrollTop() > $mainHeight) $("nav").addClass("fixed");
-    else $("nav").removeClass("fixed");
-  });
+  if ($(document).scrollTop() > $mainHeight) $("nav").addClass("fixed");
+  else $("nav").removeClass("fixed");
+}
 
-  $("nav li a").on("click", goto);
+function goto(e, hash){
 
-  function goto(e){
+  e && e.preventDefault();
+  e && e.stopPropagation();
 
-    e.preventDefault();
-    e.stopPropagation();
+  var t;
 
-    var t = $(this).attr("href"),
-    n = t.substring(t.indexOf("#") + 1);
+  if (hash) {
+    t = hash
+  } else {
+    t = $(this).attr("href");
+  }
 
-    var $el = $("." + n);
+  n = t.substring(t.indexOf("#") + 1);
+  var $el = $("." + n);
 
-    var position;
-    var paddingTop = parseInt($("nav").css("paddingTop"), 10);
+    window.location.hash = n;
 
-    if (n == 'about') {
-      position = $(".main").height()
-    } else {
+  $("nav li").removeClass("active");
+  $(this).parent().addClass("active");
 
-      if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2);
-      else position = Math.round($el.position().top - $("nav").outerHeight(true));
+  var position;
+  var paddingTop = parseInt($("nav").css("paddingTop"), 10);
 
-    }
+  if (n == 'about') {
+    position = $(".main").height()
+  } else {
 
-
-    $("body,html").animate({ scrollTop: position }, { easing: "easeInSine", duration: 300 });
+    if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2);
+    else position = Math.round($el.position().top - $("nav").outerHeight(true));
 
   }
+
+  $("body,html").animate({ scrollTop: position }, { easing: "easeInSine", duration: 300 });
+
+}
+
+$(function() {
+
+  updateNavPosition();
+
+  $(document).on("scroll", updateNavPosition);
+  $("nav li a").on("click", goto);
+
+  if(window.location.hash) {
+    goto(null, window.location.hash);
+  } else {
+    // Fragment doesn't exist
+  }
+
 
 });
