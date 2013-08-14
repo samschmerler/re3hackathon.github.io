@@ -820,7 +820,7 @@ section.nominate {
       .select2-results .select2-result-label { font-size:1em; }
       .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
 
-      .field.submit .msg { float:none; margin: 10px 0 0 0; font-size: 1em; }
+      .field.submit .msg { float:none; margin: 10px 0 0 0; font-size: 1em; text-align: center; }
 
     }
 
@@ -1034,7 +1034,7 @@ section.nominate {
       .select2-results .select2-result-label { font-size:1em; }
       input, textarea { font-size: 1em; }
       .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
-      .field.submit .msg { float:none; margin: 10px 0 0 0; font-size: 1em; }
+      .field.submit .msg { float:none; margin: 10px 0 0 0; font-size: 1em; text-align: center; }
 
     }
   }
@@ -1208,7 +1208,9 @@ section.nominate {
       .select2-results .select2-result-label { font-size:1.1em; }
       .btn { float:none; width: 100%; padding: 1em 0; font-size: 1.1em; }
 
+      .field.submit .msg { float:none; margin: 15px 0 0 0; font-size: 1.1em; text-align: center; }
     }
+
   }
 
   section.storytellers .inner {
@@ -1260,6 +1262,26 @@ section.nominate {
 
   nav ul li a { font-size: 1.0em; }
   nav ul .navigate { background:red; }
+
+  section.nominate {
+
+    p {
+      width: 100%;
+      font-size: 1.1em;
+    }
+
+    form {
+      width: 100%;
+      .inputs .input { width: 100%; }
+      input, textarea { font-size: 1.1em; }
+      .select2-container .select2-choice { font-size: 1.1em; }
+      .select2-results .select2-result-label { font-size:1.1em; }
+      .btn { float:none; width: 100%; padding: 1em 0; font-size: 1.1em; }
+
+      .field.submit .msg { float:none; margin: 15px 0 0 0; font-size: 1.1em; text-align: center; }
+    }
+
+  }
 
   section.storytellers .inner {
 
