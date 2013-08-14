@@ -36,6 +36,7 @@ $breakpoint-medium-portrait: (max-width 1400px);
   text-align:center;
   padding: 10px;
   @include opacity(.9);
+  z-index: 100000;
 
   span { display:none; }
 }
@@ -88,14 +89,6 @@ h3 {
   display: block;
   width: percentage(2855/3693);
   margin: 0 0 percentage(219/$siteWidth) 0;
-
-  @include breakpoint($breakpoint-small-landscape) {
-    width:100%;
-  }
-  @include breakpoint($breakpoint-small-portrait) {
-    width:100%;
-  }
-
 }
 
 .separator {
@@ -306,61 +299,41 @@ section p {
  */
 
 section.main {
-   background: url(../img/home_bkg.png) no-repeat center center ;
-   @include background-size(cover);
-}
+  background: url(../img/home_bkg.png) no-repeat center center ;
+  @include background-size(cover);
 
-section.main ul {
-  @include clearfix();
+  ul {
 
-  li {
-    float:left;
-    width: percentage(1319/$siteWidth);
-    margin: 0 percentage(105/$siteWidth) 0 0;
-    color:$cBrown;
+    @include clearfix();
+    width: 70%;
 
-    p { margin: 0; }
-
-    &:last-child {
-      width: percentage(1219/$siteWidth);
-      margin: 0;
-    }
-
-    @include breakpoint($breakpoint-ipad-portrait) {
-      margin: 0;
-      width: 48%;
+    li {
       float:left;
-      &:last-child { float:right; width: 48%; }
-    }
-    @include breakpoint($breakpoint-small-landscape) {
-      margin: 0;
-      width: 48%;
-      float:left;
-      &:last-child { float:right; width: 48%; }
-    }
+      width: 50%;
+      /*margin: 0 percentage(105/$siteWidth) 0 0;*/
+      padding-right: 10px;
+      color:$cBrown;
+      @include box-sizing(border-box);
 
-    @include breakpoint($breakpoint-small-portrait) {
-      float:none;
-      width: 100%;
-      margin: 0 0 20px 0;
+      p { margin: 0; }
 
       &:last-child {
-        float:none;
-        width: auto;
+        padding: 0;
+        margin: 0;
       }
 
-    }
+      .btn {
+        margin: 3% 0 0 0;
+        background:$cOrange;
+        color:$cBrown;
+        line-height: 1em;
+        padding: 1em 0;
 
-    .btn {
-      margin: 3% 0 0 0;
-      background:$cOrange;
-      color:$cBrown;
-      line-height: 1em;
+        &:hover {
+          background: $cGreen;
+        }
 
-      &:hover {
-        background: $cGreen;
       }
-
     }
   }
 }
@@ -786,14 +759,27 @@ section.sponsors {
     .desktop  { display: none; }
   }
 
+  .logo { width: 100%; }
+
   h2 { font-size: 1.6em; }
   h3 { font-size: .9em; margin: 0 0 1em 0; }
+
+  section.main {
+
+    ul, ul li, .btn { width: 100%; }
+    ul li { float:none; margin: 0 0 30px 0; }
+
+  }
 
   section.issues .inner,
   section.about .inner {
     width: 90%;
     margin: auto;
     padding: 50px 0;
+  }
+
+  section.about {
+    p { font-size: 1em; }
   }
 
   section.issues .inner {
@@ -913,8 +899,20 @@ section.sponsors {
     .desktop { display: none; }
   }
 
+  .logo { width: 100%; }
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
+
+  section.main {
+
+    ul, ul li, .btn { width: 100%; }
+    ul li { float:none; margin: 0 0 30px 0; }
+
+  }
+
+  section.about {
+    p { font-size: 1em; }
+  }
 
   section.issues .inner,
   section.about .inner {

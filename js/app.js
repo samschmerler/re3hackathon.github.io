@@ -60,9 +60,6 @@ $(function() {
 
   if(window.location.hash) {
     go(null, window.location.hash);
-  } else {
-    // Fragment doesn't exist
   }
-
 
 });
