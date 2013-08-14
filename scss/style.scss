@@ -608,6 +608,7 @@ section.issues .inner {
   }
 
 }
+
 /*
  * ---------------------
  * CONTACT
@@ -746,6 +747,16 @@ section.nominate {
   form {
     width: 70%;
     @include clearfix();
+  }
+
+  .field {
+
+    .msg {
+      float:right;
+      font-size: 1.3em;
+      color:$cPurple;
+    }
+
   }
 
   .btn {
@@ -1244,6 +1255,7 @@ section.nominate {
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
   nav ul li a { font-size: 1.0em; }
+  nav ul .navigate { background:red; }
 
   section.storytellers .inner {
 

@@ -11,7 +11,18 @@ function submitForm(e) {
       url: "/form/endpoint",
       data: $("form.nominate").serialize(),
       success: function(data) {
-        console.log('success');
+
+        var
+        $field = $("form").find(".field.submit"),
+        $input = $field.find("a"),
+        msg    = i18n[lang].sentSuccess,
+        $msg   = $('<div class="msg success">' + msg + '</div>');
+
+        $input.after($msg);
+        $msg.fadeIn(250);
+
+        $("form input[type='text'], form input[type='email'], textarea").val("");
+
       }
     });
 
