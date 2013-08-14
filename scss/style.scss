@@ -169,6 +169,8 @@ nav {
       float:right;
       margin-left: percentage(93/830);
 
+      &.active a { color: $cLightBlue; }
+
       a { color: $cOrange; }
     }
 

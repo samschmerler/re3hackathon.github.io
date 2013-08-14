@@ -45,12 +45,12 @@ function go(e, hash) {
   }
 
   n = t.substring(t.indexOf("#") + 1);
-  var $el = $("." + n);
+  var $el = $("section." + n);
 
   window.location.hash = n;
 
   $("nav li").removeClass("active");
-  $(this).parent().addClass("active");
+  $("nav li a." + n).parent().addClass("active");
 
   var position;
   var paddingTop = parseInt($("nav").css("paddingTop"), 10);
