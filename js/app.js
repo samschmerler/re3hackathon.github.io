@@ -3,13 +3,14 @@ $(function() {
   var $mainHeight = $("section.main").height();
 
   $(document).on("scroll", function() {
-    if ($("body").scrollTop() > $mainHeight) $("nav").addClass("fixed");
+    if ($("*, body").scrollTop() > $mainHeight) $("nav").addClass("fixed");
     else $("nav").removeClass("fixed");
   });
 
   $("nav li a").on("click", goto);
 
   function goto(e){
+
     e.preventDefault();
     e.stopPropagation();
 
@@ -24,9 +25,12 @@ $(function() {
     if (n == 'about') {
       position = $(".main").height()
     } else {
-      position = Math.round($el.offset().top) - $("nav").outerHeight(true) ;
-      console.log(position);
+
+      if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2);
+      else position = Math.round($el.position().top - $("nav").outerHeight(true));
+
     }
+
 
     $("body,html").animate({ scrollTop: position }, { easing: "easeInSine", duration: 300 });
 
