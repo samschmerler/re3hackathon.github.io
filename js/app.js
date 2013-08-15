@@ -116,10 +116,13 @@ $(function() {
 
   });
 
-  $('.nominate .submit').on("click", submitForm);
+  $('.nominate .submit').on("click", function() {
+    $("form.nominate").submit();
+  });
+
   $('form.nominate input').on("keypress", function(e){
     if(e.which == 13) {
-      submitForm(e);
+      $("form.nominate").submit();
     }
   });
 
