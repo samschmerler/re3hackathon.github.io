@@ -7,8 +7,8 @@ function submitForm(e) {
   check(function() {
 
     $.ajax({
-      type: "GET",
-      url: "/form/endpoint",
+      type: "POST",
+      url: "http://re3hackathon.us7.list-manage1.com/subscribe/post",
       data: $("form.nominate").serialize(),
       success: function(data) {
 
