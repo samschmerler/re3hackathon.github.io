@@ -336,41 +336,6 @@ section p {
 
 section.main,
 section.sponsors {
-
-  ul li {
-    text-align: center;
-
-    a { margin: auto; }
-
-    a.brfny {
-      @include size(145px, 73px);
-      display:block;
-      background: url(../img/logos/brfny.png) no-repeat!Important;
-      background-size: 145px 73px;
-    }
-
-    a.parsons {
-      @include size(214px, 65px);
-      display:block;
-      background: url(../img/logos/parsons.png) no-repeat!Important;
-      background-size: 214px 65px;
-    }
-
-    a.hyperakt {
-      @include size(172px, 28px);
-      display:block;
-      background: url(../img/logos/hyperakt.png) no-repeat!Important;
-      background-size: 154px 81px;
-    }
-
-    a.vizzuality {
-      @include size(153px, 79px);
-      display:block;
-      background: url(../img/logos/vizzuality.png) no-repeat!Important;
-      background-size: 153px 79px;
-    }
-  }
-
   position:relative;
 
   .inner { position:relative; z-index: 100; }
@@ -753,30 +718,47 @@ section.sponsors {
     text-align: center;
 
     li {
-      display:block;
       float:left;
-      @include box-sizing(border-box);
+      display:block;
       width: 25%;
-      text-align:center;
-      padding: 20px;
+      @include box-sizing(border-box);
+      text-align: center;
 
       &:last-child { margin: 0; }
-
-      img {
-        display:block;
-        @include size(100%, 100%);
-        text-align:center;
-      }
 
       a {
         display:block;
         width:100%;
         text-align:center;
+        margin: auto;
+      }
 
-        img { margin: auto; max-width: 230px; }
+      a.brfny {
+        @include size(145px, 73px);
+        background: url(../img/logos/brfny.png) no-repeat!Important;
+        background-size: 145px 73px;
+      }
 
+      a.parsons {
+        @include size(214px, 65px);
+        background: url(../img/logos/parsons.png) no-repeat!Important;
+        background-size: 214px 65px;
+      }
+
+      a.hyperakt {
+        @include size(172px, 28px);
+        background: url(../img/logos/hyperakt.png) no-repeat!Important;
+        background-size: 154px 81px;
+      }
+
+      a.vizzuality {
+        @include size(153px, 79px);
+        background: url(../img/logos/vizzuality.png) no-repeat!Important;
+        background-size: 153px 79px;
       }
     }
+
+
   }
 }
 
@@ -1463,7 +1445,7 @@ section.sponsors ul li {
     background-size: 172px 28px!important;
   }
 
-  a.vizzuality {
+  a.vizzuality img {
     @include size(153px, 79px);
     display:block;
     background: url(../img/logos/vizzuality@2x.png) no-repeat!Important;
