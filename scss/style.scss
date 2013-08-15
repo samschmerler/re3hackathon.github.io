@@ -1570,6 +1570,10 @@ form {
   .input {
     margin: 0 0 20px 0;
     input, textarea { font-size: 1.5em; }
+
+    textarea {
+      overflow:autoj
+    }
   }
 
   .inputs {
