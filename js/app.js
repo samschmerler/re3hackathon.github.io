@@ -36,8 +36,12 @@ function updateNavPosition() {
 
   if ($(document).scrollTop() > $mainHeight) {
     $("nav").addClass("fixed");
+    $("nav .re3").fadeIn(150);
+    $("nav ul.navigation").addClass("with_logo");
   } else {
     $("nav").removeClass("fixed");
+    $("nav .re3").fadeOut(150);
+    $("nav ul.navigation").removeClass("with_logo");
   }
 
 }

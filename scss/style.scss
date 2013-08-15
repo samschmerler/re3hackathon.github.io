@@ -153,6 +153,7 @@ nav {
 
   ul {
 
+    @include simple-transition(150);
     &.with_logo { padding-left: 75px; width: 60%; }
 
     @include clearfix();
