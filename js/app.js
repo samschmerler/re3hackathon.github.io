@@ -81,8 +81,13 @@ function go(e, hash) {
 
 $(function() {
 
+
+  var device = (/android|webos|iphone|ipod|blackberry/i.test(navigator.userAgent.toLowerCase()));
+  var attribute = device ? "mobile" : "original";
+
   $(".cover").lazyload({
-    effect : "fadeIn"
+    effect : "fadeIn",
+    data_attribute: "mobile"
   });
 
   updateNavPosition();
