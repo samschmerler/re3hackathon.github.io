@@ -99,21 +99,13 @@ $(function() {
   $('select').select2();
 
   $('a[data-action="submit-email"]').on("click", function(e) {
+    $("form.email").submit();
+  });
 
-    e.preventDefault();
-    e.stopPropagation();
-
-    var data = { email: $("input.email").val() };
-
-    $.ajax({
-      type: "GET",
-      url: "/email/endpoint",
-      data: data,
-      success: function(data) {
-        console.log('success');
-      }
-    });
-
+  $('a[data-action="submit-email"]').on("keypress", function(e){
+    if(e.which == 13) {
+      $("form.email").submit();
+    }
   });
 
   $('.nominate .submit').on("click", function() {
