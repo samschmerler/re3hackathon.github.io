@@ -414,9 +414,8 @@ section.storytelling {
     width: 90%;
   }
 
-  p, strong {
-    font-size:1.1em;
-  }
+  p, strong { font-size:1.1em; }
+
 
   ul {
 
@@ -428,7 +427,6 @@ section.storytelling {
 
       .text {
         float:left;
-        /*background:green;*/
         width:90%;
       }
 
@@ -473,7 +471,6 @@ section.organizers .inner {
       width: 25%;
 
       min-width: 186px;
-      /*max-width: 213px;*/
       min-height: 410px;
       padding: 20px;
 
@@ -547,6 +544,17 @@ section.when_where {
  */
 
 section.storytellers .inner {
+
+  .band {
+    width: 100%;
+    text-align:center;
+    margin: 2em 0;
+
+    img {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
 
   ul {
 
@@ -935,6 +943,8 @@ section.nominate {
 
   section.storytellers .inner {
 
+    .band { display: none; }
+
     h2  { font-size:1.7em; }
 
     ul li {
@@ -1123,6 +1133,8 @@ section.nominate {
   section.storytellers .inner {
 
     h2  { font-size:1.7em; }
+
+    .band { display: none; }
 
     ul li {
 
