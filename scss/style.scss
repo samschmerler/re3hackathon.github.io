@@ -166,6 +166,7 @@ nav {
 
       &:last-child { margin: 0; }
       &.active a { color: $cLightBlue; }
+      a:hover { color: $cLightBlue; }
     }
 
     a  { font-size:1.2em; color: $cWhite; }
