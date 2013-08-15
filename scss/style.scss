@@ -621,11 +621,12 @@ section.issues .inner {
   }
 
   .graph {
-    display: block;
-    margin: auto;
-    background: url(../img/flower@2x.png) no-repeat;
-    background-size: 100% 100%;
-    @include size(600px);
+    text-align:center;
+
+    img {
+      max-width:100%;
+      margin: auto;
+    }
   }
 
 }
@@ -1388,18 +1389,6 @@ section.nominate {
     }
   }
 
-  section.issues .inner {
-
-    .graph {
-      display: block;
-      margin: auto;
-      background: url(../img/flower@2x.png) no-repeat;
-      background-size: 100% 100%;
-      @include size(800px);
-    }
-
-  }
-
   section.organizers .inner {
     ul li {
       min-height: 480px;
@@ -1462,16 +1451,6 @@ section.sponsors ul li {
     background-size: 153px 79px;
   }
 }
-
-  section.issues .inner {
-    .graph {
-      display: block;
-      margin: auto;
-      background: url(../img/flower.png) no-repeat;
-      background-size: 100% 100%;
-      @include size(400px);
-    }
-  }
 
 }
 
