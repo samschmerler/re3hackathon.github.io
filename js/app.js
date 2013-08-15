@@ -81,6 +81,10 @@ function go(e, hash) {
 
 $(function() {
 
+  $(".cover").lazyload({
+    effect : "fadeIn"
+  });
+
   updateNavPosition();
 
   $('select').select2();
