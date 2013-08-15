@@ -337,6 +337,40 @@ section p {
 section.main,
 section.sponsors {
 
+  ul li {
+    text-align: center;
+
+    a { margin: auto; }
+
+    a.brfny {
+      @include size(145px, 73px);
+      display:block;
+      background: url(../img/logos/brfny.png) no-repeat!Important;
+      background-size: 145px 73px;
+    }
+
+    a.parsons {
+      @include size(214px, 65px);
+      display:block;
+      background: url(../img/logos/parsons.png) no-repeat!Important;
+      background-size: 214px 65px;
+    }
+
+    a.hyperakt {
+      @include size(172px, 28px);
+      display:block;
+      background: url(../img/logos/hyperakt.png) no-repeat!Important;
+      background-size: 154px 81px;
+    }
+
+    a.vizzuality {
+      @include size(153px, 79px);
+      display:block;
+      background: url(../img/logos/vizzuality.png) no-repeat!Important;
+      background-size: 153px 79px;
+    }
+  }
+
   position:relative;
 
   .inner { position:relative; z-index: 100; }
@@ -1404,6 +1438,38 @@ section.nominate {
     section.issues .inner
     .graph { @include size(290px); }
   }
+
+section.sponsors ul li {
+
+  a.brfny {
+    @include size(145px, 73px);
+    display:block;
+    background: url(../img/logos/brfny@2x.png) no-repeat!Important;
+    background-size: 145px 73px;
+  }
+
+  a.parsons {
+    @include size(214px, 65px);
+    display:block;
+    background: url(../img/logos/parsons@2x.png) no-repeat!Important;
+    background-size: 214px 65px;
+  }
+
+
+  a.hyperakt {
+    @include size(172px, 28px);
+    display:block;
+    background: url(../img/logos/hyperakt@2x.png) no-repeat!Important;
+    background-size: 172px 28px!important;
+  }
+
+  a.vizzuality {
+    @include size(153px, 79px);
+    display:block;
+    background: url(../img/logos/vizzuality.png) no-repeat!Important;
+    background-size: 153px 79px;
+  }
+}
 
   section.issues .inner {
     .graph {
