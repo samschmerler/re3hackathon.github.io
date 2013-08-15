@@ -1260,6 +1260,16 @@ section.nominate {
     }
   }
 
+  section.sponsors .inner {
+    ul {
+      li {
+        width:50%;
+        min-height: 100px;
+        padding: 10px;
+      }
+    }
+  }
+
   section.organizers .inner {
     ul {
       width: 100%;
