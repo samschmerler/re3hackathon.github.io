@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>re3</title>
-    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0;"/>
-    <link href="/css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>re3 - A hackathon for storytellers with a conscience. October 4-6,2013 \ UnionSquare \ NYC</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+    <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
-      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
   </head>
-  <body>
+  <body class="home">
 
-    <section class="main">
+    <!--<a href="/" class="breakpoint"> -->
+    <!--<span class="mobile">mobile</span>-->
+    <!--<span class="tablet">tablet</span>-->
+    <!--<span class="desktop">desktop</span>-->
+    <!--<span class="retina">retina</span>-->
+    <!--<span class="portrait">portrait</span>-->
+    <!--<span class="landscape">landscape</span>-->
+    <!--</a>-->
+
+    <section class="main" >
+
       <div class="inner">
 
         <img src="img/logo.gif" alt="re3 logo" class="logo" />
@@ -24,36 +34,37 @@
         <ul>
 
           <li>
-          Non-profits \ Change-makers \ Journalists
-          <a href="#" class="btn">Nominate stories</a>
+          <p>Non-profits \ Change-makers \ Journalists</p>
+          <a href="nominate.html" class="btn">Nominate stories</a>
           </li>
 
           <li>
-          Designers \ Developers \ Data Scientists
+          <p>Designers \ Developers \ Data Scientists</p>
           <a href="#" class="btn">I want in!</a>
           </li>
 
         </ul>
 
       </div>
+      <img src="img/white.jpg" class="cover" data-mobile="img/bg_device.jpg" data-original="img/bg.jpg" />
     </section>
 
     <nav>
       <div class="inner">
-
+        <a class="re3" href="index.html"></a>
         <ul class="navigation">
-          <li><a href="#about">About</a></li>
-          <li><a href="#issues">Issues</a></li>
-          <li><a href="#storytelling">Why</a></li>
-          <li><a href="#organizers">Organizers</a></li>
-          <li><a href="#storytellers">Storytellers</a></li>
-          <li><a href="#when_where">When & Where</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="scroll about" href="#about">About</a></li>
+          <li><a class="scroll issues" href="#issues">Issues</a></li>
+          <li><a class="scroll storytelling" href="#storytelling">Why</a></li>
+          <li><a class="scroll organizers" href="#organizers">Organizers</a></li>
+          <li><a class="scroll storytellers" href="#storytellers">Storytellers</a></li>
+          <li><a class="scroll when_where" href="#when_where">When & Where</a></li>
+          <li><a class="scroll contact" href="#contact">Contact</a></li>
         </ul>
 
         <ul class="actions">
-          <li><a href="#">Nominate Stories</a></li>
           <li><a href="#">I want in!</a></li>
+          <li><a href="nominate.html">Nominate Stories</a></li>
         </ul>
 
       </div>
@@ -84,9 +95,7 @@
           <h2>We believe that everyone deserves a fair chance. Let’s amplify the voices seeking to make the world a fairer, more just place, even if it means challenging the powers that be!</h2>
         </div>
 
-        <div class="graph">
-          <img src="img/flower.png" alt="" class="flower" />
-        </div>
+        <div class="graph"><img src="img/flower_2.png" /></div>
 
       </div>
 
@@ -104,7 +113,7 @@
 
           <li>
           <div class="num">1</div>
-          <div>
+          <div class="text">
             <strong>We wont preach to the choir.</strong>
             <p>Let’s articulate why these stories matter to those that think they don’t.</p>
           </div>
@@ -112,7 +121,7 @@
 
           <li>
           <div class="num">2</div>
-          <div>
+          <div class="text">
             <strong>We’ll start with empathy.</strong>
             <p>Let’s listen and try to understand different perspectives.</p>
           </div>
@@ -120,7 +129,7 @@
 
           <li>
           <div class="num">3</div>
-          <div>
+          <div class="text">
             <strong>We’ll find the human side to the facts.</strong>
             <p>Let’s be rigorous, but always put people before numbers.</p>
           </div>
@@ -128,7 +137,7 @@
 
           <li>
           <div class="num">4</div>
-          <div>
+          <div class="text">
             <strong>We’ll tell beautiful stories.</strong>
             <p>Stories that people different than us can connect to, relate to, and be open to.</p>
           </div>
@@ -136,7 +145,7 @@
 
           <li>
           <div class="num">5</div>
-          <div>
+          <div class="text">
             <strong>We’ll pull out all the stops.</strong>
             <p>We’ll use humor, love, metaphor, sex, and aything under the sun so our stories are heard.</p>
           </div>
@@ -156,52 +165,50 @@
 
         <ul>
 
-          <li>
-          <div class="pic"></div>
+          <li class="mitchell">
+          <img src="img/organizers/parker_mitchell.png" alt="" />
           <strong>Parker Mitchell</strong>
           <p>Former Co-Founder & Co-CEO at Engineers Without Borders Canada</p>
           </li>
 
-          <li>
-          <div class="pic"></div>
+          <li class="cezzar">
+          <img src="img/organizers/juliette_cezzar.png" alt="" />
           <strong>Juliette Cezzar</strong>
           <p>Designer and Director of the Communication Design Program at Parsons the New School for Design</p>
           </li>
 
-          <li>
-          <div class="pic"></div>
+          <li class="peraza">
+          <img src="img/organizers/deroy_peraza.png" alt="" />
           <strong>Deroy Peraza</strong>
           <p>Co-Founder &amp; Creative Director at Hyperakt</p>
           </li>
 
-          <li>
-          <div class="pic"></div>
+          <li class="klein">
+          <img src="img/organizers/matthew_klein.png" alt="" />
           <strong>Matthew Klein</strong>
           <p>Executive Director at Blue Ridge Foundation New York</p>
           </li>
-        </ul>
 
-        <ul>
-          <li>
-          <div class="pic"></div>
+          <li class="roos">
+          <img src="img/organizers/ambika_roos.png" alt="" />
           <strong>Ambika Roos</strong>
           <p>Project Manager at Hyperakt</p>
           </li>
 
-          <li>
-          <div class="pic"></div>
+          <li class="hill">
+          <img src="img/organizers/andrew_hill.png" alt="" />
           <strong>Andrew Hill</strong>
           <p>Senior Scientist at Vizzuality</p>
           </li>
 
-          <li>
-          <div class="pic"></div>
+          <li class="richmond">
+          <img src="img/organizers/amrit_richmond.png" alt="" />
           <strong>Amrit Richmond</strong>
-          <p>Community Developer & Creative Strategist at Magenta Labs</p>
+          <p>Community Developer &amp; Creative Strategist at Magenta Labs</p>
           </li>
 
-          <li>
-          <div class="pic"></div>
+          <li class="porway">
+          <img src="img/organizers/jake_porway.png" alt="" />
           <strong>Jake Porway</strong>
           <p>Founder and Exec Director of DataKind, Host of NatGeo's The Numbers Game</p>
           </li>
@@ -217,13 +224,17 @@
         <div class="separator"></div>
         <h2>Issues that matter. Storytellers with a conscience.<br />Let the magic happen.</h2>
 
+        <div class="band">
+          <img src="/img/storytellers_band.png" />
+        </div>
+
         <ul>
 
           <li>
           <strong>Non-profits \ Change-makers \ Journalists</strong>
           <p>You’re on a crusade to bring more truth, justice, fairness and joy into the world, but are having trouble being heard.</p>
           <p>We can help. We’ll work with you to sift through your facts and uncover a nugget of a story. Talented storytellers will polish that into a gem that will carry your message out into the world.</p>
-          <a href="#" class="btn">Nominate stories</a>
+          <a href="nominate.html" class="btn">Nominate stories</a>
           <p class="explanation">Nominated stories are due Sept. 1st. 10 finalists will be chosen.</p>
           </li>
 
@@ -242,8 +253,18 @@
 
     <section class="when_where">
       <div class="inner">
-        <h3>When &amp; Where</h3>
-        <div class="separator"></div>
+
+        <div class="overlay">
+          <div class="content">
+            <h3>When &amp; Where</h3>
+            <div class="separator"></div>
+            <h2>October 4 - 6, 2013</h2>
+            <p>Parsons the New School for Design List Center<br />6 East 16th Street, New York City</p>
+          </div>
+        </div>
+
+        <div class="marker"></div>
+
       </div>
     </section>
 
@@ -255,17 +276,26 @@
           <div class="separator"></div>
 
           <address>Mailing address:<br />Re3 c/o Hyperakt<br />401 Smith Street<br />Brooklyn, NY 11231</address>
-          <a href="mailto:seeyou@re3hackathon.com">seeyou@re3hackathon.com</a>
-        </div>
+          <a href="mailto:seeyou@re3hackathon.com" class="mail">seeyou@re3hackathon.com</a>
 
+          <ul class="social">
+            <li><a href="#" class="twitter"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+          </ul>
+
+        </div>
 
         <div class="informed_and_involved">
           <h3>Stay informed</h3>
           <div class="separator"></div>
 
           <div class="input">
-            <input type="text" placeholder="your email address" />
-            <a class="submit" href="#"></a>
+            <form class="nominate" action="http://re3hackathon.us7.list-manage.com/subscribe/post" method="POST">
+              <input type="hidden" name="u" value="f022b70d7432f39c07ee8cfe5">
+              <input type="hidden" name="id" value="68a0e95075">
+              <input type="text" name="MERGE0" class="email" placeholder="your email address" />
+              <a class="submit" href="#" data-action="submit-email"></a>
+            </form>
           </div>
 
           <h3>Get involved</h3>
@@ -274,7 +304,6 @@
           <a class="btn" href="#">Apply to Volunteer</a>
         </div>
 
-          
       </div>
     </section>
 
@@ -284,19 +313,32 @@
         <div class="separator"></div>
 
         <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="http://newschool.edu/parsons" class="parsons"></a></li>
+          <li><a href="http://hyperakt.com/" class="hyperakt"></a></li>
+          <li><a href="http://vizzuality.com" class="vizzuality"></a></li>
+          <li><a href="http://brfny.org" class="brfny"></a></li>
         </ul>
 
       </div>
+
+      <img src="img/white.jpg" class="cover" data-mobile="img/bg_device.jpg" data-original="img/bg.jpg" />
+
     </section>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <script src='js/select2.js'></script>
+    <script src='js/fastclick.js'></script>
+    <script src="js/jquery.lazy.js"></script>
+    <script src="js/helpers.js"></script>
     <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        FastClick.attach(document.body);
+      }, false);
+    </script>
 
   </body>
 </html>
