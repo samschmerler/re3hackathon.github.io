@@ -968,7 +968,6 @@ section.nominate {
     }
   }
 
-
   section.storytellers .inner {
 
     .band { display: none; }
@@ -1000,7 +999,7 @@ section.nominate {
       li {
         width: 100%;
         float:none;
-        margin: 0 0 30px 0;
+        margin: 0 0 50px 0;
         padding: 0;
 
         a img {
@@ -1077,6 +1076,7 @@ section.nominate {
   }
 
   .logo { width: 100%; }
+
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
 
@@ -1107,7 +1107,6 @@ section.nominate {
       }
     }
   }
-
 
   section.nominate {
 
@@ -1155,7 +1154,6 @@ section.nominate {
         font-size: 1.2em;
       }
     }
-
   }
 
   section.storytellers .inner {
@@ -1192,9 +1190,11 @@ section.nominate {
         padding: 10px;
         min-height:100px;
 
-        a img {
-          max-width: 200px;
-        }
+        a.brfny      { background-size: 145px 73px!important; }
+        a.parsons    { background-size: 150px 46px!important; }
+        a.hyperakt   { background-size: 150px 24px!important; }
+        a.vizzuality { background-size: 153px 79px!important; }
+
       }
     }
   }
@@ -1578,7 +1578,7 @@ section.sponsors ul li {
     @include size(214px, 65px);
     display:block;
     background: url(../img/logos/parsons@2x.png) no-repeat!Important;
-    background-size: 214px 65px;
+    background-size: 214px 65px!Important;
   }
 
 
