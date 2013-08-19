@@ -827,7 +827,8 @@ section.nominate {
     line-height: 1em;
 
     &:hover {
-      color: $cOrange;
+      color: $cWhite;
+      background: $cDarkGreen;
     }
   }
 
