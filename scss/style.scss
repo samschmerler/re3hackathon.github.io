@@ -26,11 +26,15 @@ $breakpoint-small-landscape: (max-width 768px)  (orientation landscape);
 $breakpoint-ipad-portrait:   (max-width 768px)  (orientation portrait);
 $breakpoint-medium-portrait: (max-width 1400px);
 
+
+$breakpoint-test: (max-width 1240px);
+$breakpoint-test-2: (max-width 1143px);
+
 /* Main elements */
 
 .breakpoint {
   display:none;
-  position:fixed; right: 0; top: 0;
+  position:fixed; right: 0; bottom: 0;
   width: 100%;
   z-index: 1000;
   text-align:center;
@@ -39,6 +43,7 @@ $breakpoint-medium-portrait: (max-width 1400px);
   z-index: 100000;
 
   span { display:none; }
+  span.coordinates { @include inline-block(); }
 }
 
 body {
@@ -162,14 +167,36 @@ nav {
     li {
       float:left;
       position:relative;
-      margin-right: percentage(93/$siteWidth);
+      margin-right: 2.0%;
 
       &:last-child { margin: 0; }
       &.active a { color: $cLightBlue; }
       a:hover { color: $cLightBlue; }
+
+      /*@include breakpoint($breakpoint-test) {
+        margin-right: 1.8%;
+      }
+      @include breakpoint($breakpoint-test-2) {
+        margin-right: 1.5%;
+      }*/
+
     }
 
-    a  { font-size:1.2em; color: $cWhite; }
+    a  {
+      font-size:1.2em;
+      color: $cWhite;
+
+      /*@include breakpoint($breakpoint-test) {
+        font-size: 1.1em;
+        color:blue;
+      }
+
+      @include breakpoint($breakpoint-test-2) {
+        font-size: .95em;
+        color:red;
+      }*/
+
+    }
 
   }
 
