@@ -27,9 +27,6 @@ $breakpoint-ipad-portrait:   (max-width 768px)  (orientation portrait);
 $breakpoint-medium-portrait: (max-width 1400px);
 
 
-$breakpoint-test: (max-width 1240px);
-$breakpoint-test-2: (max-width 1143px);
-
 /* Main elements */
 
 .breakpoint {
@@ -146,10 +143,10 @@ nav {
   }
 
   a.re3 {
+    display: none;
     position:absolute;
     top: -8px;
     left: 0;
-    display: block;
     background-image: url('../img/re3logo.png');
     background-repeat: no-repeat;
     width: 55px; height: 34px;
@@ -173,29 +170,16 @@ nav {
       &.active a { color: $cLightBlue; }
       a:hover { color: $cLightBlue; }
 
-      /*@include breakpoint($breakpoint-test) {
-        margin-right: 1.8%;
-      }
-      @include breakpoint($breakpoint-test-2) {
+      @include breakpoint(1025px 1224px) {
         margin-right: 1.5%;
-      }*/
+        a { font-size: 1.0em; }
+      }
 
     }
 
     a  {
       font-size:1.2em;
       color: $cWhite;
-
-      /*@include breakpoint($breakpoint-test) {
-        font-size: 1.1em;
-        color:blue;
-      }
-
-      @include breakpoint($breakpoint-test-2) {
-        font-size: .95em;
-        color:red;
-      }*/
-
     }
 
   }
@@ -211,7 +195,7 @@ nav {
 
     li {
       float:right;
-      margin-left: percentage(93/830);
+      margin-left: 4%;
 
       &.active a { color: $cLightBlue; }
 
@@ -1393,8 +1377,16 @@ section.nominate {
   h2 { font-size: 1.9em; }
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
-  nav ul li a { font-size: 1.0em; }
-  nav ul .navigate { background:red; }
+  nav ul li {
+    margin-right: 1.5%;
+
+    a { font-size: .80em; }
+
+    @include breakpoint(920px 1024px) {
+      margin-right: 1.5%;
+      a { font-size: .85em; }
+    }
+  }
 
   section.nominate {
 
