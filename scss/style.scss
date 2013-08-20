@@ -140,6 +140,7 @@ nav {
     width: percentage(3693/$siteWidth);
     padding: 0;
     margin:auto;
+    @include clearfix();
   }
 
   a.re3 {
@@ -169,6 +170,10 @@ nav {
       &:last-child { margin: 0; }
       &.active a { color: $cLightBlue; }
       a:hover { color: $cLightBlue; }
+
+      &.tablet { display: none; }
+      &.tablet.active a { color: $cLightBlue; }
+      &.tablet a { color: $cOrange; }
 
       @include breakpoint(1025px 1224px) {
         margin-right: 1.5%;
@@ -1261,7 +1266,15 @@ section.nominate {
   h2 { font-size: 1.9em; }
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
-  nav ul li a { font-size: .75em; }
+  nav {
+    .inner {
+      ul li { margin-right: 1.5%; }
+      ul li a { font-size: 0.75em; }
+      ul.navigation { width: 90%; }
+      ul li.tablet { display: block; }
+      ul.actions { display: none; }
+    }
+  }
 
   section.main .inner {
     ul { width: 80%; }
@@ -1269,7 +1282,6 @@ section.nominate {
       font-size: .9em;
     }
   }
-
 
   section.nominate {
 
@@ -1377,15 +1389,38 @@ section.nominate {
   h2 { font-size: 1.9em; }
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
-  nav ul li {
-    margin-right: 1.5%;
+  nav {
 
-    a { font-size: .80em; }
+    .inner {
 
-    @include breakpoint(920px 1024px) {
-      margin-right: 1.5%;
-      a { font-size: .85em; }
+      ul li.tablet.i_want_in { margin-left: 1%; }
+      ul li a { font-size: .95em; }
+
+      ul.with_logo li.tablet.i_want_in { margin-left: 1.1%; }
+
+      ul li { margin-right: 1.1%; }
+      ul li a { font-size: .95em; }
+      ul.navigation { width: 90%; }
+
+      ul li.tablet { display: block; }
+      ul.actions { display: none; }
+
     }
+
+    @include breakpoint(769px 912px) {
+      .inner {
+
+        ul li.tablet.i_want_in { margin-left: 1%; }
+        ul.with_logo li.tablet.i_want_in { margin-left: 1%; }
+
+        ul li { margin-right: 1.0%; }
+        ul li a { font-size: .80em; }
+        ul.navigation { width: 90%; }
+        ul li.tablet { display: block; }
+        ul.actions { display: none; }
+      }
+    }
+
   }
 
   section.nominate {
@@ -1518,36 +1553,36 @@ section.nominate {
   }
 
   section.when_where {
-  .overlay {
+    .overlay {
 
-    @include position(0, false, false, 0);
-    @include size(475px, 481px);
-    background: url(../img/when_where_overlay.png) no-repeat;
+      @include position(0, false, false, 0);
+      @include size(475px, 481px);
+      background: url(../img/when_where_overlay.png) no-repeat;
 
-    text-align: center;
+      text-align: center;
 
-    .content {
-      margin: auto;
-      width: 80%;
-      text-align:left;
-      padding: 60px 0;
+      .content {
+        margin: auto;
+        width: 80%;
+        text-align:left;
+        padding: 60px 0;
 
-      h2 { font-size: 2em; }
-      p  { font-size: 1.3em; line-height: 150%; }
+        h2 { font-size: 2em; }
+        p  { font-size: 1.3em; line-height: 150%; }
 
-      h2, h3, p { color: $cLightBlue; }
+        h2, h3, p { color: $cLightBlue; }
 
+      }
     }
-  }
 
-  .marker {
-    background:url(../img/logo_marker.png) no-repeat;
-    position:absolute;
-    height:82px; width:83px;
-    left:40%;
-    top: 55%;
-    margin-top: -82/2;
-  }
+    .marker {
+      background:url(../img/logo_marker.png) no-repeat;
+      position:absolute;
+      height:82px; width:83px;
+      left:40%;
+      top: 55%;
+      margin-top: -82/2;
+    }
   }
 
 }
@@ -1565,37 +1600,37 @@ section.nominate {
     .graph { @include size(290px); }
   }
 
-section.sponsors ul li {
+  section.sponsors ul li {
 
-  a.brfny {
-    @include size(145px, 73px);
-    display:block;
-    background: url(../img/logos/brfny@2x.png) no-repeat!Important;
-    background-size: 145px 73px;
+    a.brfny {
+      @include size(145px, 73px);
+      display:block;
+      background: url(../img/logos/brfny@2x.png) no-repeat!Important;
+      background-size: 145px 73px;
+    }
+
+    a.parsons {
+      @include size(214px, 65px);
+      display:block;
+      background: url(../img/logos/parsons@2x.png) no-repeat!Important;
+      background-size: 214px 65px!Important;
+    }
+
+
+    a.hyperakt {
+      @include size(172px, 28px);
+      display:block;
+      background: url(../img/logos/hyperakt@2x.png) no-repeat!Important;
+      background-size: 172px 28px!important;
+    }
+
+    a.vizzuality img {
+      @include size(153px, 79px);
+      display:block;
+      background: url(../img/logos/vizzuality@2x.png) no-repeat!Important;
+      background-size: 153px 79px;
+    }
   }
-
-  a.parsons {
-    @include size(214px, 65px);
-    display:block;
-    background: url(../img/logos/parsons@2x.png) no-repeat!Important;
-    background-size: 214px 65px!Important;
-  }
-
-
-  a.hyperakt {
-    @include size(172px, 28px);
-    display:block;
-    background: url(../img/logos/hyperakt@2x.png) no-repeat!Important;
-    background-size: 172px 28px!important;
-  }
-
-  a.vizzuality img {
-    @include size(153px, 79px);
-    display:block;
-    background: url(../img/logos/vizzuality@2x.png) no-repeat!Important;
-    background-size: 153px 79px;
-  }
-}
 
 }
 
@@ -1713,55 +1748,55 @@ form {
 
 /*
 Version: @@ver@@ Timestamp: @@timestamp@@
-*/
+ */
 .select2-container {
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    /* inline-block for ie7 */
-    zoom: 1;
-    *display: inline;
-    vertical-align: middle;
-}
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  /* inline-block for ie7 */
+  zoom: 1;
+        *display: inline;
+        vertical-align: middle;
+      }
 
-.select2-container,
-.select2-drop,
-.select2-search,
-.select2-search input {
-  /*
-    Force border-box so that % widths fit the parent
-    container without overlap because of margin/padding.
+      .select2-container,
+      .select2-drop,
+      .select2-search,
+      .select2-search input {
+        /*
+        Force border-box so that % widths fit the parent
+        container without overlap because of margin/padding.
 
-    More Info : http://www.quirksmode.org/css/box.html
-  */
-  -webkit-box-sizing: border-box; /* webkit */
-     -moz-box-sizing: border-box; /* firefox */
-          box-sizing: border-box; /* css3 */
+        More Info : http://www.quirksmode.org/css/box.html
+         */
+-webkit-box-sizing: border-box; /* webkit */
+-moz-box-sizing: border-box; /* firefox */
+box-sizing: border-box; /* css3 */
 }
 
 .select2-container .select2-choice {
-    display: block;
-    padding: .8em;
-    overflow: hidden;
-    position: relative;
-    font-size:1.5em;
-    outline:none;
+  display: block;
+  padding: .8em;
+  overflow: hidden;
+  position: relative;
+  font-size:1.5em;
+  outline:none;
 
-    white-space: nowrap;
-    line-height: 26px;
-    color: $cBrown;
-    text-decoration: none;
+  white-space: nowrap;
+  line-height: 26px;
+  color: $cBrown;
+  text-decoration: none;
 
-    background-clip: padding-box;
+  background-clip: padding-box;
 
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-    background-color: $cBlue;
+  background-color: $cBlue;
 }
 
 .select2-container.select2-drop-above .select2-choice {
@@ -1769,104 +1804,104 @@ Version: @@ver@@ Timestamp: @@timestamp@@
 }
 
 .select2-container.select2-allowclear .select2-choice .select2-chosen {
-    margin-right: 42px;
+  margin-right: 42px;
 }
 
 .select2-container .select2-choice > .select2-chosen {
-    margin-right: 26px;
-    display: block;
-    overflow: hidden;
+  margin-right: 26px;
+  display: block;
+  overflow: hidden;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .select2-container .select2-choice abbr {
-    display: none;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    right: 24px;
-    top: 8px;
+  display: none;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 24px;
+  top: 8px;
 
-    font-size: 1px;
-    text-decoration: none;
+  font-size: 1px;
+  text-decoration: none;
 
-    background: url('../img/select2.png') right top no-repeat;
-    cursor: pointer;
-    outline: 0;
+  background: url('../img/select2.png') right top no-repeat;
+  cursor: pointer;
+  outline: 0;
 }
 
 .select2-container.select2-allowclear .select2-choice abbr {
-    display: inline-block;
+  display: inline-block;
 }
 
 .select2-container .select2-choice abbr:hover {
-    background-position: right -11px;
-    cursor: pointer;
+  background-position: right -11px;
+  cursor: pointer;
 }
 
 .select2-drop-mask {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-height: 100%;
-    min-width: 100%;
-    height: auto;
-    width: auto;
-    opacity: 0;
-    z-index: 9998;
-    /* styles required for IE to work */
-    background-color: #fff;
-    opacity: 0;
-    filter: alpha(opacity=0);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  z-index: 9998;
+  /* styles required for IE to work */
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .select2-drop {
-    width: 100%;
-    margin-top: -1px;
-    position: absolute;
-    z-index: 9999;
-    top: 100%;
+  width: 100%;
+  margin-top: -1px;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
 
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 
 .select2-drop-auto-width {
-    width: auto;
+  width: auto;
 }
 
 .select2-drop-auto-width .select2-search {
-    padding-top: 4px;
+  padding-top: 4px;
 }
 
 .select2-drop.select2-drop-above {
-    margin-top: 1px;
+  margin-top: 1px;
 
 }
 
 .select2-drop-active {
-    border-top: none;
+  border-top: none;
 }
 
 .select2-drop.select2-drop-above.select2-drop-active {
 }
 
 .select2-container .select2-choice .select2-arrow {
-    display: inline-block;
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
+  display: inline-block;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-    background-clip: padding-box;
+  background-clip: padding-box;
 
-    background: $cPurple;
+  background: $cPurple;
 }
 
 .select2-container .select2-choice .select2-arrow b {
