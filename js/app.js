@@ -85,6 +85,9 @@ function go(e, hash) {
 
 $(function() {
 
+  //$(window).resize(function() {
+    //$('.breakpoint .coordinates').text($(window).width() + "x" + $(window).height());
+  //});
 
   var device = (/android|webos|iphone|ipod|blackberry/i.test(navigator.userAgent.toLowerCase()));
   var attribute = device ? "mobile" : "original";
