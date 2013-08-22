@@ -195,6 +195,7 @@ nav {
   }
 
   .actions {
+    display:none;
     float:right;
     width: 28%;
 
@@ -262,9 +263,6 @@ section.about {
   color: $cBlue;
 
   .separator { background: $cBlue; }
-
-  a { color: $cOrange; }
-  a:hover { color: $cGreen; }
 
 }
 
@@ -646,6 +644,9 @@ section.about {
     line-height: 150%;
     font-size: 1.3em;
   }
+
+  a { text-decoration:underline; color:$cBlue; }
+  a.storytellers { font-family: "SohoStd-Bold"; font-weight: bold; text-decoration:underline;}
 
 }
 

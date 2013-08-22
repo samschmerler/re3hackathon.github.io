@@ -38,10 +38,12 @@ function updateNavPosition() {
     $("nav").addClass("fixed");
     $("nav .re3").fadeIn(150);
     $("nav ul.navigation").addClass("with_logo");
+    $("nav ul.actions").fadeIn(150);
   } else {
     $("nav").removeClass("fixed");
     $("nav .re3").fadeOut(150);
     $("nav ul.navigation").removeClass("with_logo");
+    $("nav ul.actions").fadeOut(150);
   }
 
 }
