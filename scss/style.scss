@@ -225,7 +225,7 @@ section.sponsors .inner {
   padding: 4.5em 0;
 }
 
-section.storytellers .inner {
+section.participants .inner {
   width: 86%;
   margin:auto;
   padding: 4.5em 0;
@@ -284,7 +284,7 @@ section.issues {
   .separator { background: $cBrown; }
 }
 
-section.storytellers {
+section.participants {
   background: $cOrange;
   color: $cWhite;
 
@@ -555,11 +555,11 @@ section.when_where {
 }
 
 /* ---------------------
- * STORYTELLERS
+ * PARTICIPANTS
  * ---------------------
  */
 
-section.storytellers .inner {
+section.participants .inner {
 
   .band {
     width: 100%;
@@ -598,6 +598,9 @@ section.storytellers .inner {
         line-height: 150%;
         font-size:1.3em;
         margin: 0 0 1.5em 0;
+
+        &.calling { color: $cPurple; }
+
       }
 
       .explanation {
@@ -957,7 +960,7 @@ section.nominate {
     }
   }
 
-  section.storytellers .inner {
+  section.participants .inner {
 
     .band { display: none; }
 
@@ -1145,7 +1148,7 @@ section.nominate {
     }
   }
 
-  section.storytellers .inner {
+  section.participants .inner {
 
     h2  { font-size:1.7em; }
 
@@ -1303,7 +1306,7 @@ section.nominate {
 
   }
 
-  section.storytellers .inner {
+  section.participants .inner {
 
     h2  { font-size:1.7em; }
 
@@ -1443,7 +1446,7 @@ section.nominate {
 
   }
 
-  section.storytellers .inner {
+  section.participants .inner {
 
     h2  { font-size:1.7em; }
 
@@ -1528,7 +1531,7 @@ section.nominate {
   h2 { font-size: 2.9em; }
   h3 { font-size: 1.5em; margin: 0 0 1em 0; }
 
-  section.storytellers .inner {
+  section.participants .inner {
     ul li {
       p {
         font-size:1.47em;
