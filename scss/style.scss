@@ -482,6 +482,8 @@ section.organizers .inner {
 
   h2 { width: 75%; }
 
+  ul li p a { text-decoration:underline; color:$cPurple; }
+
   ul {
     width: 100%;
     @include clearfix();
@@ -1041,6 +1043,7 @@ section.nominate {
         width: 100%;
         min-height: 260px;
         text-align: left;
+
       }
     }
   }
