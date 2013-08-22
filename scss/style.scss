@@ -719,9 +719,18 @@ section.contact {
         float:left;
         margin: 0 29px 0 0;
 
-        a {
+        color: $cOrange;
 
-          display:block;
+        a {
+          @include inline-block();
+          color: $cOrange;
+        }
+
+        .icon {
+
+          @include inline-block();
+
+          margin: 0 5px 0 0;
 
           &.twitter  {
             background: url(../img/twitter.png) no-repeat;
