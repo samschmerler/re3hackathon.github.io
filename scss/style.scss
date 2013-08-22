@@ -262,6 +262,10 @@ section.about {
   color: $cBlue;
 
   .separator { background: $cBlue; }
+
+  a { color: $cOrange; }
+  a:hover { color: $cGreen; }
+
 }
 
 section.storytelling {
@@ -389,6 +393,8 @@ section.main {
       color:$cBrown;
 
       p { margin: 0; }
+      a { color: $cOrange; }
+      a:hover { color: $cPurple; }
 
       &:last-child {
         padding: 0;
@@ -640,6 +646,7 @@ section.about {
     line-height: 150%;
     font-size: 1.3em;
   }
+
 }
 
 /* ---------------------

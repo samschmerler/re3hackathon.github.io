@@ -122,7 +122,7 @@ $(function() {
   });
 
   $(document).on("scroll", updateNavPosition);
-  $("nav .navigation li a.scroll").on("click", go);
+  $("a.scroll").on("click", go);
 
   if(window.location.hash) {
     setTimeout(function() {
