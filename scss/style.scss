@@ -493,6 +493,7 @@ section.organizers .inner {
       width: 25%;
 
       min-width: 186px;
+      max-width: 240px;
       min-height: 410px;
       padding: 20px;
 
@@ -507,6 +508,7 @@ section.organizers .inner {
         display:block;
         @include size(100%, 100%);
         margin: 0 0 1em 0;
+        max-width: 240px;
       }
     }
   }
