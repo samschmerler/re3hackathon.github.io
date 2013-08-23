@@ -169,11 +169,11 @@ nav {
       margin-right: 2.0%;
 
       &:last-child { margin: 0; }
-      &.active a { color: $cLightBlue; }
+      /*&.active a { color: $cLightBlue; }*/
       a:hover { color: $cLightBlue; }
 
       &.tablet { display: none; }
-      &.tablet.active a { color: $cLightBlue; }
+      /*&.tablet.active a { color: $cLightBlue; }*/
       &.tablet a { color: $cOrange; }
 
       @include breakpoint(1025px 1224px) {
@@ -205,7 +205,7 @@ nav {
       float:right;
       margin-left: 4%;
 
-      &.active a { color: $cLightBlue; }
+      /*&.active a { color: $cLightBlue; }*/
 
       a { color: $cOrange; }
     }
