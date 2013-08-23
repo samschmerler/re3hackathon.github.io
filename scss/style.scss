@@ -1290,12 +1290,16 @@ section.nominate {
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
   nav {
-    .inner {
-      ul li { margin-right: 1.5%; }
-      ul li a { font-size: 0.75em; }
-      ul.navigation { width: 90%; }
-      ul li.tablet { display: block; }
-      ul.actions { display: none; }
+    .inner ul {
+
+      li {
+        margin-right: 3px;
+        a { font-size: 0.75em; }
+        &.tablet { display: block; }
+      }
+
+      &.navigation { width: 380px; }
+      &.actions { width: 162px; }
     }
   }
 
