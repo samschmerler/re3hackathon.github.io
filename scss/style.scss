@@ -1291,7 +1291,6 @@ section.nominate {
 
   nav {
     .inner ul {
-
       li {
         margin-right: 3px;
         a { font-size: 0.75em; }
@@ -1301,6 +1300,7 @@ section.nominate {
       &.navigation { width: 380px; }
       &.actions { width: 162px; }
     }
+
   }
 
   section.main .inner {
@@ -1417,39 +1417,18 @@ section.nominate {
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
   nav {
-
-    .inner {
-
-      ul li.tablet.i_want_in { margin-left: 1%; }
-      ul li a { font-size: .95em; }
-
-      ul.with_logo li.tablet.i_want_in { margin-left: 1.1%; }
-
-      ul li { margin-right: 1.1%; }
-      ul li a { font-size: .95em; }
-      ul.navigation { width: 90%; }
-
-      ul li.tablet { display: block; }
-      ul.actions { display: none; }
-
-    }
-
-    @include breakpoint(769px 912px) {
-      .inner {
-
-        ul li.tablet.i_want_in { margin-left: 1%; }
-        ul.with_logo li.tablet.i_want_in { margin-left: 1%; }
-
-        ul li { margin-right: 1.0%; }
-        ul li a { font-size: .80em; }
-        ul.navigation { width: 90%; }
-        ul li.tablet { display: block; }
-        ul.actions { display: none; }
+    .inner ul {
+      li {
+        margin-right: 3px;
+        a { font-size: 0.75em; }
+        &.tablet { display: block; }
       }
+
+      &.navigation { width: 380px; }
+      &.actions { width: 162px; }
     }
 
   }
-
   section.nominate {
 
     p {
