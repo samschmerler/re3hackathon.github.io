@@ -143,8 +143,9 @@ nav {
     @include clearfix();
   }
 
+  body.home a.re3 { display: none; }
+
   a.re3 {
-    display: none;
     position:absolute;
     top: -8px;
     left: 0;
@@ -194,8 +195,9 @@ nav {
     width: 68%;
   }
 
+  body.home .actions { display: none; }
+
   .actions {
-    display:none;
     float:right;
     width: 28%;
 
