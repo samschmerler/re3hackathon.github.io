@@ -89,6 +89,38 @@ function go(e, hash) {
 
 $(function() {
 
+  var mapOptions = {
+    center: new google.maps.LatLng(40.736882, -73.992277),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  };
+
+  var styles = [ { "featureType": "landscape", "stylers": [ { "visibility": "on" }, { "color": "#39c2c9" } ] },{ "featureType": "road", "stylers": [ { "visibility": "simplified" }, { "color": "#3acbc9" }, { "lightness": 16 }, { "weight": 3 } ] },{ "featureType": "water", "stylers": [ { "color": "#4897cb" } ] },{ "elementType": "labels.text.fill", "stylers": [ { "visibility": "on" }, { "invert_lightness": true }, { "weight": 3.8 }, { "color": "#4ec9e2" } ] },{ },{ "elementType": "labels.text.fill", "stylers": [ { "color": "#5e31cb" }, { "visibility": "on" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "simplified" }, { "saturation": -85 }, { "color": "#41b1cb" } ] },{ } ];
+
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(40.736882, -73.992277),
+    map: map,
+    icon: 'img/logo_marker.png',
+  });
+
+
+  // Create a new StyledMapType object, passing it the array of styles,
+  // as well as the name to be displayed on the map type control.
+  var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+
   //$(window).resize(function() {
   //$('.breakpoint .coordinates').text($(window).width() + "x" + $(window).height());
   //});
