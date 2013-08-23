@@ -143,8 +143,9 @@ nav {
     @include clearfix();
   }
 
+  body.home a.re3 { display: none; }
+
   a.re3 {
-    display: none;
     position:absolute;
     top: -8px;
     left: 0;
@@ -168,11 +169,11 @@ nav {
       margin-right: 2.0%;
 
       &:last-child { margin: 0; }
-      &.active a { color: $cLightBlue; }
+      /*&.active a { color: $cLightBlue; }*/
       a:hover { color: $cLightBlue; }
 
       &.tablet { display: none; }
-      &.tablet.active a { color: $cLightBlue; }
+      /*&.tablet.active a { color: $cLightBlue; }*/
       &.tablet a { color: $cOrange; }
 
       @include breakpoint(1025px 1224px) {
@@ -194,8 +195,9 @@ nav {
     width: 68%;
   }
 
+  body.home .actions { display: none; }
+
   .actions {
-    display:none;
     float:right;
     width: 28%;
 
@@ -203,7 +205,7 @@ nav {
       float:right;
       margin-left: 4%;
 
-      &.active a { color: $cLightBlue; }
+      /*&.active a { color: $cLightBlue; }*/
 
       a { color: $cOrange; }
     }
@@ -483,6 +485,7 @@ section.organizers .inner {
   h2 { width: 75%; }
 
   ul li p a { text-decoration:underline; color:$cPurple; }
+  ul li p a:hover { color: $cOrange; }
 
   ul {
     width: 100%;
@@ -493,6 +496,7 @@ section.organizers .inner {
       width: 25%;
 
       min-width: 186px;
+      max-width: 240px;
       min-height: 410px;
       padding: 20px;
 
@@ -507,6 +511,7 @@ section.organizers .inner {
         display:block;
         @include size(100%, 100%);
         margin: 0 0 1em 0;
+        max-width: 240px;
       }
     }
   }
@@ -648,7 +653,7 @@ section.about {
   }
 
   a { text-decoration:underline; color:$cBlue; }
-  a.storytellers { font-family: "SohoStd-Bold"; font-weight: bold; text-decoration:underline;}
+  a:hover { color: $cOrange; }
 
 }
 
@@ -662,8 +667,6 @@ section.issues .inner {
   .header {
     width: percentage(2905/$siteWidth);
     margin: 0 0 percentage(144/$siteWidth) 0;
-
-    h2  { font-size: 1.5em; }
 
   }
 
@@ -724,6 +727,7 @@ section.contact {
         a {
           @include inline-block();
           color: $cOrange;
+          &:hover { color: $cGreen; }
         }
 
         .icon {
@@ -944,10 +948,6 @@ section.nominate {
     .header {
       width: 100%;
       margin: 0 0 20px 0;
-
-      h2  {
-        font-size: 1.2em;
-      }
     }
   }
 

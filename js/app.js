@@ -34,16 +34,18 @@ function updateNavPosition() {
 
   var $mainHeight = $("section.main").height();
 
+
+
   if ($(document).scrollTop() > $mainHeight) {
-    $("nav").addClass("fixed");
-    $("nav .re3").fadeIn(150);
-    $("nav ul.navigation").addClass("with_logo");
-    $("nav ul.actions").fadeIn(150);
+    $("body.home nav").addClass("fixed");
+    $("body.home nav .re3").fadeIn(150);
+    $("body.home nav ul.navigation").addClass("with_logo");
+    $("body.home nav ul.actions").fadeIn(150);
   } else {
-    $("nav").removeClass("fixed");
-    $("nav .re3").fadeOut(150);
-    $("nav ul.navigation").removeClass("with_logo");
-    $("nav ul.actions").fadeOut(150);
+    $("body.home nav").removeClass("fixed");
+    $("body.home nav .re3").fadeOut(150);
+    $("body.home nav ul.navigation").removeClass("with_logo");
+    $("body.home nav ul.actions").fadeOut(150);
   }
 
 }
@@ -88,7 +90,7 @@ function go(e, hash) {
 $(function() {
 
   //$(window).resize(function() {
-    //$('.breakpoint .coordinates').text($(window).width() + "x" + $(window).height());
+  //$('.breakpoint .coordinates').text($(window).width() + "x" + $(window).height());
   //});
 
   var device = (/android|webos|iphone|ipod|blackberry/i.test(navigator.userAgent.toLowerCase()));
@@ -128,7 +130,7 @@ $(function() {
 
   if(window.location.hash) {
     setTimeout(function() {
-    go(null, window.location.hash);
+      go(null, window.location.hash);
     }, 500);
   }
 
