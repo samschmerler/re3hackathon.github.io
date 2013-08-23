@@ -542,9 +542,6 @@ section.when_where {
 
   }
 
-  /*background: url(../img/map.png) no-repeat center center ;*/
-  /*@include background-size(cover);*/
-
   position:relative;
   clear:both;
   overflow:hidden;
@@ -962,6 +959,9 @@ section.nominate {
 
   section.when_where {
 
+    height: 600px;
+    min-height:600px;
+
     .overlay {
       @include position(0, false, false, 0);
       @include size(300px, 304px);
@@ -975,7 +975,7 @@ section.nominate {
         padding: 60px 0;
 
         h2 { font-size: 1.1em; }
-        p  { font-size: .9em; line-height: 150%; }
+        p  { font-size: .8em; line-height: 150%; }
 
       }
     }

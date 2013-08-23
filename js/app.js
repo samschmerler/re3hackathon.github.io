@@ -105,7 +105,11 @@ $(function() {
     }
   };
 
-  if (isiPhone) mapOptions.draggable = false;
+  if (isiPhone) {
+    mapOptions.draggable = false;
+    mapOptions.center = new google.maps.LatLng(40.7360, -73.9986),
+    mapOptions.zoom = 14;
+  }
 
   var styles = [ { "featureType": "landscape", "stylers": [ { "visibility": "on" }, { "color": "#39c2c9" } ] },{ "featureType": "road", "stylers": [ { "visibility": "simplified" }, { "color": "#3acbc9" }, { "lightness": 16 }, { "weight": 3 } ] },{ "featureType": "water", "stylers": [ { "color": "#4897cb" } ] },{ "elementType": "labels.text.fill", "stylers": [ { "visibility": "on" }, { "invert_lightness": true }, { "weight": 3.8 }, { "color": "#4ec9e2" } ] },{ },{ "elementType": "labels.text.fill", "stylers": [ { "color": "#5e31cb" }, { "visibility": "on" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "simplified" }, { "saturation": -85 }, { "color": "#41b1cb" } ] },{ } ];
 
@@ -115,7 +119,7 @@ $(function() {
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(40.7350, -73.9946),
     map: map,
-    icon: 'img/logo_marker.png',
+    icon: 'img/marker.png',
   });
 
 
