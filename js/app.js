@@ -91,7 +91,7 @@ $(function() {
 
   var mapOptions = {
     center: new google.maps.LatLng(40.7350, -73.9946),
-    zoom: 16,
+    zoom: 15,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
     navigationControl: false,
