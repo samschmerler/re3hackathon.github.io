@@ -215,45 +215,43 @@ nav {
 
 /* Margins */
 
+section .inner p { max-width: 1000px; }
+section .inner h3 { max-width: 1000px; }
+section .inner h2 { max-width: 1000px; }
+
 section.main .inner,
 section.contact .inner {
   width: percentage(3693/$siteWidth);
-  max-width:950px;
   padding: 40px 0;
   margin:auto;
 }
 
 section.sponsors .inner {
   width: percentage(3693/$siteWidth);
-  max-width:950px;
   margin:auto;
   padding: 4.5em 0;
 }
 
 section.participants .inner {
   width: 86%;
-  max-width:950px;
   margin:auto;
   padding: 4.5em 0;
 }
 
 section.storytelling .inner {
   width: percentage(2969/$siteWidth);
-  max-width:950px;
   padding: 50px 0;
 }
 
 section.nominate .inner,
 section.issues .inner {
   width: percentage(3693/$siteWidth);
-  max-width:950px;
   padding: 50px 0;
   margin-left:7%;
 }
 
 section .inner {
   width: percentage(2969/$siteWidth);
-  max-width:950px;
   margin-left:7%;
   padding: 4.5em 0;
 }
