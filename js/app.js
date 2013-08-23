@@ -34,8 +34,6 @@ function updateNavPosition() {
 
   var $mainHeight = $("section.main").height();
 
-
-
   if ($(document).scrollTop() > $mainHeight) {
     $("body.home nav").addClass("fixed");
     $("body.home nav .re3").fadeIn(150);
@@ -56,6 +54,8 @@ function go(e, hash) {
   e && e.stopPropagation();
 
   var t;
+
+  var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
 
   if (hash) {
     t = hash
@@ -78,7 +78,8 @@ function go(e, hash) {
     position = $(".main").height()
   } else {
 
-    if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2 + 2);
+    if (isiPhone) { position = Math.round($el.position().top) + 2; }
+    else if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2 + 2);
     else position = Math.round($el.position().top - $("nav").outerHeight(true) + 1);
 
   }
@@ -109,6 +110,8 @@ $(function() {
   if (isiPad) {
     mapOptions.draggable = false;
     mapOptions.disableDoubleClickZoom = true;
+    mapOptions.center = new google.maps.LatLng(40.7400, -73.9956),
+    mapOptions.zoom = 15;
   }
 
   if (isiPhone) {
