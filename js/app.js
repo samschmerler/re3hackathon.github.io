@@ -90,8 +90,8 @@ function go(e, hash) {
 $(function() {
 
   var mapOptions = {
-    center: new google.maps.LatLng(40.736882, -73.992277),
-    zoom: 15,
+    center: new google.maps.LatLng(40.7350, -73.9946),
+    zoom: 16,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
     navigationControl: false,
@@ -108,7 +108,7 @@ $(function() {
 
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(40.736882, -73.992277),
+    position: new google.maps.LatLng(40.7350, -73.9946),
     map: map,
     icon: 'img/logo_marker.png',
   });
