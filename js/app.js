@@ -97,6 +97,7 @@ $(function() {
     navigationControl: false,
     mapTypeControl: false,
     scaleControl: false,
+    zoomControl: false,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     }
