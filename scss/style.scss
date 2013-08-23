@@ -972,7 +972,7 @@ section.nominate {
         margin: auto;
         width: 80%;
         text-align:left;
-        padding: 60px 0;
+        padding: 45px 0;
 
         h2 { font-size: 1.1em; }
         p  { font-size: .8em; line-height: 150%; }
@@ -1096,6 +1096,9 @@ section.nominate {
 
   section.when_where {
 
+    height: 600px;
+    min-height:600px;
+
     .overlay {
       @include position(0, false, false, 0);
       @include size(300px, 304px);
@@ -1106,9 +1109,9 @@ section.nominate {
         margin: auto;
         width: 80%;
         text-align:left;
-        padding: 60px 0;
+        padding: 45px 0;
 
-        h2 { font-size: 1.1em; }
+        h2 { font-size: 1em; }
         p  { font-size: .9em; line-height: 150%; }
 
       }
