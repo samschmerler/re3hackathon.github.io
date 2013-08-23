@@ -89,6 +89,8 @@ function go(e, hash) {
 
 $(function() {
 
+  var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+
   var mapOptions = {
     center: new google.maps.LatLng(40.7350, -73.9946),
     zoom: 15,
@@ -102,6 +104,8 @@ $(function() {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     }
   };
+
+  if (isiPhone) mapOptions.draggable = false;
 
   var styles = [ { "featureType": "landscape", "stylers": [ { "visibility": "on" }, { "color": "#39c2c9" } ] },{ "featureType": "road", "stylers": [ { "visibility": "simplified" }, { "color": "#3acbc9" }, { "lightness": 16 }, { "weight": 3 } ] },{ "featureType": "water", "stylers": [ { "color": "#4897cb" } ] },{ "elementType": "labels.text.fill", "stylers": [ { "visibility": "on" }, { "invert_lightness": true }, { "weight": 3.8 }, { "color": "#4ec9e2" } ] },{ },{ "elementType": "labels.text.fill", "stylers": [ { "color": "#5e31cb" }, { "visibility": "on" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "simplified" }, { "saturation": -85 }, { "color": "#41b1cb" } ] },{ } ];
 
