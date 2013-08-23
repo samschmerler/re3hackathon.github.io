@@ -483,6 +483,7 @@ section.organizers .inner {
   h2 { width: 75%; }
 
   ul li p a { text-decoration:underline; color:$cPurple; }
+  ul li p a:hover { color: $cOrange; }
 
   ul {
     width: 100%;
@@ -650,6 +651,7 @@ section.about {
   }
 
   a { text-decoration:underline; color:$cBlue; }
+  a:hover { color: $cOrange; }
   a.storytellers { font-family: "SohoStd-Bold"; font-weight: bold; text-decoration:underline;}
 
 }
@@ -724,6 +726,7 @@ section.contact {
         a {
           @include inline-block();
           color: $cOrange;
+          &:hover { color: $cGreen; }
         }
 
         .icon {
