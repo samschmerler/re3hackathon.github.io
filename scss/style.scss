@@ -665,8 +665,6 @@ section.issues .inner {
     width: percentage(2905/$siteWidth);
     margin: 0 0 percentage(144/$siteWidth) 0;
 
-    h2  { font-size: 1.5em; }
-
   }
 
   .graph {
@@ -946,10 +944,6 @@ section.nominate {
     .header {
       width: 100%;
       margin: 0 0 20px 0;
-
-      h2  {
-        font-size: 1.2em;
-      }
     }
   }
 
