@@ -1283,6 +1283,11 @@ section.nominate {
   h3 { font-size: 1em; margin: 0 0 1em 0; }
 
   nav {
+
+      @include breakpoint(486px 715px) {
+        display:none;
+      }
+
     .inner ul {
       li {
         margin-right: 3px;
