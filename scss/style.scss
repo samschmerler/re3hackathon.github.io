@@ -400,6 +400,7 @@ section.main {
       color:$cBrown;
 
       p { margin: 0; }
+      p.mobile { display:none; }
       a { color: $cOrange; }
       a:hover { color: $cPurple; }
 
@@ -947,6 +948,8 @@ section.nominate {
 
     ul, ul li, .btn { width: 100%; }
     ul li { float:none; margin: 0 0 30px 0; }
+    ul li p.mobile { display:block; }
+    ul.titles { display:none; }
 
   }
 
@@ -1152,6 +1155,8 @@ section.nominate {
 
     ul, ul li, .btn { width: 100%; }
     ul li { float:none; margin: 0 0 30px 0; }
+    ul li p.mobile { display:block; }
+    ul.titles { display:none; }
 
   }
 
