@@ -839,6 +839,10 @@ section.sponsors {
 
 section.nominate {
 
+  .inner {
+    @include clearfix();
+  }
+
   p {
     width: 70%;
     font-size: 1.5em;
@@ -849,6 +853,23 @@ section.nominate {
       font-family: "SohoStd-Bold";
     }
 
+  }
+
+  .btn {
+    float:left;
+    padding: 1em 5em;
+    font-size:1em;
+
+    background:$cPurple;
+    font-family: "SohoStd-Bold";
+    text-decoration:none;
+    color:$cWhite;
+    line-height: 1em;
+
+    &:hover {
+      color: $cWhite;
+      background: $cDarkGreen;
+    }
   }
 
   form {
@@ -866,22 +887,6 @@ section.nominate {
 
   }
 
-  .btn {
-    float:left;
-    padding: 1em 5em;
-    font-size:1.5em;
-
-    background:$cPurple;
-    font-family: "SohoStd-Bold";
-    text-decoration:none;
-    color:$cWhite;
-    line-height: 1em;
-
-    &:hover {
-      color: $cWhite;
-      background: $cDarkGreen;
-    }
-  }
 
 }
 
@@ -1123,6 +1128,8 @@ section.nominate {
       font-size: 1em;
     }
 
+    .btn { float:none; width: 100%; padding: 1em 0; font-size: 1em; }
+
     form {
       width: 100%;
       .inputs .input { width: 100%; }
@@ -1317,6 +1324,8 @@ section.nominate {
       width: 100%;
       font-size: 1.1em;
     }
+
+    .btn { float:none; width: 100%; padding: 1em 0; font-size: 1.1em; }
 
     form {
       width: 100%;
