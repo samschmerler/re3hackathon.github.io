@@ -844,13 +844,27 @@ section.sponsors {
  * ---------------------
  */
 
+section.sample_stories {
+  h2 { color: $cPurple; }
+  h3 { color: $cWhite; }
+}
+
+section.faq {
+
+  h3.question {
+    text-transform: none;
+    font-size: 1.9em;
+    color: $cPurple;
+    font-weight:normal;
+    font-family: "SohoStd-Regular";
+  }
+
+}
+
 section.sample_stories,
 section.faq {
 
   .inner { @include clearfix(); }
-
-  h3 { color: $cPurple; }
-  h3.question { text-transform: none; }
 
   ul {
     list-style: disc;
