@@ -552,22 +552,21 @@ section.when_where {
     @include position(0, false, false, 0);
     @include size(475px, 481px);
     background: url(../img/when_where_overlay.png) no-repeat;
-
     text-align: center;
     z-index: 10;
+  }
 
-    .content {
-      margin: auto;
-      width: 80%;
-      text-align:left;
-      padding: 60px 0;
+  .overlay_content {
+    position:relative;
+    z-index: 11;
+    margin: 0;
+    text-align:left;
 
-      h2 { font-size: 2em; }
-      p  { font-size: 1.3em; line-height: 150%; }
+    h2 { font-size: 2em; }
+    p  { font-size: 1.3em; line-height: 150%; }
 
-      h2, h3, p { color: $cLightBlue; }
+    h2, h3, p { color: $cLightBlue; }
 
-    }
   }
 
 }
@@ -939,6 +938,7 @@ section.nominate {
 
   }
 
+  section.when_where .inner,
   section.issues .inner,
   section.nominate .inner,
   section.about .inner {
@@ -960,6 +960,8 @@ section.nominate {
 
   section.when_where {
 
+    .inner { padding: 3.5em; }
+
     height: 600px;
     min-height:600px;
 
@@ -968,17 +970,12 @@ section.nominate {
       @include size(300px, 304px);
       background: url(../img/when_where_overlay.png) no-repeat;
       background-size: 300px 304px;
+    }
 
-      .content {
-        margin: auto;
-        width: 80%;
-        text-align:left;
-        padding: 45px 0;
+    .overlay_content {
+      h2 { font-size: 1em; }
+      p  { font-size: .8em; line-height: 150%; }
 
-        h2 { font-size: 1.1em; }
-        p  { font-size: .8em; line-height: 150%; }
-
-      }
     }
   }
 
@@ -1100,23 +1097,20 @@ section.nominate {
     height: 600px;
     min-height:600px;
 
+    .inner { padding: 2.2em 0 4.5em 0; }
+
     .overlay {
       @include position(0, false, false, 0);
       @include size(300px, 304px);
       background: url(../img/when_where_overlay.png) no-repeat;
       background-size: 300px 304px;
-
-      .content {
-        margin: auto;
-        width: 80%;
-        text-align:left;
-        padding: 45px 0;
-
-        h2 { font-size: 1em; }
-        p  { font-size: .9em; line-height: 150%; }
-
-      }
     }
+
+    .overlay_content {
+      h2 { font-size: 1em; }
+      p  { font-size: .9em; line-height: 150%; }
+    }
+
   }
 
   section.nominate {
@@ -1374,26 +1368,23 @@ section.nominate {
 
   section.when_where {
 
+
+    .inner { padding: 2.0em 0; }
+
     .overlay {
       @include position(0, false, false, 0);
       @include size(340px, 344px);
       background: url(../img/when_where_overlay.png) no-repeat;
       background-size:340px 344px;
+    }
 
-      .content {
-        margin: auto;
-        width: 80%;
-        text-align:left;
-        padding: 60px 0;
+    .overlay_content {
+      text-align:left;
 
-        h2 { font-size: 1.3em; }
-        p  { font-size: 1.0em; line-height: 150%; }
-
-      }
+      h2 { font-size: 1.2em; }
+      p  { font-size: 1.0em; line-height: 150%; }
     }
   }
-
-
 }
 
 @include tablet-landscape {
@@ -1481,21 +1472,17 @@ section.nominate {
       @include size(375px, 380px);
       background: url(../img/when_where_overlay.png) no-repeat;
       background-size:375px 380px;
+    }
 
-      .content {
-        margin: auto;
-        width: 80%;
-        text-align:left;
-        padding: 60px 0;
+    .overlay_content {
+      text-align:left;
+      padding: 0;
 
-        h2 { font-size: 1.4em; }
-        p  { font-size: 1.2em; line-height: 150%; }
+      h2 { font-size: 1.2em; }
+      p  { font-size: 1.1em; line-height: 150%; }
 
-      }
     }
   }
-
-
 }
 
 @include desktop {
@@ -1544,6 +1531,9 @@ section.nominate {
   }
 
   section.when_where {
+
+    .inner { padding: 6.3em 0; }
+
     .overlay {
 
       @include position(0, false, false, 0);
@@ -1551,19 +1541,15 @@ section.nominate {
       background: url(../img/when_where_overlay.png) no-repeat;
 
       text-align: center;
+    }
 
-      .content {
-        margin: auto;
-        width: 80%;
-        text-align:left;
-        padding: 60px 0;
+    .overlay_content {
 
-        h2 { font-size: 2em; }
-        p  { font-size: 1.3em; line-height: 150%; }
+      h2 { font-size: 1.7em; }
+      p  { font-size: 1.1em; line-height: 150%; }
 
-        h2, h3, p { color: $cLightBlue; }
+      h2, h3, p { color: $cLightBlue; }
 
-      }
     }
 
   }
