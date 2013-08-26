@@ -48,6 +48,32 @@ function updateNavPosition() {
 
 }
 
+function goFAQ(e, hash) {
+
+  e && e.preventDefault();
+  e && e.stopPropagation();
+
+  var t;
+
+  var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+
+  if (hash) {
+    t = hash
+  } else {
+    t = $(this).attr("href");
+  }
+
+  n = t.substring(t.indexOf("#") + 1);
+  var $el = $("h3#" + n);
+
+  window.location.hash = n;
+
+  var position = Math.round($el.position().top - 20);
+
+  $("body,html").animate({ scrollTop: position }, { easing: "easeInSine", duration: 300 });
+
+}
+
 function go(e, hash) {
 
   e && e.preventDefault();
@@ -184,10 +210,12 @@ $(function() {
 
   $(document).on("scroll", updateNavPosition);
   $("a.scroll").on("click", go);
+  $("a.faq_scroll").on("click", goFAQ);
 
   if(window.location.hash) {
     setTimeout(function() {
-      go(null, window.location.hash);
+      if ($("body.home").length > 0) go(null, window.location.hash);
+      else if ($("body.faq").length > 0) goFAQ(null, window.location.hash);
     }, 500);
   }
 

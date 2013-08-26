@@ -901,8 +901,22 @@ section.faq {
   ul {
     list-style: disc;
     padding-left: 40px;
-
     margin: 0 0 30px 0;
+
+    &.links {
+      padding: 0;
+      list-style:none;
+
+      li {
+        padding: 0;
+
+        a {
+          color: $cPurple;
+          text-decoration:none;
+          &:hover { text-decoration: underline; }
+        }
+      }
+    }
 
     li {
       padding-left: 2px;
@@ -1009,6 +1023,13 @@ section.nominate {
   h2 { font-size: 1.6em; }
   h3 { font-size: .9em; margin: 0 0 1em 0; }
 
+  section.faq {
+    .inner {
+      p { width: 100%; }
+      p, ul li { font-size: 1em; }
+    }
+  }
+
   section.nominate {
 
     .inner { padding: 1.5em 0; }
@@ -1043,6 +1064,8 @@ section.nominate {
 
   }
 
+  section.sample_stories .inner,
+  section.faq .inner,
   section.when_where .inner,
   section.issues .inner,
   section.nominate .inner,
@@ -1197,6 +1220,13 @@ section.nominate {
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
 
+  section.faq {
+    .inner {
+      p { width: 100%; }
+      p, ul li { font-size: 1em; }
+    }
+  }
+
   section.when_where {
 
     height: 600px;
@@ -1254,6 +1284,7 @@ section.nominate {
     p { font-size: 1em; }
   }
 
+  section.faq .inner,
   section.issues .inner,
   section.about .inner {
     width: 90%;
