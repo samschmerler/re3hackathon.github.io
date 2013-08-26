@@ -219,7 +219,7 @@ $(function() {
     }, 500);
   }
 
-  $('.twitter.share').click(function(event) {
+  $('.popup').click(function(event) {
     var width  = 575,
     height = 400,
     left   = ($(window).width()  - width)  / 2,
