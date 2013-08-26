@@ -88,7 +88,7 @@ function go(e, hash) {
 
 }
 
-$(function() {
+function setupMap() {
 
   var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
   var isiPad = navigator.userAgent.match(/iPad/i) != null;
@@ -139,6 +139,12 @@ $(function() {
 
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
+
+}
+
+$(function() {
+
+  if ($("body.home").length > 0) setupMap();
 
   //$(window).resize(function() {
   //$('.breakpoint .coordinates').text($(window).width() + "x" + $(window).height());
