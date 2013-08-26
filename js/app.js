@@ -34,8 +34,6 @@ function updateNavPosition() {
 
   var $mainHeight = $("section.main").height();
 
-
-
   if ($(document).scrollTop() > $mainHeight) {
     $("body.home nav").addClass("fixed");
     $("body.home nav .re3").fadeIn(150);
@@ -56,6 +54,8 @@ function go(e, hash) {
   e && e.stopPropagation();
 
   var t;
+
+  var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
 
   if (hash) {
     t = hash
@@ -78,7 +78,8 @@ function go(e, hash) {
     position = $(".main").height()
   } else {
 
-    if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2 + 2);
+    if (isiPhone) { position = Math.round($el.position().top) + 2; }
+    else if (!$("nav").hasClass("fixed")) position = Math.round($el.position().top - $("nav").outerHeight(true)*2 + 2);
     else position = Math.round($el.position().top - $("nav").outerHeight(true) + 1);
 
   }
@@ -87,7 +88,63 @@ function go(e, hash) {
 
 }
 
+function setupMap() {
+
+  var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+  var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+  var mapOptions = {
+    center: new google.maps.LatLng(40.7350, -73.9946),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    zoomControl: false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  };
+
+  if (isiPad) {
+    mapOptions.draggable = false;
+    mapOptions.disableDoubleClickZoom = true;
+    mapOptions.center = new google.maps.LatLng(40.7400, -73.9956),
+    mapOptions.zoom = 15;
+  }
+
+  if (isiPhone) {
+    mapOptions.draggable = false;
+    mapOptions.disableDoubleClickZoom = true;
+    mapOptions.center = new google.maps.LatLng(40.7400, -73.9956),
+    mapOptions.zoom = 15;
+  }
+
+  var styles = [ { "featureType": "landscape", "stylers": [ { "visibility": "on" }, { "color": "#39c2c9" } ] },{ "featureType": "road", "stylers": [ { "visibility": "simplified" }, { "color": "#3acbc9" }, { "lightness": 16 }, { "weight": 3 } ] },{ "featureType": "water", "stylers": [ { "color": "#4897cb" } ] },{ "elementType": "labels.text.fill", "stylers": [ { "visibility": "on" }, { "invert_lightness": true }, { "weight": 3.8 }, { "color": "#4ec9e2" } ] },{ },{ "elementType": "labels.text.fill", "stylers": [ { "color": "#5e31cb" }, { "visibility": "on" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "simplified" }, { "saturation": -85 }, { "color": "#41b1cb" } ] },{ } ];
+
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(40.7350, -73.9949),
+    map: map,
+    icon: 'img/marker.png',
+  });
+
+
+  // Create a new StyledMapType object, passing it the array of styles,
+  // as well as the name to be displayed on the map type control.
+  var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+
+}
+
 $(function() {
+
+  if ($("body.home").length > 0) setupMap();
 
   //$(window).resize(function() {
   //$('.breakpoint .coordinates').text($(window).width() + "x" + $(window).height());

@@ -6,6 +6,9 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
     <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
     <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -29,7 +32,7 @@
         <img src="img/logo.gif" alt="re3 logo" class="logo" />
 
         <div class="separator"></div>
-        <h2>A hackathon for storytellers with a conscience.<br />October 4-6, 2013  \  Union Square  \  NYC</h2>
+        <h2>A hackathon for storytellers with a conscience. October 4-6, 2013  \  Union Square  \  NYC</h2>
         <div class="separator"></div>
 
         <ul>
@@ -109,7 +112,7 @@
         <h3>Why Storytelling</h3>
         <div class="separator"></div>
 
-        <h2>The <strong>Re<sup>3</sup></strong> StoryHack is an experiment in pushing the boundaries of justice-based persuasive storytelling.</h2>
+        <h2>The Re<sup>3</sup> StoryHack is an experiment in pushing the boundaries of justice-based persuasive storytelling.</h2>
         <p>Let’s be honest. We all have issues that we care about, and that we’d like others to also care about. While it’s easy to march out an army of facts and hope that they overwhelm people into thinking differently, that usually isn’t enough to change hearts and minds.</p>
 
         <ul>
@@ -210,7 +213,12 @@
           <p>Senior Scientist at <a href="http://vizzuality.com">Vizzuality</a></p>
           </li>
 
-  
+          <li class="arce">
+          <img src="img/organizers/javier_arce.png" alt="" />
+          <strong>Javier Arce</strong>
+          <p><a href="http://twitter.com/javier">@javier</a></p>
+          <p>Front-End Dev at <a href="http://vizzuality.com">Vizzuality</a></p>
+          </li>
 
         </ul>
 
@@ -221,7 +229,7 @@
       <div class="inner">
         <h3>The Participants</h3>
         <div class="separator"></div>
-        <h2>Issues that matter. Storytellers with a conscience.<br />Let the magic happen.</h2>
+        <h2>Issues that matter. Storytellers with a conscience. Let the magic happen.</h2>
 
         <div class="band">
           <img src="img/storytellers_band.png" />
@@ -253,18 +261,19 @@
     <section class="when_where">
       <div class="inner">
 
-        <div class="overlay">
-          <div class="content">
+        <div class="overlay"> </div>
+          <div class="overlay_content">
             <h3>When &amp; Where</h3>
             <div class="separator"></div>
             <h2>October 4 - 6, 2013</h2>
-            <p>Parsons the New School for Design<br />The Vera List Center<br />6 East 16th Street,12<sup>th</sup> Floor<br />New York City</p>
+            <p>Parsons the New School for Design<br />The Vera List Center<br />6 East 16th Street, 12<sup>th</sup> Floor<br />New York City</p>
           </div>
-        </div>
-
-        <div class="marker"></div>
-
       </div>
+
+      <div class="map">
+        <div id="map-canvas"></div>
+      </div>
+
     </section>
 
     <section class="contact">
@@ -325,6 +334,7 @@
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src='js/select2.js'></script>
     <script src='js/fastclick.js'></script>
