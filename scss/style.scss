@@ -842,8 +842,7 @@ section.sponsors {
  * ---------------------
  */
 
-section.sample_stories,
-section.faq {
+section.sample_stories {
 
   .inner { @include clearfix(); }
 
@@ -891,7 +890,37 @@ section.faq {
 
   }
 
+}
 
+section.faq {
+
+  .inner { @include clearfix(); }
+
+  h3 { color: $cPurple; }
+
+  ul {
+    list-style: disc;
+    padding-left: 40px;
+
+    margin: 0 0 30px 0;
+
+    li {
+      padding-left: 2px;
+      font-size: 1.1em;
+      line-height: 150%;
+    }
+  }
+
+  p {
+    width: 70%;
+    font-size: 1.1em;
+    line-height: 150%;
+
+    &.deadline {
+      color: $cPurple;
+      font-family: "SohoStd-Bold";
+    }
+  }
 }
 
 /* ---------------------
