@@ -850,6 +850,7 @@ section.faq {
   .inner { @include clearfix(); }
 
   h3 { color: $cPurple; }
+  h3.question { text-transform: none; }
 
   ul {
     list-style: disc;
