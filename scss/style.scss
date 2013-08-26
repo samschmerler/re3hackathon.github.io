@@ -760,6 +760,7 @@ section.contact {
           &.facebook {
             background: url(../img/facebook.png) no-repeat;
             @include size(32px, 32px);
+            margin-top: -2px;
           }
         }
       }
