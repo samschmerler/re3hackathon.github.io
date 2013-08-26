@@ -842,56 +842,7 @@ section.sponsors {
  * ---------------------
  */
 
-section.sample_stories {
-
-  .inner { @include clearfix(); }
-
-  p {
-    width: 70%;
-    font-size: 1.5em;
-    line-height: 150%;
-
-    &.deadline {
-      color: $cPurple;
-      font-family: "SohoStd-Bold";
-    }
-
-  }
-
-  .btn {
-    float:left;
-    padding: 1em 5em;
-    font-size:1em;
-
-    background:$cPurple;
-    font-family: "SohoStd-Bold";
-    text-decoration:none;
-    color:$cWhite;
-    line-height: 1em;
-
-    &:hover {
-      color: $cWhite;
-      background: $cDarkGreen;
-    }
-  }
-
-  form {
-    width: 70%;
-    @include clearfix();
-  }
-
-  .field {
-
-    .msg {
-      float:right;
-      font-size: 1.3em;
-      color:$cPurple;
-    }
-
-  }
-
-}
-
+section.sample_stories,
 section.faq {
 
   .inner { @include clearfix(); }
@@ -902,6 +853,7 @@ section.faq {
     list-style: disc;
     padding-left: 40px;
     margin: 0 0 30px 0;
+    width: 70%;
 
     &.links {
       padding: 0;
@@ -950,7 +902,7 @@ section.nominate {
 
   p {
     width: 70%;
-    font-size: 1.5em;
+    font-size: 1.1em;
     line-height: 150%;
 
     &.deadline {
@@ -1023,16 +975,17 @@ section.nominate {
   h2 { font-size: 1.6em; }
   h3 { font-size: .9em; margin: 0 0 1em 0; }
 
+  section.sample_stories,
   section.faq {
     .inner {
-      p { width: 100%; }
+      p, ul{ width: 100%; }
       p, ul li { font-size: 1em; }
     }
   }
 
   section.nominate {
 
-    .inner { padding: 1.5em 0; }
+    .inner { padding: 1.1em 0; }
 
     p {
       width: 100%;
@@ -1220,9 +1173,10 @@ section.nominate {
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
 
+  section.sample_stories,
   section.faq {
     .inner {
-      p { width: 100%; }
+      p, ul{ width: 100%; }
       p, ul li { font-size: 1em; }
     }
   }
