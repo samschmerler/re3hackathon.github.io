@@ -64,7 +64,7 @@ function goFAQ(e, hash) {
   }
 
   n = t.substring(t.indexOf("#") + 1);
-  var $el = $("h3#" + n);
+  var $el = $("#" + n);
 
   window.location.hash = n;
 
@@ -215,7 +215,7 @@ $(function() {
   if(window.location.hash) {
     setTimeout(function() {
       if ($("body.home").length > 0) go(null, window.location.hash);
-      else if ($("body.faq").length > 0) goFAQ(null, window.location.hash);
+      else if ($("body.faq, body.sample_stories").length > 0) goFAQ(null, window.location.hash);
     }, 500);
   }
 
