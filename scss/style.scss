@@ -115,6 +115,21 @@ h3 {
   @include simple-transition(background, 200ms);
 }
 
+form textarea {
+  resize: none;
+}
+
+form .input {
+  @include clearfix();
+}
+
+form .input small {
+  font-size: 14px;
+  float:right;
+  display:block;
+  color:$cOrange;
+}
+
 /*
  * ---------------------
  * NAVIGATION
