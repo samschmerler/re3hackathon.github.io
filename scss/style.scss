@@ -1522,6 +1522,13 @@ section.nominate {
       p  { font-size: 1.0em; line-height: 150%; }
     }
   }
+
+  section.contact .inner {
+    .contact {
+      margin-bottom: 20px;
+    }
+  }
+
 }
 
 @include tablet-landscape {
@@ -1620,6 +1627,7 @@ section.nominate {
 
     }
   }
+
 }
 
 @include desktop {
