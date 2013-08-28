@@ -199,12 +199,12 @@ $(function() {
   });
 
   $('.nominate .submit').on("click", function() {
-    $("form.nominate").submit();
+    $(this).parent().submit();
   });
 
-  $('form.nominate input').on("keypress", function(e){
+  $('form input').on("keypress", function(e){
     if(e.which == 13) {
-      $("form.nominate").submit();
+      $(this).parent().submit();
     }
   });
 
