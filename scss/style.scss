@@ -813,7 +813,7 @@ section.sponsors {
     li {
       float:left;
       display:block;
-      width: 25%;
+      width: 20%;
       @include box-sizing(border-box);
       text-align: center;
 
@@ -836,6 +836,12 @@ section.sponsors {
         @include size(214px, 65px);
         background: url(../img/logos/parsons.png) no-repeat!Important;
         background-size: 214px 65px;
+      }
+
+      a.mailchimp {
+        @include size(172px, 50px);
+        background: url(../img/logos/mailchimp.png) no-repeat!Important;
+        background-size: 172px 50px;
       }
 
       a.hyperakt {
@@ -1320,6 +1326,7 @@ section.nominate {
       margin: 20px auto 0 auto;
 
       li {
+        position: relative;
         float:left;
         width: 50%;
         padding: 10px;
@@ -1328,7 +1335,16 @@ section.nominate {
         a.brfny      { background-size: 145px 73px!important; }
         a.parsons    { background-size: 150px 46px!important; }
         a.hyperakt   { background-size: 150px 24px!important; }
+        a.mailchimp  { background-size: 150px 44px!important; }
         a.vizzuality { background-size: 153px 79px!important; }
+
+        a.mailchimp {
+          @include absolute-center(172px, 50px);
+        }
+
+        a.hyperakt {
+          @include absolute-center(172px, 28px);
+        }
 
       }
     }
@@ -1482,9 +1498,21 @@ section.nominate {
         width:50%;
         min-height: 100px;
         padding: 10px;
+        margin: 0 0 20px 0;
+        position:relative;
+
+        a.mailchimp {
+          @include absolute-center(172px, 50px);
+        }
+
+        a.hyperakt {
+          @include absolute-center(172px, 28px);
+        }
       }
     }
   }
+
+
 
   section.organizers .inner {
     ul {
@@ -1556,6 +1584,27 @@ section.nominate {
     }
 
   }
+
+  section.sponsors .inner {
+    ul {
+      li {
+        width:50%;
+        min-height: 100px;
+        padding: 10px;
+        margin: 0 0 20px 0;
+        position:relative;
+
+    a.mailchimp {
+      @include absolute-center(172px, 50px);
+    }
+
+    a.hyperakt {
+      @include absolute-center(172px, 28px);
+    }
+      }
+    }
+  }
+
   section.nominate {
 
     p {
@@ -1735,6 +1784,12 @@ section.nominate {
       background-size: 214px 65px!Important;
     }
 
+    a.mailchimp {
+      @include size(172px, 50px);
+      display:block;
+      background: url(../img/logos/mailchimp@2x.png) no-repeat!Important;
+      background-size: 172px 50px!important;
+    }
 
     a.hyperakt {
       @include size(172px, 28px);
