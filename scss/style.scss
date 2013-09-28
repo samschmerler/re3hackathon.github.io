@@ -832,6 +832,12 @@ section.sponsors {
         background-size: 145px 73px;
       }
 
+      .visually {
+        @include size(178px, 70px);
+        background: url(../img/logos/visually.png) no-repeat!Important;
+        background-size: 178px 70px;
+      }
+
       a.parsons {
         @include size(214px, 65px);
         background: url(../img/logos/parsons.png) no-repeat!Important;
