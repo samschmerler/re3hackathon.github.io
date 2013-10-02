@@ -893,6 +893,25 @@ section.sample_stories {
   h2 { color: $cPurple; }
   h2.title { color: $cWhite; }
   h3 { color: $cWhite; }
+
+  .btn  {
+    margin: 3% 0 0 0;
+    padding: 1em 0.5em;
+
+    @include size(295px, auto);
+    
+    text-decoration: none; 
+    font-weight:bold;
+    font-size:1.2em;
+    background:$cPurple;
+    color: $cWhite;
+
+    &:hover {
+      background: $cDarkGreen;
+      color: $cWhite;
+    }
+  }
+
 }
 
 section.faq {
