@@ -918,6 +918,7 @@ section.participant_list {
     margin-bottom: 30px; 
     li {
       line-height: 1.6em;
+      a { text-transform: lowercase;} 
     }
   }
 
