@@ -260,6 +260,7 @@ section.storytelling .inner {
 
 section.faq .inner,
 section.sample_stories .inner,
+section.participant_list .inner,
 section.nominate .inner,
 section.issues .inner {
   width: percentage(3693/$siteWidth);
@@ -338,6 +339,7 @@ section.sponsors {
 
 section.faq ,
 section.sample_stories,
+section.participant_list,
 section.nominate {
 
   .inner { padding: 4em 0 5em 0; }
@@ -885,9 +887,42 @@ section.sponsors {
 }
 
 /* ---------------------
- * FAQ & SAMPLE STORIES
+ * FAQ & SAMPLE STORIES & PARTICIPANTS
  * ---------------------
  */
+
+section.participant_list {
+  h2 { color: $cPurple; }
+  h2.title { color: $cWhite; }
+  h3 { color: $cWhite; }
+
+  .btn  {
+    margin: 3% 0 0 0;
+    padding: 1em 0.5em;
+
+    @include size(295px, auto);
+
+    text-decoration: none; 
+    font-weight:bold;
+    font-size:1.2em;
+    background:$cPurple;
+    color: $cWhite;
+
+    &:hover {
+      background: $cDarkGreen;
+      color: $cWhite;
+    }
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 30px; 
+    li {
+      line-height: 1.6em;
+      a { text-transform: lowercase;} 
+    }
+  }
+
+}
 
 section.sample_stories {
   h2 { color: $cPurple; }
@@ -899,7 +934,7 @@ section.sample_stories {
     padding: 1em 0.5em;
 
     @include size(295px, auto);
-    
+
     text-decoration: none; 
     font-weight:bold;
     font-size:1.2em;
@@ -927,6 +962,7 @@ section.faq {
 }
 
 section.sample_stories,
+section.participants,
 section.faq {
 
   .inner { @include clearfix(); }
@@ -1058,6 +1094,7 @@ section.nominate {
   h3 { font-size: .9em; margin: 0 0 1em 0; }
 
   section.sample_stories,
+  section.participants,
   section.faq {
     .inner {
       p, ul{ width: 100%; }
@@ -1100,6 +1137,7 @@ section.nominate {
   }
 
   section.sample_stories .inner,
+  seciont.participants .inner,
   section.faq .inner,
   section.when_where .inner,
   section.issues .inner,
@@ -1256,6 +1294,7 @@ section.nominate {
   h3 { font-size: .75em; margin: 0 0 1em 0; }
 
   section.sample_stories,
+  section.participant_list,
   section.faq {
     .inner {
       p, ul{ width: 100%; }
@@ -1743,6 +1782,7 @@ section.nominate {
   h3 { font-size: 1.5em; margin: 0 0 1em 0; }
 
   section.sample_stories,
+  section.participant_list,
   section.faq {
     p { font-size: 1.3em; }
   }
