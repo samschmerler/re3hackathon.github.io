@@ -592,6 +592,22 @@ section.when_where {
 
   }
 
+  .btn {
+    margin: 3% 0 0 0;
+    padding: 1em 0;
+
+    @include size(295px, auto);
+
+    background:$cOrange;
+    color:$cBrown;
+    line-height: 0.9em;
+    font-size: 0.9em;
+
+    &:hover {
+      background: $cGreen;
+    }
+
+  }
 }
 
 /* ---------------------
