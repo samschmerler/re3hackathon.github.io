@@ -648,7 +648,7 @@ section.people .inner {
  */
 
 section.when_where {
-  min-height: 786px;
+  min-height: 356px;
 
   div.map {
     position:absolute;
@@ -1259,8 +1259,8 @@ section.nominate {
 
     .inner { padding: 3.5em; }
 
-    height: 600px;
-    min-height:600px;
+    height: 306px;
+    min-height:306px;
 
     .overlay {
       @include position(0, false, false, 0);
@@ -1400,8 +1400,8 @@ section.nominate {
 
   section.when_where {
 
-    height: 600px;
-    min-height:600px;
+    height: 306px;
+    min-height:306px;
 
     .inner { padding: 2.2em 0 4.5em 0; }
 
