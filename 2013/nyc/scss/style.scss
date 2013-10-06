@@ -306,7 +306,8 @@ section.projects {
   .separator { background: $cPurple; }
 }
 
-section.issues {
+section.issues,
+section.stories {
   color:$cBrown;
 
   .separator { background: $cBrown; }
