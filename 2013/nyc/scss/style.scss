@@ -505,6 +505,51 @@ section.storytelling {
 }
 
 /* ---------------------
+ * PROJECTS
+ * ---------------------
+ */
+
+section.projects .inner {
+  width: 86%;
+  margin:auto;
+  padding: 4.5em 0;
+
+  h2 { width: 75%; }
+
+  ul li p a { text-decoration:underline; color:$cPurple; }
+  ul li p a:hover { color: $cOrange; }
+
+  ul {
+    width: 100%;
+    @include clearfix();
+
+    li {
+      float:left;
+      width: 400px;
+
+      min-width: 400px;
+      max-width: 400px;
+      max-height:300px;
+      min-height: 300px;
+      padding: 5px;
+
+      @include box-sizing(border-box);
+
+      p {
+        font-size:.9em;
+        width:auto;
+      }
+
+      img {
+        display:block;
+        @include size(100%, 100%);
+        margin: 0 0 2em 0;
+        max-width: 400px;
+      }
+    }
+  }
+}
+/* ---------------------
  * ORGANIZERS
  * ---------------------
  */
