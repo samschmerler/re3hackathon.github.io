@@ -1,0 +1,23 @@
+@import "compass/css3";
+
+@include font-face(
+  "SohoStd-Regular",
+  inline-font-files(
+    'SohoStd-Regular.woff', woff,
+    'SohoStd-Regular.ttf', ttf,
+    'SohoStd-Regular.svg', svg),
+    'SohoStd-Regular.eot',
+  light, // font-weight
+  normal  // font-style
+);
+
+@include font-face(
+  "SohoStd-Bold",
+  inline-font-files(
+    'SohoStd-Bold.woff', woff,
+    'SohoStd-Bold.ttf', ttf,
+    'SohoStd-Bold.svg', svg),
+    'SohoStd-Bold.eot',
+  700, // font-weight
+  normal  // font-style
+);
