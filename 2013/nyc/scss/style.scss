@@ -302,7 +302,7 @@ section.organizers,
 section.projects {
   background: $cBlue;
   color: $cPurple;
-
+  .award { color: $cOrange; }
   .separator { background: $cPurple; }
 }
 
@@ -530,9 +530,9 @@ section.projects .inner {
 
       min-width: 400px;
       max-width: 400px;
-      max-height:300px;
-      min-height: 300px;
-      padding: 5px;
+      max-height:380px;
+      min-height: 350px;
+      padding: 5px 5px 10px 5px;
 
       @include box-sizing(border-box);
 
@@ -541,11 +541,22 @@ section.projects .inner {
         width:auto;
       }
 
-      img {
-        display:block;
-        @include size(100%, 100%);
-        margin: 0 0 2em 0;
-        max-width: 400px;
+      a {
+        position: relative;
+        float:left;
+        img {
+          display:block;
+          @include size(100%, 100%);
+          margin: 0 0 2em 0;
+          max-width: 400px;
+        }
+        .overlay {
+          @include position(0, false, false, 0);
+          @include size(35px, 35px);
+          background: url(../img/award.png) no-repeat;
+          text-align: center;
+          z-index: 100;
+        }
       }
     }
   }
