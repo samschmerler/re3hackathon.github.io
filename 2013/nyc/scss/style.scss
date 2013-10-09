@@ -517,10 +517,22 @@ section.projects .inner {
 
   h2 { width: 75%; }
 
-  ul li p a { text-decoration:underline; color:$cPurple; }
-  ul li p a:hover { color: $cOrange; }
+  .project_block {
+    h3 { text-transform: uppercase; }
+    h3 > a {
+      color:$cPurple;
+      text-decoration: underline;
+      text-transform: none;
+      font-size: .7em;
+      font-weight:normal;
+      &:hover { color:$cOrange; }
+    }
+  }
 
-  ul {
+  .project_block ul li p a { text-decoration:underline; color:$cPurple; }
+  .project_block ul li p a:hover { color: $cOrange; }
+
+  .project_block ul {
     width: 100%;
     @include clearfix();
 
@@ -530,13 +542,26 @@ section.projects .inner {
       min-width:600px;
       max-width:600px;
       max-height:800px;
-      min-height:666px;
-      padding:0px 30px 30px 0px;
+      min-height:715px;
+      padding:0px 30px 0px 0px;
       @include box-sizing(border-box);
+      margin: 0 0 50px 0 0;
 
       p {
         font-size:1.2em;
         width:auto;
+      }
+
+      .btn {
+        padding: 14px 35px;
+        font-size:1.2em;
+        color:$cBlue;
+
+        &:hover {
+          background-color:$cOrange;
+          color:$cPurple;
+        }
+
       }
 
       a {
@@ -550,9 +575,11 @@ section.projects .inner {
           max-width:600px
         }
         .overlay {
-          @include position(0, false, false, 0);
+          @include position(-7px, false, false, -7px);
           @include size(60px, 60px);
-          background: url(../img/award.png) no-repeat;
+          background:red;
+          background: url(../img/award-full.png) no-repeat;
+          background-size:60px 60px;
           text-align: center;
           z-index:100
         }
