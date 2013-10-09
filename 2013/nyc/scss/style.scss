@@ -656,6 +656,7 @@ section.people .inner {
     li {
       float:left;
       width: 120px;
+      position:relative;
 
       min-width: 130px;
       max-width: 130px;
@@ -676,6 +677,27 @@ section.people .inner {
         margin: 0 0 0 0;
         max-width: 120px;
       }
+
+      div {
+        display:none;
+        position:absolute;
+        top: 5px; left: 5px;
+        @include size(120px);
+        background: url(../img/people_cover.png) no-repeat;
+
+        color: $cOrange;
+        @include box-sizing(border-box);
+        padding: 30px 10px;
+
+        font-weight:bold;
+        font-size:.9em;
+        a { color:$cOrange; font-weight:normal; text-decoration:underline; }
+      }
+
+      &:hover div {
+        display:block;
+      }
+
     }
   }
 }
