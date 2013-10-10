@@ -291,6 +291,7 @@ section.thanks {
 
 }
 
+section.the_event,
 section.storytelling {
   background: $cDarkGreen;
   color: $cGreen;
@@ -531,7 +532,6 @@ section.projects .inner {
   .project_block {
     h3 {
       text-transform: uppercase;
-      margin: 0 0 .5em 0
     }
     h3 > a {
       color:$cPurple;
@@ -585,7 +585,7 @@ section.projects .inner {
         img {
           @include size(100%, 100%);
           display:block;
-          margin:0 0 4em 0;
+          margin:0 0 2em 0;
           max-width:600px
         }
         .overlay {
