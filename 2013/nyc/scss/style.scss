@@ -1366,11 +1366,16 @@ section.nominate {
     p { font-size: 1em; }
   }
 
+
   section.issues .inner {
     .header {
       width: 100%;
       margin: 0 0 20px 0;
     }
+  }
+  section.issues div p {
+    font-size:1.1em;
+    line-height:150%;
   }
 
   section.projects .inner {
@@ -2015,7 +2020,6 @@ section.nominate {
   section.projects .inner {
 
     p { font-size: 2em;}
-
 
     .project_block h3 {
       font-size: 1.2em;
