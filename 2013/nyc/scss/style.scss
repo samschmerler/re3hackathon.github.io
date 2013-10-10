@@ -130,6 +130,9 @@ form .input small {
   color:$cOrange;
 }
 
+
+img.resizable { width: 100%!important; }
+
 /*
  * ---------------------
  * NAVIGATION
@@ -486,6 +489,7 @@ section.the_event {
     font-size:1.2em;
     color:$cDarkGreen;
     background: $cGreen;
+
     &:hover {
       background:$cOrange;
       color:$cBrown;
@@ -624,7 +628,6 @@ section.projects .inner {
         .overlay {
           @include position(-7px, false, false, -7px);
           @include size(60px, 60px);
-          background:red;
           background: url(../img/award-full.png) no-repeat;
           background-size:60px 60px;
           text-align: center;
@@ -1366,6 +1369,40 @@ section.nominate {
     }
   }
 
+  section.projects .inner {
+
+    .project_block h3 {
+      font-size: 1.2em;
+    }
+
+    .project_block ul {
+
+      li {
+        clear:both;
+        float:left;
+        width:280px;
+        margin: 0 0 30px 0;
+        min-width: initial;
+        min-height:initial;
+
+        a {
+          clear:both;
+          img { width: 280px; }
+          &.btn { width: 210px; }
+        }
+
+        p {
+          font-size: 1em;
+          clear:both;
+        }
+
+        font-size:1em;
+      }
+    }
+  }
+
+
+
   section.when_where {
 
     .inner { padding: 3.5em; }
@@ -1499,6 +1536,40 @@ section.nominate {
 
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
+
+  section.projects .inner {
+
+    .project_block h3 {
+      font-size: 1.2em;
+    }
+
+    .project_block ul {
+
+      li {
+        clear:both;
+        float:left;
+        width:400px;
+        margin: 0 0 30px 0;
+        min-width: initial;
+        min-height:initial;
+
+        a {
+          clear:both;
+          img { width: 400px; }
+          &.btn { width: 330px; }
+        }
+
+        p {
+          font-size: 1em;
+          clear:both;
+        }
+
+        font-size:1em;
+      }
+    }
+  }
+
+
 
   section.sample_stories,
   section.participant_list,
@@ -2057,7 +2128,7 @@ section.nominate {
     .graph { @include size(290px); }
   }
 
-  section.sponsors ul li {
+section.sponsors ul li {
 
     a.brfny {
       @include size(145px, 73px);
