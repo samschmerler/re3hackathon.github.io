@@ -474,6 +474,8 @@ section.the_event {
 
   text-align:center;
 
+  .resizable { width: 100%; }
+
   .inner { text-align: left; }
 
   .btn {
@@ -484,6 +486,10 @@ section.the_event {
     font-size:1.2em;
     color:$cDarkGreen;
     background: $cGreen;
+    &:hover {
+      background:$cOrange;
+      color:$cBrown;
+    }
   }
 }
 
