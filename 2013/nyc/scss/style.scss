@@ -518,7 +518,10 @@ section.projects .inner {
   h2 { width: 75%; }
 
   .project_block {
-    h3 { text-transform: uppercase; }
+    h3 {
+      text-transform: uppercase;
+      margin: 0 0 .5em 0
+    }
     h3 > a {
       color:$cPurple;
       text-decoration: underline;
@@ -545,7 +548,7 @@ section.projects .inner {
       min-height:715px;
       padding:0px 30px 0px 0px;
       @include box-sizing(border-box);
-      margin: 0 0 40px 0 0;
+      margin: 0 0 50px 0 0;
 
       p {
         font-size:1.0em;
@@ -571,7 +574,7 @@ section.projects .inner {
         img {
           @include size(100%, 100%);
           display:block;
-          margin:0 0 2em 0;
+          margin:0 0 4em 0;
           max-width:600px
         }
         .overlay {
