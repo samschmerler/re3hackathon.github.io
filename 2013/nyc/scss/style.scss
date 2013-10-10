@@ -529,6 +529,11 @@ section.projects .inner {
 
   h2 { width: 75%; }
 
+  & > p {
+    line-height: 150%;
+    font-size: 1.3em;
+  }
+
   .project_block {
     h3 {
       text-transform: uppercase;
