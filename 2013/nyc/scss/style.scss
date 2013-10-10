@@ -593,7 +593,7 @@ section.projects .inner {
       min-width:600px;
       max-width:600px;
       max-height:800px;
-      min-height:715px;
+      min-height:580px;
       padding:0px 30px 0px 0px;
       @include box-sizing(border-box);
       margin: 0 0 50px 0 0;
@@ -1871,6 +1871,28 @@ section.nominate {
     }
   }
 
+  section.projects .inner {
+
+    .project_block h3 {
+      font-size: 1.2em;
+    }
+
+    .project_block ul {
+
+      li {
+        width:320px;
+        min-width:320px;
+        max-width:320px;
+        max-height:400px;
+        min-height:515px;
+        margin-bottom: 30px;
+
+        p { font-size: 1em; }
+
+        font-size:1em;
+      }
+    }
+  }
 
 
   section.organizers .inner {
@@ -1984,6 +2006,30 @@ section.nominate {
 
   }
 
+  section.projects .inner {
+
+    .project_block h3 {
+      font-size: 1.2em;
+    }
+
+    .project_block ul {
+
+      li {
+        width:420px;
+        min-width:420px;
+        max-width:420px;
+        max-height:500px;
+        min-height:515px;
+        margin-bottom: 30px;
+
+        p { font-size: 1em; }
+
+        font-size:1em;
+      }
+    }
+  }
+
+
   section.participants .inner {
 
     h2  { font-size:1.7em; }
@@ -2045,6 +2091,24 @@ section.nominate {
     color: #fff;
     .desktop { display: inline-block; }
   }
+
+  section.projects .inner {
+
+    .project_block ul {
+
+      li {
+        width:520px;
+        min-width:520px;
+        max-width:520px;
+        max-height:500px;
+        min-height:515px;
+        margin: 0 0 40px 0;
+      }
+
+    }
+  }
+
+
 }
 
 @include desktop-and-up {
