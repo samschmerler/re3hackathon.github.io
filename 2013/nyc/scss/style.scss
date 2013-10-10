@@ -466,6 +466,28 @@ section.main {
 
 
 /* ---------------------
+ * The Event
+ * ---------------------
+ */
+
+section.the_event {
+
+  text-align:center;
+
+  .inner { text-align: left; }
+
+  .btn {
+    margin: 70px auto;
+    padding: 14px 35px;
+    text-align:center;
+    @include inline-block();
+    font-size:1.2em;
+    color:$cDarkGreen;
+    background: $cGreen;
+  }
+}
+
+/* ---------------------
  * STORYTELLING
  * ---------------------
  */
