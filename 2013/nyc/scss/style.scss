@@ -605,7 +605,8 @@ section.projects .inner {
       p {
         font-size:1.0em;
         width:auto;
-          clear:both;
+        max-width: 600px;
+        clear:both;
       }
 
       .btn {
