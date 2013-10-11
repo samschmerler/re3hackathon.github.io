@@ -482,10 +482,10 @@ section.the_event {
   .inner { text-align: left; }
 
   .btn {
+    @include inline-block();
     margin: 70px auto;
     padding: 14px 35px;
     text-align:center;
-    @include inline-block();
     font-size:1.2em;
     color:$cDarkGreen;
     background: $cGreen;
@@ -605,6 +605,7 @@ section.projects .inner {
       p {
         font-size:1.0em;
         width:auto;
+          clear:both;
       }
 
       .btn {
@@ -627,7 +628,8 @@ section.projects .inner {
           @include size(100%, 100%);
           display:block;
           margin:0 0 2em 0;
-          max-width:600px
+          max-width:600px;
+          clear:both;
         }
         .overlay {
           @include position(-7px, false, false, -7px);
@@ -1374,7 +1376,7 @@ section.nominate {
     }
   }
   section.issues div p {
-    font-size:1.1em;
+    font-size:1em;
     line-height:150%;
   }
 
@@ -1891,12 +1893,17 @@ section.nominate {
     .project_block ul {
 
       li {
-        width:320px;
-        min-width:320px;
-        max-width:320px;
-        max-height:400px;
-        min-height:515px;
-        margin-bottom: 30px;
+        width:49%;
+        min-width:initial;
+        max-width:initial;
+        max-height:initial;
+        min-height:initial;
+        margin: 0;
+        padding: 0;
+        &:first-child { margin-right: 2%; }
+        &:last-child { margin-right: 0; }
+
+        /*margin: 0 0 40px 0;*/
 
         p { font-size: 1em; }
 
@@ -2017,6 +2024,16 @@ section.nominate {
 
   }
 
+  section.projects .inner p.intro {
+    line-height: 150%;
+    font-size: 1.4em;
+  }
+
+  section.issues p {
+    line-height: 150%;
+    font-size: .9em;
+  }
+
   section.projects .inner {
 
     p { font-size: 2em;}
@@ -2028,12 +2045,15 @@ section.nominate {
     .project_block ul {
 
       li {
-        width:420px;
-        min-width:420px;
-        max-width:420px;
-        max-height:500px;
-        min-height:515px;
-        margin-bottom: 30px;
+        width:49%;
+        min-width:initial;
+        max-width:initial;
+        max-height:initial;
+        min-height:initial;
+        margin: 0;
+        padding: 0;
+        &:first-child { margin-right: 2%; }
+        &:last-child { margin-right: 0; }
 
         p { font-size: 1em; }
 
@@ -2110,18 +2130,20 @@ section.nominate {
     .project_block ul {
 
       li {
-        width:520px;
-        min-width:520px;
-        max-width:520px;
-        max-height:500px;
-        min-height:515px;
-        margin: 0 0 40px 0;
-      }
+        width:49%;
+        min-width:initial;
+        max-width:initial;
+        max-height:initial;
+        min-height:initial;
+        margin: 0;
+        padding: 0;
+        &:first-child { margin-right: 2%; }
+        &:last-child { margin-right: 0; }
 
+        /*margin: 0 0 40px 0;*/
+      }
     }
   }
-
-
 }
 
 @include desktop-and-up {
@@ -2135,6 +2157,26 @@ section.nominate {
   nav ul li a { font-size: 1.2em; }
   h2 { font-size: 2.9em; }
   h3 { font-size: 1.5em; margin: 0 0 1em 0; }
+
+  section.projects .inner {
+
+    .project_block ul {
+
+      li {
+        width:49%;
+        min-width:initial;
+        max-width:initial;
+        max-height:initial;
+        min-height:initial;
+        margin: 0;
+        padding: 0;
+        &:first-child { margin-right: 2%; }
+        &:last-child { margin-right: 0; }
+
+        /*margin: 0 0 40px 0;*/
+      }
+    }
+  }
 
   section.sample_stories,
   section.participant_list,
