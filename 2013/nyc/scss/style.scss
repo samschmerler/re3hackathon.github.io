@@ -1376,6 +1376,7 @@ section.nominate {
       margin: 0 0 20px 0;
     }
   }
+
   section.issues div p {
     font-size:1em;
     line-height:150%;
@@ -1550,6 +1551,16 @@ section.nominate {
 
   h2 { font-size: 1.4em; }
   h3 { font-size: .75em; margin: 0 0 1em 0; }
+
+  section.issues div p {
+    font-size:1em;
+    line-height:150%;
+  }
+
+  section.projects p.intro {
+    font-size:1em;
+    line-height:150%;
+  }
 
   section.projects .inner {
 
