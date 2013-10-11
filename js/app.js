@@ -170,9 +170,9 @@ function setupMap() {
 
 $(function() {
 
-  // Redirection to 2013 site
-  //window.location.href =  "http://re3storyhack.org/2013/nyc";
-  //return;
+  //Redirection to 2013 site
+  window.location.href =  "http://re3storyhack.org/2013/nyc";
+  return;
 
   if ($("body.home").length > 0) setupMap();
 
